@@ -11,6 +11,9 @@ class AdminController extends Controller
     public function index(){
         return view('admin.data-artikel');
     }
+    public function dashboard(){
+        return view('admin.dashboard');
+    }
     public function allArticles(){
         $articles = Artikel::all();
         return view('admin.data-artikel', compact('articles'));

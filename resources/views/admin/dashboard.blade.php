@@ -1,4 +1,4 @@
-@extends('template')
+@extends('admin.sidebar')
 @section('content')
 <h1>ADMIN</h1>
     

@@ -3,7 +3,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Tambah Anggota</h4>
+        <h4 class="modal-title">Tambah Artikel</h4>
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
           <i class="material-icons">clear</i>
         </button>
@@ -15,7 +15,7 @@
             <label class="col-sm-4 col-form-label">Nama</label>
             <div class="col-sm-8">
               <div class="form-group">
-                <input type="text" name="nama" value="{{Session::get('name')}}" class="form-control" disabled>
+                <input type="text" name="nama" value="{{Session::get('name')}}" class="form-control" >
                 <span class="bmd-help">Errors message goes here</span>
               </div>
             </div>
@@ -33,7 +33,7 @@
             <label class="col-sm-4 col-form-label">Konten</label>
             <div class="col-sm-8">
               <div class="form-group">
-                <textarea name="deskripsi" id="" class="form-control"></textarea>
+                <textarea name="deskripsi" id="konten" class="form-control"></textarea>
                 <span class="bmd-help">Errors message goes here</span>
               </div>
             </div>
@@ -66,3 +66,8 @@
   </div>
 </div>
 <!--  End Modal -->
+<script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/classic/ckeditor.js"></script>
+<script>
+  ClassicEditor
+  .create( document.querySelector('#konten'))
+</script>
