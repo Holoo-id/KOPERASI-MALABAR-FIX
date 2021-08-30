@@ -50,11 +50,10 @@
           <div class="row">
             <label class="col-sm-4 col-form-label">Gambar</label>
             <div class="col-sm-8">
-              <div class="form-group">
+              
                 <input type="file" name="gambar" class="form-control">
-                <input type="file" id="inputFile4" multiple="">
                 <span class="bmd-help">Errors message goes here</span>
-              </div>
+            
             </div>
           </div>
         </div>
