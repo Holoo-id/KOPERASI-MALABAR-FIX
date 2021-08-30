@@ -9,7 +9,8 @@ use Illuminate\Support\Str;
 class SuperAdminController extends Controller
 {
     public function index(){
-        return view('superAdmin.dashboard');
+        $pageName = 'Index';
+        return view('super_admin.dashboard', compact('pageName'));
     }
     public function buatAkun(Request $request){
         $buatAkun = User::create([
@@ -20,7 +21,7 @@ class SuperAdminController extends Controller
             'remember_token' => Str::random(60)
 
         ]);
-        return view('superAdmin.dashboard');
+        return view('super_admin.dashboard');
         
     }
 }

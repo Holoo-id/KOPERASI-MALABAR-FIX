@@ -17,7 +17,9 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::get('/postLogin', 'App\Http\Controllers\LoginController@login')->name('login');
-Route::post('/superAdmin/postAkun', 'App\Http\Controllers\SuperAdminController@buatAkun')->name('buatAkun');
-Route::post('/Admin/postArtikel', 'App\Http\Controllers\AdminController@buatArtikel')->name('buatArtikel');
+Route::get('/post-login', 'App\Http\Controllers\LoginController@login')->name('login');
+Route::post('/super-admin', 'App\Http\Controllers\SuperAdminController@index')->name('dashboard');
+Route::post('/super-admin/post-akun', 'App\Http\Controllers\SuperAdminController@buatAkun')->name('buatAkun');
+Route::get('/admin/artikel', 'App\Http\Controllers\AdminController@allArticles')->name('allArticle');
+Route::post('/admin/post-artikel', 'App\Http\Controllers\AdminController@buatArtikel')->name('buatArtikel');
 

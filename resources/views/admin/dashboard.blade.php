@@ -1,5 +1,7 @@
+@extends('template')
+@section('content')
 <h1>ADMIN</h1>
-
+    
 <form action="{{ route('buatArtikel') }}" method="post" enctype="multipart/form-data">
 @csrf
 <input type="text" placeholder="Nama" name="nama" value="{{Session::get('name')}}">
@@ -9,3 +11,4 @@
 <input type="file" placeholder="Masukan Gambar" name="gambar">
 <input type="submit" value="Buat Artikel">
 </form>
+@endsection

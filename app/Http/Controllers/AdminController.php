@@ -9,7 +9,11 @@ use Illuminate\Support\Str;
 class AdminController extends Controller
 {
     public function index(){
-        return view('admin.dashboard');
+        return view('admin.data-artikel');
+    }
+    public function allArticles(){
+        $articles = Artikel::all();
+        return view('admin.data-artikel', compact('articles'));
     }
     public function buatArtikel(Request $request){
         $uploadedFile = $request->file('gambar');

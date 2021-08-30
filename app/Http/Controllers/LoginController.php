@@ -18,7 +18,7 @@ class LoginController extends Controller
         if(Hash::check($password,$data->password)){
             if($data->role == 'super_admin'){
                 Session::put('name',$data->name);
-                return view('superAdmin.dashboard');
+                return view('super_admin.dashboard');
             }else{
                 return view('admin.dashboard');
             }
