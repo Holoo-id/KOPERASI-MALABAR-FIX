@@ -30,7 +30,7 @@
                 <div class="card" data-animation="true">
                   <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                     <a class="d-block blur-shadow-image">
-                      <img src="{{ asset('storage/images/contents/'.$article->gambar) }}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                      <img src="{{ asset('storage/images/contents/'.$article->galeri->gambar) }}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
                     </a>
                     <div class="colored-shadow" style="background-image: url(&quot;/be/img/products/product-2-min.jpg&quot;);"></div>
                   </div>

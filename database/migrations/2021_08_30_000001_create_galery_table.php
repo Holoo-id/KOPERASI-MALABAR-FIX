@@ -16,6 +16,7 @@ class CreateGaleryTable extends Migration
         Schema::create('galeri', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
+            $table->string('gambar');
             $table->foreignId('added_by');
             $table->string('path');
             $table->boolean('tampilkan')->default(true);

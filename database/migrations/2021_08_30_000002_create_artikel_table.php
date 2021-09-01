@@ -22,8 +22,7 @@ class CreateArtikelTable extends Migration
             // $table->string('gambar');
             // $table->string('gambar_path');
             $table->foreignId('gambar_sampul')->nullable();
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+            $table->timestamps();
 
             $table->foreign('gambar_sampul')
             ->references('id')

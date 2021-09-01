@@ -12,10 +12,9 @@
         @csrf
         <div class="modal-body">
           <div class="row">
-            <label class="col-sm-4 col-form-label">Nama</label>
             <div class="col-sm-8">
               <div class="form-group">
-                <input type="text" name="nama" value="{{Session::get('name')}}" class="form-control" >
+                <input type="text" name="id" value="{{Session::get('id')}}" class="form-control" hidden>
                 <span class="bmd-help">Errors message goes here</span>
               </div>
             </div>
@@ -54,6 +53,15 @@
                 <input type="file" name="gambar" class="form-control">
                 <span class="bmd-help">Errors message goes here</span>
             
+            </div>
+          </div>
+          <div class="row">
+            <label class="col-sm-4 col-form-label">Judul Gambar</label>
+            <div class="col-sm-8">
+              <div class="form-group">
+                <input type="text" name="judul_gambar" class="form-control">
+                <span class="bmd-help">Errors message goes here</span>
+              </div>
             </div>
           </div>
         </div>

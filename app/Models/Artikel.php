@@ -21,6 +21,6 @@ class Artikel extends Model
     }
     public function galeri()
     {
-        return $this->hasOne(Galeri::class,'gambar_sampul');
+        return $this->hasOne(Galeri::class,'id');
     }
 }
