@@ -20,6 +20,7 @@ class LoginController extends Controller
                 Session::put('name',$data->name);
                 return view('super_admin.dashboard');
             }else{
+                Session::put('name',$data->name);
                 return view('admin.dashboard');
             }
         }

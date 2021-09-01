@@ -14,6 +14,17 @@ class AdminController extends Controller
     public function dashboard(){
         return view('admin.dashboard');
     }
+    public function uploadGambar(Request $request){
+       $file = $request->upload;
+       $namaFile = $file->getClientOriginalName();
+       $namaBaru = time().$namaFile;
+       $uploaded = "storage/images/upload/";
+       $file->move($uploaded,$namaBaru);
+       $url = asset('storage/images/upload/'.$namaBaru);
+       $CkeditorFuncNum = $request->input('CKEditorFuncNum');
+       $status = "<script>window.parent.CKEDITOR.tools.callFunction('$CkeditorFuncNum','$url','Gambar Telah Berhasil Di Upload')</script>";
+        echo $status;
+    }
     public function allArticles(){
         $articles = Artikel::all();
         return view('admin.data-artikel', compact('articles'));
@@ -34,5 +45,6 @@ class AdminController extends Controller
         ]);
         return view('admin.dashboard');
     }
+    
    
 }

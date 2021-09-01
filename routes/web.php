@@ -24,4 +24,5 @@ Route::post('/super-admin/post-akun', 'App\Http\Controllers\SuperAdminController
 Route::get('/admin/artikel', 'App\Http\Controllers\AdminController@allArticles')->name('allArticle');
 Route::post('/admin/post-artikel', 'App\Http\Controllers\AdminController@buatArtikel')->name('buatArtikel');
 Route::get('/admin/dashboard', 'App\Http\Controllers\AdminController@dashboard')->name('dashboard-admin');
+Route::post('/admin/upload-gambar', 'App\Http\Controllers\AdminController@uploadGambar')->name('upload-gambar');
 
