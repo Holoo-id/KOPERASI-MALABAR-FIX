@@ -1147,7 +1147,7 @@
 </html> --}}
 @extends('template')
 @section('content')
-    $pageName
+{{Session::get('name')}}
 @endsection
 
 {{-- <h1>SUPER ADMIN</h1>

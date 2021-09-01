@@ -66,8 +66,10 @@
   </div>
 </div>
 <!--  End Modal -->
-<script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/classic/ckeditor.js"></script>
+<script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
 <script>
-  ClassicEditor
-  .create( document.querySelector('#konten'))
+    CKEDITOR.replace('deskripsi',{
+      filebrowserUploadUrl: "{{ route('upload-gambar',['_token'=> csrf_token()]) }}",
+      filebrowserUploadMethod:"form"
+    });
 </script>
