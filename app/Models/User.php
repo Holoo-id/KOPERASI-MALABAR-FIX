@@ -43,4 +43,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function galeri()
+    {
+        return $this->hasMany(Galeri::class, 'added_by');
+    }
+    public function artikel()
+    {
+        return $this->hasMany(Artikel::class, 'added_by');
+    }
 }

@@ -9,11 +9,18 @@ class Artikel extends Model
 {
     protected $table = 'artikel';
     protected $fillable = [
-        'nama',
+        'added_by',
         'judul',
         'deskripsi',
         'tanggal',
-        'gambar',
-        'gambar_path',
+        'gambar_sampul',
     ];
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'added_by');
+    }
+    public function galeri()
+    {
+        return $this->hasOne(Galeri::class,'gambar_sampul');
+    }
 }
