@@ -10,15 +10,11 @@ class FrontendController extends Controller
     {
         return view('default.page.home');
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function profil()
     {
-        //
+        $pageTitle = 'PROFIL';
+        $pageSubtitle = 'Kopi Mitra Malabar';
+        return view('default.page.profil', compact('pageTitle', 'pageSubtitle'));
     }
 
     /**

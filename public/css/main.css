@@ -21,9 +21,17 @@ h3.page-subtitle {
 }
 
 .home-banner {
-  background: url(https://i.pinimg.com/originals/e4/d2/fe/e4d2fe20325524f5e1d3b84a11e20496.jpg) no-repeat center center fixed;
-  background-size: cover;
   height: 100vh;
+  background: url(https://i.pinimg.com/originals/e4/d2/fe/e4d2fe20325524f5e1d3b84a11e20496.jpg) no-repeat center center fixed;
+}
+
+.page-banner {
+  background: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2a348a61432093.5a6ecd817d781.png) no-repeat center center fixed;
+  height: 465px;
+}
+
+.home-banner, .page-banner {
+  background-size: cover;
   width: 100%;
   z-index: -1;
 }
@@ -35,14 +43,44 @@ h3.page-subtitle {
   margin: -5rem auto 0;
 }
 
+.default-page .page-section {
+  margin-top: calc( 465px - 5rem );
+}
+
 .section-content-wrap {
   background-color: #E0EBF9;
 }
 
-.content-image .image-content {
+.content-image img, .content-image2 img {
+  width: 100%;
+}
+.content-image .image-content, .content-image2 .image-content {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   text-align: center;
+}
+
+.content-image2 {
+  min-width: 45%;
+  max-width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .content-image2 {
+    min-width: 30%;
+    max-width: calc( 100vw / 3 );
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content-image2 {
+    min-width: 23%;
+    max-width: 25%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .content-image2 {
+    min-width: 18%;
+    max-width: 20%;
+  }
 }
 
 .video-content-wrap {

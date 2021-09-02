@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'App\Http\Controllers\FrontendController@index')->name('home');
+Route::get('/profil', 'App\Http\Controllers\FrontendController@profil')->name('profil');
 Route::get('/post-login', 'App\Http\Controllers\LoginController@login')->name('login');
 Route::get('/logout', 'App\Http\Controllers\LoginController@logout')->name('logout');
 Route::post('/super-admin', 'App\Http\Controllers\SuperAdminController@index')->name('dashboard');

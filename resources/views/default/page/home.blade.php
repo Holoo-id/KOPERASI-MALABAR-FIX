@@ -1,6 +1,7 @@
 @extends('default.base')
 @section('content')
     <div class="home-page -mt-20 pt-20">
+      {{-- banner --}}
       <div class="home-banner absolute flex flex-col justify-center items-center top-0 w-full">
         <h1 class="
           page-title w-11/12 text-white text-center font-black uppercase text-4xl
@@ -16,6 +17,7 @@
         ">Agribisnis, Pertanian, Perkebunan</h3>
       </div>
       <div class="page-section relative">
+        {{-- card --}}
         <div class="
           card bg-white p-10 flex text-center shadow w-11/12 flex-col gap-4
           md:w-10/12 md:flex-row
@@ -38,6 +40,7 @@
             <p class="card-item-text text-gray-600">Berusaha menghadirkan kesejahteraan dan kebahagiaan untuk sesama</p>
           </div>
         </div>
+        {{-- tentang kami --}}
         <div class="mx-auto flex flex-col items-center">
           <h2 class="
             section-title py-8 text-center font-black capitalize text-2xl mt-16
@@ -46,14 +49,14 @@
             xl:text-5xl
           ">Tentang Kami</h2>
           <p class="
-            text-center w-10/12 text-lg mb-4
+            text-center w-10/12 text-lg mb-4 text-gray-800
             md:text-xl md:w-9/12
             lg:text-2xl
             xl:text-3xl
             2xl:w-7/12
           ">Koperasi Mitra Malabar merupakan jenis koperasi produksi yang memilik potensi besar dalam mendukung kesejahteraan ekonomi masyarakat Jawa Barat</p>
           <p class="
-            text-center w-10/12 mt-4 mb-36
+            text-center w-10/12 mt-4 mb-36 text-gray-800
             md:w-9/12
             2xl:w-7/12
           ">Melalui koperasi inilah berwirausaha akan dikembangkan sesuai perubahan lingkungan bisnis, tanpa meninggalkan semangat gotong royong dan semangat berjamaah.</p>
@@ -69,13 +72,13 @@
                   lg:text-3xl
                   xl:text-4xl
                 ">2009 - Titik Tolak</h4> --}}
-                <p class="py-4">
+                <p class="py-4 text-gray-800">
                   <span class="font-bold">Jawa Barat</span> merupakan provinsi pertama yang dibentuk sejak masa kolonial 
                   <span class="font-bold">Undang-Undang Nomor 11 tahun 1950</span>, Provinsi Jawa Barat berdiri pada tanggal 4 Juli 1950, saat ditetapkan dan mulai diberlakukan oleh pemerintah. Pusat pemerintahannya berada di 
                   <span class="font-bold">Belanda</span> tahun 1925. Namun demikian, sesuai dengan
                   <span class="font-bold">Bandung</span>.
                 </p>
-                <p class="py-4">
+                <p class="py-4 text-gray-800">
                   Dengan luas 
                   <span class="font-bold">35.377,76 kilometer persegi</span> atau sekitar 
                   <span class="font-bold">1,85 persen</span> dari luas daratan Indonesia, Jawa Barat terluas kedua di Pulau Jawa setelah Jawa Timur (47.921 km²). Populasi penduduknya mencapai 49,93 juta jiwa (BPS 2019) dan terbanyak di Indonesia.
@@ -84,6 +87,7 @@
             </div>
           </div>
         </div>
+        {{-- divisi --}}
         <div class="w-11/12 mx-auto mt-28
           md:w-10/12
           xl:w-9/12
@@ -96,7 +100,7 @@
             xl:text-5xl
           ">Divisi Kami</h2>
           <p class="
-            text-center text-lg mb-4
+            text-center text-lg mb-4 text-gray-800
             md:text-xl
             lg:text-2xl
             xl:text-3xl
@@ -137,6 +141,7 @@
             </a>
           </div>
         </div>
+        {{-- bergabung --}}
         <div class="video-content-wrap flex flex-col items-center p-8 mt-60">
           <div class="
             video-thumbnail border-white w-full
@@ -155,6 +160,7 @@
           <p class="text-center text-white">Koperasi Mitra Malabar merupakan jenis koperasi produksi yang memilik potensi besar dalam mendukung kesejahteraan ekonomi masyarakat Jawa Barat</p>
           <a href="text-center" class="primary-button rounded-full mt-8">Hubungi Kami</a>
         </div>
+        {{-- info --}}
         <div class="w-11/12 mx-auto">
           <h2 class="
             section-title py-8 text-center font-black capitalize text-2xl
