@@ -13,10 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('auth.login');
-});
-
+Route::get('/', 'App\Http\Controllers\FrontendController@index')->name('home');
 Route::get('/post-login', 'App\Http\Controllers\LoginController@login')->name('login');
 Route::post('/super-admin', 'App\Http\Controllers\SuperAdminController@index')->name('dashboard');
 Route::post('/super-admin/post-akun', 'App\Http\Controllers\SuperAdminController@buatAkun')->name('buatAkun');
