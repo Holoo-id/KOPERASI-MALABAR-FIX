@@ -30,6 +30,17 @@ class AdminController extends Controller
         $articles = Artikel::all();
         return view('admin.data-artikel', compact('articles'));
     }
+    public function detailArticle($link){
+        $article = Artikel::where('id', $link)->first();
+        return view('admin.detail-artikel', compact('article'));
+    }
+    public function createArticlesPage(){
+        return view('admin.artikel-baru');
+    }
+    public function editArticlePage($link){
+        $article = Artikel::where('id', $link)->first();
+        return view('admin.edit-artikel', compact('article'));
+    }
     public function buatArtikel(Request $request){
         $uploadedFile = $request->file('gambar');
         $uploadedFile->storePubliclyAs('public/images/contents/', $uploadedFile->getClientOriginalName());
