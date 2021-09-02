@@ -20,9 +20,15 @@ class LoginController extends Controller
                 Session::put('name',$data->name);
                 return view('super_admin.dashboard');
             }else{
+                Session::put('name',$data->name);
+                Session::put('id',$data->id);
                 return view('admin.dashboard');
             }
         }
 
+    }
+    public function logout(){
+        Auth::logout();
+        return view('auth.login');
     }
 }

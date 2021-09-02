@@ -1,6 +1,6 @@
-@extends('template')
+@extends('admin.sidebar')
 @section('content')
-<h1>ADMIN</h1>
+<h1>ADMIN{{Session::get('name')}}</h1>
     
 <form action="{{ route('buatArtikel') }}" method="post" enctype="multipart/form-data">
 @csrf

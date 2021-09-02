@@ -1,4 +1,4 @@
-@extends('template')
+@extends('admin.sidebar')
 @section('content')
   <div class="row">
     <div class="col-md-12">
@@ -7,14 +7,14 @@
           <div class="card-icon">
             <i class="material-icons">assignment</i>
           </div>
-          <h4 class="card-title">Data Anggota</h4>
+          <h4 class="card-title">Data Artikel</h4>
         </div>
         <div class="card-body">
           <div class="toolbar">
             <div class="row mt-3">
               <div class="col">
                 <button class="btn bg-primary" data-toggle="modal" data-target="#artikelBaru">
-                  Tambah Anggota
+                  Tambah Artikel
                 </button>
               </div>
               <div class="col d-flex justify-content-end">
@@ -30,7 +30,7 @@
                 <div class="card" data-animation="true">
                   <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                     <a class="d-block blur-shadow-image">
-                      <img src="/be/img/card-2.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                      <img src="{{ asset('storage/images/contents/'.$article->galeri->gambar) }}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
                     </a>
                     <div class="colored-shadow" style="background-image: url(&quot;/be/img/products/product-2-min.jpg&quot;);"></div>
                   </div>
@@ -47,7 +47,7 @@
                       <a href="javascript:;">{{ $article->judul }}</a>
                     </h5>
                     <p class="mb-0">
-                      {{ Str::limit($article->deskripsi, 200) }}
+                      {!! Str::limit( html_entity_decode ($article->deskripsi) , 200) !!}
                     </p>
                   </div>
                   <hr class="dark horizontal my-0">

@@ -5,22 +5,26 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Artikel extends Model
+class Galeri extends Model
 {
-    protected $table = 'artikel';
+    use HasFactory;
+
+    protected $table = 'galeri';
     protected $fillable = [
-        'added_by',
+        'id',
         'judul',
-        'deskripsi',
-        'tanggal',
-        'gambar_sampul',
+        'gambar',
+        'added_by',
+        'path',
+        'tampilkan',
     ];
+
     public function user()
     {
         return $this->belongsTo(User::class, 'added_by');
     }
-    public function galeri()
+    public function artikel()
     {
-        return $this->hasOne(Galeri::class,'id');
+        return $this->belongsTo(Artikel::class,'gambar_sampul');
     }
 }
