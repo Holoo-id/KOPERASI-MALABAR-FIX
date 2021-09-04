@@ -17,6 +17,7 @@ Route::get('/', 'App\Http\Controllers\FrontendController@index')->name('home');
 Route::get('/profil', 'App\Http\Controllers\FrontendController@profil')->name('profil');
 Route::get('/artikel', 'App\Http\Controllers\FrontendController@articles')->name('articles');
 Route::get('/artikel/{link}', 'App\Http\Controllers\FrontendController@articleDetail')->name('article');
+Route::get('/kontak', 'App\Http\Controllers\FrontendController@contact')->name('contact');
 
 Route::get('/login', function () {
     return view('auth.login');

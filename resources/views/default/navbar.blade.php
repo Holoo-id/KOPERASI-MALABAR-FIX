@@ -12,7 +12,7 @@
     <a href="{{ route('home') }}" class="menu-item hover:underline px-4">Produk</a>
     <a href="{{ route('home') }}" class="menu-item hover:underline px-4">Pelatihan</a>
     <a href="{{ route('home') }}" class="menu-item hover:underline px-4">Galeri</a>
-    <a href="{{ route('home') }}" class="menu-item hover:underline px-4">Kontak</a>
+    <a href="{{ route('contact') }}" class="menu-item hover:underline px-4">Kontak</a>
   </nav>
   <div class="lang-switcher px-4">
     <a href="" class="menu-item hover:underline">ID</a>

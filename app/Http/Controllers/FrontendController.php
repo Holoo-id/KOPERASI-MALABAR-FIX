@@ -31,16 +31,11 @@ class FrontendController extends Controller
         $article = Artikel::where('id', $link)->first();
         return view('default.page.article-detail', compact('article'));
     }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
+    public function contact()
     {
-        //
+        $pageTitle = 'CONTACT';
+        $pageSubtitle = 'Hubungi Kami';
+        return view('default.page.contact', compact('pageTitle', 'pageSubtitle'));
     }
 
     /**
