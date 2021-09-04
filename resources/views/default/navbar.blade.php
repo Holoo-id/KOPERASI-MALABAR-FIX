@@ -8,7 +8,7 @@
   ">
     <a href="{{ route('home') }}" class="menu-item hover:underline px-4">Beranda</a>
     <a href="{{ route('profil') }}" class="menu-item hover:underline px-4">Profil</a>
-    <a href="{{ route('home') }}" class="menu-item hover:underline px-4">Artikel</a>
+    <a href="{{ route('articles') }}" class="menu-item hover:underline px-4">Artikel</a>
     <a href="{{ route('home') }}" class="menu-item hover:underline px-4">Produk</a>
     <a href="{{ route('home') }}" class="menu-item hover:underline px-4">Pelatihan</a>
     <a href="{{ route('home') }}" class="menu-item hover:underline px-4">Galeri</a>

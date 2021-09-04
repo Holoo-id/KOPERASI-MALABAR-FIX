@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Artikel;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
     public function index()
     {
-        return view('default.page.home');
+        $articles = Artikel::orderBy('created_at', 'desc')
+        ->paginate(3);
+        return view('default.page.home', compact('articles'));
     }
     public function profil()
     {
@@ -16,27 +19,17 @@ class FrontendController extends Controller
         $pageSubtitle = 'Kopi Mitra Malabar';
         return view('default.page.profil', compact('pageTitle', 'pageSubtitle'));
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function articles()
     {
-        //
+        $articles = Artikel::all();
+        $pageSubtitle = 'Informasi Terbaru';
+        $pageTitle = 'ARTIKEL';
+        return view('default.page.artikel', compact('articles', 'pageSubtitle', 'pageTitle'));
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+    public function articleDetail($link)
     {
-        //
+        $article = Artikel::where('id', $link)->first();
+        return view('default.page.article-detail', compact('article'));
     }
 
     /**

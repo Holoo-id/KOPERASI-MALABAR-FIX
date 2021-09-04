@@ -19,6 +19,9 @@ h3.page-subtitle {
   color: white;
   padding: 1rem 2rem;
 }
+.primary-button:hover {
+  background: #0C94A4;
+}
 
 .home-banner {
   height: 100vh;
@@ -89,6 +92,26 @@ h3.page-subtitle {
 .video-content-wrap .video-thumbnail {
   margin: -10rem auto 0;
   border-width: 1rem;
+}
+
+.article-thumbnail {
+  aspect-ratio: 11/13;
+}
+.article-thumbnail .article-thumbnail-image {
+  max-height: 50%;
+}
+.article-thumbnail .article-thumbnail-image img {
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.article-content p {
+  margin: 1.5rem 0;
+}
+.article-content ul {
+  list-style: disc;
+  margin: 0 2.5rem;
 }
 
 footer.footer {
