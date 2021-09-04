@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Artikel;
+use App\Models\Galeri;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -37,17 +38,12 @@ class FrontendController extends Controller
         $pageSubtitle = 'Hubungi Kami';
         return view('default.page.contact', compact('pageTitle', 'pageSubtitle'));
     }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
+    public function gallery()
     {
-        //
+        $pageTitle = 'GALERI';
+        $pageSubtitle = 'Dokumentasi Kegiatan';
+        $images = Galeri::where('tampilkan', 1)->get();
+        return view('default.page.gallery', compact('images', 'pageTitle', 'pageSubtitle'));
     }
 
     /**

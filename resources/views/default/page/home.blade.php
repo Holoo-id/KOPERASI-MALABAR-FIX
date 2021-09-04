@@ -41,7 +41,7 @@
           </div>
         </div>
         {{-- tentang kami --}}
-        <div class="mx-auto flex flex-col items-center">
+        <div class="mx-auto flex flex-col items-center justify-center">
           <h2 class="
             section-title py-8 text-center font-black capitalize text-2xl mt-16
             md:text-3xl
@@ -88,23 +88,42 @@
           </div>
         </div>
         {{-- divisi --}}
-        <div class="w-11/12 mx-auto mt-28
-          md:w-10/12
-          xl:w-9/12
-          2xl:w-8/12
-        ">
+        <div class="w-11/12 mx-auto mt-28 flex flex-col items-center justify-center">
           <h2 class="
-            section-title py-8 text-center font-black capitalize text-2xl
-            md:text-3xl
+            section-title py-8 text-center font-black capitalize text-2xl w-11/12
+            md:text-3xl md:w-10/12
             lg:text-4xl
-            xl:text-5xl
+            xl:text-5xl xl:w-9/12
+            2xl:w-8/12
           ">Divisi Kami</h2>
           <p class="
-            text-center text-lg mb-4 text-gray-800
-            md:text-xl
+            text-center text-lg mb-4 text-gray-800 w-11/12
+            md:text-xl md:w-10/12
             lg:text-2xl
-            xl:text-3xl
+            xl:text-3xl xl:w-9/12
           ">Koperasi Mitra Malabar memiliki beberapa unit divisi unggulan yang ada saat ini, antara lain:</p>
+          <div class="flex flex-nowrap md:flex-row flex-col text-center gap-8 mt-16 mb-24">
+            <div class="card-item flex-1 bg-gray-100 p-4">
+              <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">1</div>
+              <div class="card-item-title font-bold -mt-4 pb-4">BERMITRA</div>
+              <p class="card-item-text text-gray-600">Koperasi Mitra Malabar siap bermitra dengan berbagai pihak berdasarkan prinsip-prinsip koperasi</p>
+            </div>
+            <div class="card-item flex-1 bg-gray-100 p-4">
+              <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">2</div>
+              <div class="card-item-title font-bold -mt-4 pb-4">BERBAGI</div>
+              <p class="card-item-text text-gray-600">Berkomitmen untuk menginisiasi dan menghidupkan budaya berbagi kepada masyarakat</p>
+            </div>
+            <div class="card-item flex-1 bg-gray-100 p-4">
+              <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">3</div>
+              <div class="card-item-title font-bold -mt-4 pb-4">PEDULI</div>
+              <p class="card-item-text text-gray-600">Berusaha menghadirkan kesejahteraan dan kebahagiaan untuk sesama</p>
+            </div>
+            <div class="card-item flex-1 bg-gray-100 p-4">
+              <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">3</div>
+              <div class="card-item-title font-bold -mt-4 pb-4">PEDULI</div>
+              <p class="card-item-text text-gray-600">Berusaha menghadirkan kesejahteraan dan kebahagiaan untuk sesama</p>
+            </div>
+          </div>
         </div>
         <div class="flex flex-col items-center lg:flex-row">
           <div class="
@@ -161,17 +180,17 @@
           <a href="text-center" class="primary-button rounded-full mt-8">Hubungi Kami</a>
         </div>
         {{-- info --}}
-        <div class="w-11/12 mx-auto my-20">
+        <div class="mx-auto bg-gray-200 py-32">
           <h2 class="
-            section-title py-8 text-center font-black capitalize text-2xl
+            section-title pb-8 text-center font-black capitalize text-2xl
             md:text-3xl
             lg:text-4xl
             xl:text-5xl
           ">Informasi Terbaru</h2>
           {{-- start articles grid --}}
-          <div class="mx-auto grid auto-rows-auto items-center gap-8 w-full md:grid-cols-2 xl:grid-cols-3">
+          <div class="w-11/12 mx-auto grid auto-rows-auto items-center gap-8 md:grid-cols-2 xl:grid-cols-3">
             @foreach ($articles as $article)
-              <div class="article-thumbnail shadow-xl bg-gray-200 flex flex-col flex-nowrap items-center justify-between rounded-2xl w-full">
+              <div class="article-thumbnail shadow-xl bg-white flex flex-col flex-nowrap items-center justify-between rounded-2xl w-full">
                 <img class="article-thumbnail-image" src="{{ asset('storage/images/contents/'.$article->galeri->gambar) }}" alt="{{ $article->galeri->gambar }}">
                 <div class="flex flex-col p-4 text-gray-800 items-end">
                   <h5 class="w-full text-lg text-left font-bold">{{ $article->judul }}</h5>
