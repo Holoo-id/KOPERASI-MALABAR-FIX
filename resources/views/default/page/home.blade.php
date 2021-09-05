@@ -1,6 +1,6 @@
 @extends('default.base')
 @section('content')
-    <div class="home-page -mt-20 pt-20">
+    <div class="home-page -mt-20">
       {{-- banner --}}
       {{-- <div class="home-banner absolute flex flex-col justify-center items-center top-0 w-full">
         <h1 class="
@@ -32,7 +32,7 @@
         
         <div class="homeSlides fade">
           <div class="numbertext">3 / 3</div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpcaNl85RG8ev2ZAmYhfbq5uv-ggELlQu9w&usqp=CAU" style="width:100%">
+          <img src="https://www.wallpapertip.com/wmimgs/92-929402_illustration-wallpaper.jpg" style="width:100%">
           <div class="text">Caption Three</div>
         </div>
         

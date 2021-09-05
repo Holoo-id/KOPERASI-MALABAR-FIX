@@ -13,6 +13,7 @@
   @yield('content')
   @include('default.footer')
 
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
   <script>
     var slideIndex = 1;
     showSlides(slideIndex);
@@ -40,6 +41,20 @@
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
     }
+  </script>
+  <script>
+    $(function() {
+      $(window).on("scroll", function() {
+        if($(window).scrollTop() > 50) {
+            $(".nav-wrap").removeClass("text-white");
+            $(".nav-wrap").addClass("bg-white text-gray-600");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+          $(".nav-wrap").removeClass("bg-white text-gray-600");
+          $(".nav-wrap").addClass("text-white");
+        }
+      });
+    });
   </script>
 </body>
 </html>

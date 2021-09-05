@@ -133,7 +133,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-height: 100vh;
   position: relative;
   margin: auto;
 }
