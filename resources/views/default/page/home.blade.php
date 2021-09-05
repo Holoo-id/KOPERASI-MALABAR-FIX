@@ -2,7 +2,7 @@
 @section('content')
     <div class="home-page -mt-20 pt-20">
       {{-- banner --}}
-      <div class="home-banner absolute flex flex-col justify-center items-center top-0 w-full">
+      {{-- <div class="home-banner absolute flex flex-col justify-center items-center top-0 w-full">
         <h1 class="
           page-title w-11/12 text-white text-center font-black uppercase text-4xl
           md:text-5xl
@@ -15,6 +15,37 @@
           lg:text-4xl
           xl:text-5xl
         ">Agribisnis, Pertanian, Perkebunan</h3>
+      </div> --}}
+      <div class="slideshow-container">
+
+        <div class="homeSlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="https://wepik.com/storage/previews/1460817/cute-city-illustration-general-desktop-wallpaper-r-1487545516page1.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="homeSlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="https://wallpapercave.com/wp/wp2072891.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="homeSlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpcaNl85RG8ev2ZAmYhfbq5uv-ggELlQu9w&usqp=CAU" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        
+      </div>
+        <br>
+        
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
       </div>
       <div class="page-section relative">
         {{-- card --}}
