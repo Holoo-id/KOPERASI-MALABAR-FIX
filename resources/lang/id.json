@@ -1,0 +1,58 @@
+{  
+    "__navbar.blade":"__navbar.blade",
+    "Home": "Beranda",
+    "Profile":"Profil",
+    "Article":"Artikel",
+    "Product":"Produk",
+    "Training":"Pelatihan",
+    "Gallery":"Galeri",
+    "Contact":"Kontak",
+
+
+    "__article.banner":"__article.banner",
+    "Di posting tanggal: ":"Posted at",
+
+
+    "__home.blade":"__home.blade",
+    "Agribusiness, Farming, Plantation":"Agribisnis, Pertanian, Perkebunan",
+    "PARTNER":"BERMITRA",
+    "Based upon the principles of cooperation, We are ready to become partners with various parties":"Koperasi Mitra Malabar siap bermitra dengan berbagai pihak berdasarkan prinsip-prinsip koperasi",
+    "SHARING":"BERBAGI",
+    "We are committed to initiate and liven up 'the culture of sharing' to the public":"Berkomitmen untuk menginisiasi dan menghidupkan budaya berbagi kepada masyarakat",
+    "CARING":"PEDULI",
+    "Try to bring prosperity and hapiness to all side":"Berusaha menghadirkan kesejahteraan dan kebahagiaan untuk sesama",
+
+    "About Us":"Tentang Kami",
+    "Koperasi Mitra Malabar is a cooperatives production that has massive potential in supporting the well-being of West Java people's social economy":"Koperasi Mitra Malabar merupakan jenis koperasi produksi yang memilik potensi besar dalam mendukung kesejahteraan ekonomi masyarakat Jawa Barat",
+    "We develop existing entrepreneurship to match the changes in the business environment without neglecting the spirit of team working and cooperation":"Melalui koperasi inilah berwirausaha akan dikembangkan sesuai perubahan lingkungan bisnis, tanpa meninggalkan semangat gotong royong dan semangat berjamaah.",
+    
+    "__skipped__":"__skip__",
+    "West Java was the first province to exist in Indonesia since the colonial period of the Provisional Constitution of 1950 on article 11,":"Jawa Barat merupakan provinsi pertama yang dibentuk sejak masa kolonial Undang-Undang Nomor 11 tahun 1950, Provinsi Jawa Barat berdiri pada tanggal 4 Juli 1950, saat ditetapkan dan mulai diberlakukan oleh pemerintah. Pusat pemerintahannya berada di Belanda tahun 1925. Namun demikian, sesuai dengan Bandung.",
+    
+    "Our Division":"Divisi Kami",
+    "Koperasi Mitra Malabar has its finest division units, which is :":"Koperasi Mitra Malabar memiliki beberapa unit divisi unggulan yang ada saat ini, antara lain:",
+    "COFFEE":"KOPI",
+
+    "ESSENTIAL OIL":"ATSIRI",
+    
+    "COCONUT":"KELAPA",
+    
+    "PREMIUM RICE":"BERAS PREMIUM",
+
+    "PROFILE":"PROFIL",
+    "To know more about us":"Ketahui lebih lanjut informasi tentang Koperasi Mitra Malabar",
+    "TRAINING":"PELATIHAN",
+    "To join our training in agribusiness":"Ikuti pelatihan agribisnis bersama Koperasi Mitra Malabar",
+    "GALLERY":"GALERI",
+    "To see the documentations of our programs":"Dokumentasi kegiatan-kegiatan Koperasi Mitra Malabar",
+
+    "Join Us":"Bergabung Bersama Kami",
+    
+    "Latest Information":"Informasi Terbaru",
+    "More..":"Selengkapnya",
+
+
+    "__profil.blade":"__profil.blade",
+    "A cooperatives production that specialized in agribusiness consist of people that cares in Indonesian social economy and plantation and agricultural development, involving people from various professions":"Sebuah badan usaha koperasi yang bergerak di bidang agribisnis beranggotakan orang-orang yang peduli dengan ekonomi kerakyatan dan pengembangan pertanian-perkebunan Indonesia, terdiri dari berbagai lintas profesi.",
+    "West Java Koperasi Mitra Malabar (KMM) was commenced from ":"Koperasi Mitra Malabar (KMM) Jawa Barat berangkat dari kepedulian pada petani dan masyarakat desa. Melalui pendirian Koperasi diharapkan mampu menumbuh-kembangkan perekonomian di desa dan meningkatkan kesejahteraan petani."
+}
