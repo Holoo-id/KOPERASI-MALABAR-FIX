@@ -46,12 +46,10 @@
     $(function() {
       $(window).on("scroll", function() {
         if($(window).scrollTop() > 50) {
-            $(".nav-wrap").removeClass("text-white");
-            $(".nav-wrap").addClass("bg-white text-gray-600");
+            $(".nav-wrap").addClass("bg-white");
         } else {
             //remove the background property so it comes transparent again (defined in your css)
-          $(".nav-wrap").removeClass("bg-white text-gray-600");
-          $(".nav-wrap").addClass("text-white");
+          $(".nav-wrap").removeClass("bg-white");
         }
       });
     });

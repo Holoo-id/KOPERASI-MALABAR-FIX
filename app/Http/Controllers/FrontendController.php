@@ -22,7 +22,9 @@ class FrontendController extends Controller
     }
     public function articles()
     {
-        $articles = Artikel::all();
+        $articles = Artikel::orderBy('created_at', 'desc')
+        ->paginate(3);
+        // $articles = Artikel::all();
         $pageSubtitle = 'Informasi Terbaru';
         $pageTitle = 'ARTIKEL';
         return view('default.page.artikel', compact('articles', 'pageSubtitle', 'pageTitle'));

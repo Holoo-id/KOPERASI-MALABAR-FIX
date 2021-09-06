@@ -2,38 +2,143 @@
 @section('content')
     <div class="home-page -mt-20">
       {{-- banner --}}
-      {{-- <div class="home-banner absolute flex flex-col justify-center items-center top-0 w-full">
-        <h1 class="
-          page-title w-11/12 text-white text-center font-black uppercase text-4xl
-          md:text-5xl
-          lg:text-6xl
-          xl:text-7xl
-        ">KOPERASI MITRA MALABAR</h1>
-        <h3 class="
-          page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
-          md:text-3xl
-          lg:text-4xl
-          xl:text-5xl
-        ">Agribisnis, Pertanian, Perkebunan</h3>
-      </div> --}}
       <div class="slideshow-container">
 
         <div class="homeSlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="https://wepik.com/storage/previews/1460817/cute-city-illustration-general-desktop-wallpaper-r-1487545516page1.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
+          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (1 of 8).jpg') }}">
+          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
+            <h1 class="
+              page-title w-11/12 text-white text-center font-black uppercase text-4xl
+              md:text-5xl
+              lg:text-6xl
+              xl:text-7xl
+            ">KOPERASI MITRA MALABAR</h1>
+            <h3 class="
+              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
+              md:text-3xl
+              lg:text-4xl
+              xl:text-5xl
+            ">Agribisnis, Pertanian, Perkebunan</h3>
+          </div>
         </div>
-        
         <div class="homeSlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="https://wallpapercave.com/wp/wp2072891.jpg" style="width:100%">
-          <div class="text">Caption Two</div>
+          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (2 of 8).jpg') }}">
+          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
+            <h1 class="
+              page-title w-11/12 text-white text-center font-black uppercase text-4xl
+              md:text-5xl
+              lg:text-6xl
+              xl:text-7xl
+            ">KOPERASI MITRA MALABAR</h1>
+            <h3 class="
+              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
+              md:text-3xl
+              lg:text-4xl
+              xl:text-5xl
+            ">Agribisnis, Pertanian, Perkebunan</h3>
+          </div>
         </div>
-        
         <div class="homeSlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="https://www.wallpapertip.com/wmimgs/92-929402_illustration-wallpaper.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
+          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (3 of 8).jpg') }}">
+          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
+            <h1 class="
+              page-title w-11/12 text-white text-center font-black uppercase text-4xl
+              md:text-5xl
+              lg:text-6xl
+              xl:text-7xl
+            ">KOPERASI MITRA MALABAR</h1>
+            <h3 class="
+              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
+              md:text-3xl
+              lg:text-4xl
+              xl:text-5xl
+            ">Agribisnis, Pertanian, Perkebunan</h3>
+          </div>
+        </div>
+        <div class="homeSlides fade">
+          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (4 of 8).jpg') }}">
+          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
+            <h1 class="
+              page-title w-11/12 text-white text-center font-black uppercase text-4xl
+              md:text-5xl
+              lg:text-6xl
+              xl:text-7xl
+            ">KOPERASI MITRA MALABAR</h1>
+            <h3 class="
+              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
+              md:text-3xl
+              lg:text-4xl
+              xl:text-5xl
+            ">Agribisnis, Pertanian, Perkebunan</h3>
+          </div>
+        </div>
+        <div class="homeSlides fade">
+          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (5 of 8).jpg') }}">
+          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
+            <h1 class="
+              page-title w-11/12 text-white text-center font-black uppercase text-4xl
+              md:text-5xl
+              lg:text-6xl
+              xl:text-7xl
+            ">KOPERASI MITRA MALABAR</h1>
+            <h3 class="
+              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
+              md:text-3xl
+              lg:text-4xl
+              xl:text-5xl
+            ">Agribisnis, Pertanian, Perkebunan</h3>
+          </div>
+        </div>
+        <div class="homeSlides fade">
+          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (6 of 8).jpg') }}">
+          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
+            <h1 class="
+              page-title w-11/12 text-white text-center font-black uppercase text-4xl
+              md:text-5xl
+              lg:text-6xl
+              xl:text-7xl
+            ">KOPERASI MITRA MALABAR</h1>
+            <h3 class="
+              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
+              md:text-3xl
+              lg:text-4xl
+              xl:text-5xl
+            ">Agribisnis, Pertanian, Perkebunan</h3>
+          </div>
+        </div>
+        <div class="homeSlides fade">
+          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (7 of 8).jpg') }}">
+          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
+            <h1 class="
+              page-title w-11/12 text-white text-center font-black uppercase text-4xl
+              md:text-5xl
+              lg:text-6xl
+              xl:text-7xl
+            ">KOPERASI MITRA MALABAR</h1>
+            <h3 class="
+              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
+              md:text-3xl
+              lg:text-4xl
+              xl:text-5xl
+            ">Agribisnis, Pertanian, Perkebunan</h3>
+          </div>
+        </div>
+        <div class="homeSlides fade">
+          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (8 of 8).jpg') }}">
+          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
+            <h1 class="
+              page-title w-11/12 text-white text-center font-black uppercase text-4xl
+              md:text-5xl
+              lg:text-6xl
+              xl:text-7xl
+            ">KOPERASI MITRA MALABAR</h1>
+            <h3 class="
+              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
+              md:text-3xl
+              lg:text-4xl
+              xl:text-5xl
+            ">Agribisnis, Pertanian, Perkebunan</h3>
+          </div>
         </div>
         
         <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
@@ -42,11 +147,11 @@
       </div>
         <br>
         
-      <div style="text-align:center">
+      {{-- <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
+      </div> --}}
       <div class="page-section relative">
         {{-- card --}}
         <div class="
@@ -93,7 +198,7 @@
           ">Melalui koperasi inilah berwirausaha akan dikembangkan sesuai perubahan lingkungan bisnis, tanpa meninggalkan semangat gotong royong dan semangat berjamaah.</p>
           <div class="section-content-wrap flex justify-center">
             <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-              <img src="https://cdn.wallpapersafari.com/76/65/DN2Owl.jpg" alt="" class="
+              <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (4 of 8).jpg') }}" alt="" class="
                 border-4 border-white -my-8 flex-1 w-11/12
                 lg:w-5/12
               ">

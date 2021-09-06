@@ -1,4 +1,4 @@
-<header class="nav-wrap sticky z-50 flex top-0 items-center px-8 w-full justify-between font-medium text-white">
+<header class="sticky z-50 flex top-0 items-center px-8 w-full justify-between font-medium text-white nav-wrap">
   <a href="{{ route('home') }}" class="">
     <img src="{{ asset('/fe/img/kmm-logo.png') }}" alt="Logo Mitra Malabar" class="logo-image p-4 h-20">
   </a>
