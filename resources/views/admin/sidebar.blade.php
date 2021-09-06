@@ -41,6 +41,18 @@
                 <p> Data Artikel </p>
               </a>
             </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ route('show-gambar') }}">
+                <i class="material-icons">assignment</i>
+                <p> Data Galeri </p>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="material-icons">assignment</i>
+                <p> Request Gambar </p>
+              </a>
+            </li>
             {{-- <li class="nav-item ">
               <a class="nav-link" data-toggle="collapse" href="#componentsExamples">
                 <i class="material-icons">apps</i>
