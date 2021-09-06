@@ -209,15 +209,15 @@
                   xl:text-4xl
                 ">2009 - Titik Tolak</h4> --}}
                 <p class="py-4 text-gray-800">
-                  <span class="font-bold">Jawa Barat</span> merupakan provinsi pertama yang dibentuk sejak masa kolonial 
-                  <span class="font-bold">Undang-Undang Nomor 11 tahun 1950</span>, Provinsi Jawa Barat berdiri pada tanggal 4 Juli 1950, saat ditetapkan dan mulai diberlakukan oleh pemerintah. Pusat pemerintahannya berada di 
-                  <span class="font-bold">Belanda</span> tahun 1925. Namun demikian, sesuai dengan
-                  <span class="font-bold">Bandung</span>.
+                  Jawa Barat merupakan provinsi pertama yang dibentuk sejak masa kolonial 
+                  Undang-Undang Nomor 11 tahun 1950, Provinsi Jawa Barat berdiri pada tanggal 4 Juli 1950, saat ditetapkan dan mulai diberlakukan oleh pemerintah. Pusat pemerintahannya berada di 
+                  Belanda tahun 1925. Namun demikian, sesuai dengan
+                  Bandung.
                 </p>
                 <p class="py-4 text-gray-800">
                   Dengan luas 
-                  <span class="font-bold">35.377,76 kilometer persegi</span> atau sekitar 
-                  <span class="font-bold">1,85 persen</span> dari luas daratan Indonesia, Jawa Barat terluas kedua di Pulau Jawa setelah Jawa Timur (47.921 km²). Populasi penduduknya mencapai 49,93 juta jiwa (BPS 2019) dan terbanyak di Indonesia.
+                  35.377,76 kilometer persegi atau sekitar 
+                  1,85 persen dari luas daratan Indonesia, Jawa Barat terluas kedua di Pulau Jawa setelah Jawa Timur (47.921 km²). Populasi penduduknya mencapai 49,93 juta jiwa (BPS 2019) dan terbanyak di Indonesia.
                 </p>
               </div>
             </div>
@@ -269,7 +269,7 @@
           ">
             <img src="https://cdn.wallpapersafari.com/88/29/iBFYXG.jpg" alt="" srcset="">
             <a href="" class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">PROFILE</div>
+              <div class="text-white font-black">PROFIL</div>
               <p class="font-medium text-white">Ketahui lebih lanjut informasi tentang Koperasi Mitra Malabar</p>
             </a>
           </div>
