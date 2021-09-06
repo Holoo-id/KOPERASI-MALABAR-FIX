@@ -26,13 +26,13 @@
               ">2009 - Titik Tolak</h4> --}}
               <p class="py-4 text-gray-800">
                 Sebuah badan usaha koperasi yang bergerak di bidang
-                <span class="font-bold">agribisnis</span>, beranggotakan orang-orang yang peduli dengan 
-                <span class="font-bold">ekonomi kerakyatan</span> dan 
-                <span class="font-bold">pengembangan pertanian-perkebunan</span> Indonesia, terdiri dari berbagai lintas profesi.
+                agribisnis beranggotakan orang-orang yang peduli dengan 
+                ekonomi kerakyatan dan 
+                pengembangan pertanian-perkebunan Indonesia, terdiri dari berbagai lintas profesi.
               </p>
               <p class="py-4 text-gray-800">
-                <span class="font-bold">Koperasi Mitra Malabar (KMM)</span> Jawa Barat berangkat dari kepedulian pada petani dan masyarakat desa. Melalui pendirian Koperasi diharapkan mampu 
-                <span class="font-bold">menumbuh-kembangkan</span> perekonomian di desa dan meningkatkan kesejahteraan petani.
+                Koperasi Mitra Malabar (KMM) Jawa Barat berangkat dari kepedulian pada petani dan masyarakat desa. Melalui pendirian Koperasi diharapkan mampu 
+                menumbuh-kembangkan perekonomian di desa dan meningkatkan kesejahteraan petani.
               </p>
             </div>
           </div>
