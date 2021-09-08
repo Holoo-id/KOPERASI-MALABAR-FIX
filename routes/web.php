@@ -35,6 +35,8 @@ Route::get('/admin/dashboard', 'App\Http\Controllers\AdminController@dashboard')
 Route::get('/admin/artikel', 'App\Http\Controllers\AdminController@allArticles')->name('allArticle');
 Route::get('/admin/artikel/{link}', 'App\Http\Controllers\AdminController@detailArticle')->name('article-detail');
 Route::get('/admin/artikel-baru', 'App\Http\Controllers\AdminController@createArticlesPage')->name('create-article');
-Route::get('/admin/edit-artikel/{link}', 'App\Http\Controllers\AdminController@editArticlePage')->name('edit-article');
+Route::get('/admin/edit-artikel/{id}', 'App\Http\Controllers\AdminController@editArticlePage')->name('edit-article');
+Route::post('/admin/post-edit-artikel', 'App\Http\Controllers\AdminController@postEditArtikel')->name('post-edit-article');
 Route::post('/admin/post-artikel', 'App\Http\Controllers\AdminController@buatArtikel')->name('buatArtikel');
 Route::post('/admin/upload-gambar', 'App\Http\Controllers\AdminController@uploadGambar')->name('upload-gambar');
+Route::get('/admin/gambar', 'App\Http\Controllers\AdminController@showGambar')->name('show-gambar');

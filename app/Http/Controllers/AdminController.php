@@ -70,6 +70,33 @@ class AdminController extends Controller
 
         return view('admin.dashboard');
     }
-    
+    public function postEditArtikel(Request $request){
+        $uploadedFile = $request->file('gambar');
+        $uploadedFile->storePubliclyAs('public/images/contents/', $uploadedFile->getClientOriginalName());
+        $image_path = "storage/images/contents/".$request->in_img_title;
+        $tanggal = date('Y-m-d');
+
+        
+        $uploadGambar = Galeri::where('id', $request->id)->update([
+            
+            'judul' => $request->judul_gambar,
+            'gambar' => $request->in_img_title ?? $uploadedFile->getClientOriginalName(),
+            'added_by' => $request->id,
+            'path' => $image_path,
+            'tampilkan' => 0
+        ]);
+        $buatArtikel = Artikel::where('id', $request->id)->update([
+            'added_by' => $request->id,
+            'judul' => $request->judul,
+            'deskripsi' => $request->deskripsi,
+            'tanggal' => $tanggal,
+            'gambar_sampul' => $request->id,
+        ]);
+         return redirect('/admin/artikel');
+    }
+    public function showGambar(){
+        $gambar = Galeri::where('tampilkan',1)->get();
+        return view('admin.data-gambar', compact('gambar'));
+    }
    
 }
