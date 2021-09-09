@@ -20,23 +20,25 @@
             </div>
             <!--        Here you can write extra buttons/actions for the toolbar              -->
           </div>
-          <div class="row">
+          <div class="row" >
             @foreach ($gambar as $g)
-              <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
-                <div class="card">
+              <div class="col-lg-4 col-md-6 mt-5 mt-md-0" >
+                <div class="card" >
                   <div class="card-header card-header-danger">
-                    <a href="#" class="d-block blur-shadow-image">
+
                       <img src="{{ asset('storage/images/contents/'.$g->gambar) }}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
-                    </a>
+               
                   </div>
                   <div class="card-body">
-                    <a href="#">
+                  <button class="btn btn-link text-info me-auto border-0" data-toggle="modal" data-target="#modalEdit{{ $g->id }}">
+                        <i class="material-icons text-lg">edit</i>
+                      </button>
                       <h4 class="card-title">{{ $g->judul }}</h4>
-                    </a>
+              
                   </div>
                 </div>
               </div>
-            @endforeach
+              @endforeach
           </div>
         </div>
         <!-- end content-->
@@ -46,43 +48,43 @@
     <!-- end col-md-12 -->
   </div>
   
-  <div class="modal fade" id="gambarBaru" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  @foreach ($gambar as $g)
+  <div class="modal fade" id="modalEdit{{ $g->id }}" tabindex="-1" role="dialog" aria-labelledby="modalEdit" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title">Tambah Gambar</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" aria-label="Close">
           <i class="material-icons">clear</i>
         </button>
       </div>
-      <form action="{{ route('post-gambar') }}" method="post" enctype="multipart/form-data" class="form-horizontal">
+      <form action="{{ route('post-req-gambar') }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="modal-body">
           
           <div class="row">
-            <div class="col-sm-8">
-              <div class="form-group">
-                <input type="text" name="id" class="form-control" value="{{Session::get('id')}}" hidden>
-                <span class="bmd-help">Errors message goes here</span>
-              </div>
-            </div>
-          </div>
-          <div class="row">
             <label class="col-sm-4 col-form-label">Judul</label>
             <div class="col-sm-8">
               <div class="form-group">
-                <input type="text" name="judul_gambar" class="form-control">
+              <input type="text" name="id" class="form-control" value="{{ $g->id }}" hidden>
+                <input type="text" name="judul" class="form-control" value="{{ $g->judul }}">
+                <input type="text" name="added_by" class="form-control" value="{{Session::get('id')}}" hidden>
+                <input type="text" name="gambar" class="form-control" value="{{ $g->gambar }}" hidden>
+                <input type="text" name="path" class="form-control" value="{{ $g->path }}" hidden>
                 <span class="bmd-help">Errors message goes here</span>
               </div>
             </div>
           </div>
           <div class="row">
-            <label class="col-sm-4 col-form-label">Gambar</label>
+            <label class="col-sm-4 col-form-label">Status</label>
             <div class="col-sm-8">
-              
-                <input type="file" name="gambar" class="form-control">
+              <div class="form-group">
+                <select class="form control" name="status" id="status" >
+                  <option value="0">Jangan Tampilkan</option>
+                  <option value="1">Tampilkan</option>
+                </select>
                 <span class="bmd-help">Errors message goes here</span>
-            
+              </div>
             </div>
           </div>
         </div>
@@ -94,5 +96,6 @@
     </div>
   </div>
 </div>
+@endforeach
 
 @endsection 

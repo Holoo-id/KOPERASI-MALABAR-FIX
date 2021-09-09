@@ -48,7 +48,7 @@
               </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="{{ route('req-gambar') }}">
                 <i class="material-icons">assignment</i>
                 <p> Request Gambar </p>
               </a>

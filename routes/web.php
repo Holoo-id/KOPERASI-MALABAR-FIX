@@ -38,3 +38,6 @@ Route::post('/admin/post-edit-artikel', 'App\Http\Controllers\AdminController@po
 Route::post('/admin/post-artikel', 'App\Http\Controllers\AdminController@buatArtikel')->name('buatArtikel');
 Route::post('/admin/upload-gambar', 'App\Http\Controllers\AdminController@uploadGambar')->name('upload-gambar');
 Route::get('/admin/gambar', 'App\Http\Controllers\AdminController@showGambar')->name('show-gambar');
+Route::post('/admin/gambar/postGambar', 'App\Http\Controllers\AdminController@postGambar')->name('post-gambar');
+Route::get('/admin/gambar/request', 'App\Http\Controllers\AdminController@reqGambar')->name('req-gambar');
+Route::post('/admin/gambar/postReqGambar', 'App\Http\Controllers\AdminController@postReqGambar')->name('post-req-gambar');
