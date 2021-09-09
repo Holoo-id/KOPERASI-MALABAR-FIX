@@ -12,13 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', 'App\Http\Controllers\FrontendController@index')->name('home');
-Route::get('/profil', 'App\Http\Controllers\FrontendController@profil')->name('profil');
-Route::get('/artikel', 'App\Http\Controllers\FrontendController@articles')->name('articles');
-Route::get('/artikel/{link}', 'App\Http\Controllers\FrontendController@articleDetail')->name('article');
-Route::get('/galeri', 'App\Http\Controllers\FrontendController@gallery')->name('gallery');
-Route::get('/kontak', 'App\Http\Controllers\FrontendController@contact')->name('contact');
+Route::redirect('/', '/id');
+Route::group(['prefix' => '{language}'], function () {
+    Route::get('/', 'App\Http\Controllers\FrontendController@index')->name('home');
+    Route::get('/profil', 'App\Http\Controllers\FrontendController@profil')->name('profil');
+    Route::get('/artikel', 'App\Http\Controllers\FrontendController@articles')->name('articles');
+    Route::get('/artikel/{link}', 'App\Http\Controllers\FrontendController@articleDetail')->name('article');
+    Route::get('/galeri', 'App\Http\Controllers\FrontendController@gallery')->name('gallery');
+    Route::get('/kontak', 'App\Http\Controllers\FrontendController@contact')->name('contact');
+});
 
 Route::get('/login', function () {
     return view('auth.login');

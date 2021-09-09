@@ -18,6 +18,9 @@
           </div>
         @endforeach
       </div>
+      <div class="py-8 px-20">
+        {{ $articles->links() }}
+      </div>
     </div>
   </div>
 @endsection
