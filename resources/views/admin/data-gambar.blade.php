@@ -7,17 +7,17 @@
           <div class="card-icon">
             <i class="material-icons">assignment</i>
           </div>
-          <h4 class="card-title">Data Artikel</h4>
+          <h4 class="card-title">Data Galeri</h4>
         </div>
         <div class="card-body">
           <div class="toolbar">
             <div class="row mt-3">
               <div class="col">
-                <a href="{{ route('create-article') }}" class="btn bg-primary" > Tambah Artikel </a>
+                <a href="{{ route('create-article') }}" class="btn bg-primary" > Tambah Gambar </a>
               </div>
               <div class="col d-flex justify-content-end">
-                <a href="" class="btn btn-danger">Cetak Sebagai PDF</a>
-                <a href="" class="btn btn-success">Cetak Sebagai EXCEL</a>
+                {{-- <a href="" class="btn btn-danger">Cetak Sebagai PDF</a>
+                <a href="" class="btn btn-success">Cetak Sebagai EXCEL</a> --}}
               </div>
             </div>
             <!--        Here you can write extra buttons/actions for the toolbar              -->
@@ -34,6 +34,14 @@
                   <div class="card-body">
                     <a href="#">
                       <h4 class="card-title">{{ $g->judul }}</h4>
+                    </a>
+                  </div>
+                  <div class="card-footer">
+                    <a href="{{ route('show-gambar') }}" class="btn btn-primary">
+                      <i class="material-icons">assignment</i>
+                    </a>
+                    <a href="{{ route('show-gambar') }}" class="btn btn-green">
+                      <i class="material-icons">assignment</i>
                     </a>
                   </div>
                 </div>

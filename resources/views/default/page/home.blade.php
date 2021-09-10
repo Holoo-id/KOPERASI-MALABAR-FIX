@@ -55,91 +55,6 @@
             ">{{ __('Agribusiness, Farming, Plantation') }}</h3>
           </div>
         </div>
-        {{-- <div class="homeSlides fade">
-          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (4 of 8).jpg') }}">
-          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
-            <h1 class="
-              page-title w-11/12 text-white text-center font-black uppercase text-4xl
-              md:text-5xl
-              lg:text-6xl
-              xl:text-7xl
-            ">KOPERASI MITRA MALABAR</h1>
-            <h3 class="
-              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
-              md:text-3xl
-              lg:text-4xl
-              xl:text-5xl
-            ">{{ __('Agribusiness, Farming, Plantation') }}</h3>
-          </div>
-        </div>
-        <div class="homeSlides fade">
-          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (5 of 8).jpg') }}">
-          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
-            <h1 class="
-              page-title w-11/12 text-white text-center font-black uppercase text-4xl
-              md:text-5xl
-              lg:text-6xl
-              xl:text-7xl
-            ">KOPERASI MITRA MALABAR</h1>
-            <h3 class="
-              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
-              md:text-3xl
-              lg:text-4xl
-              xl:text-5xl
-            ">{{ __('Agribusiness, Farming, Plantation') }}</h3>
-          </div>
-        </div>
-        <div class="homeSlides fade">
-          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (6 of 8).jpg') }}">
-          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
-            <h1 class="
-              page-title w-11/12 text-white text-center font-black uppercase text-4xl
-              md:text-5xl
-              lg:text-6xl
-              xl:text-7xl
-            ">KOPERASI MITRA MALABAR</h1>
-            <h3 class="
-              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
-              md:text-3xl
-              lg:text-4xl
-              xl:text-5xl
-            ">{{ __('Agribusiness, Farming, Plantation') }}</h3>
-          </div>
-        </div>
-        <div class="homeSlides fade">
-          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (7 of 8).jpg') }}">
-          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
-            <h1 class="
-              page-title w-11/12 text-white text-center font-black uppercase text-4xl
-              md:text-5xl
-              lg:text-6xl
-              xl:text-7xl
-            ">KOPERASI MITRA MALABAR</h1>
-            <h3 class="
-              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
-              md:text-3xl
-              lg:text-4xl
-              xl:text-5xl
-            ">{{ __('Agribusiness, Farming, Plantation') }}</h3>
-          </div>
-        </div>
-        <div class="homeSlides fade">
-          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (8 of 8).jpg') }}">
-          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
-            <h1 class="
-              page-title w-11/12 text-white text-center font-black uppercase text-4xl
-              md:text-5xl
-              lg:text-6xl
-              xl:text-7xl
-            ">KOPERASI MITRA MALABAR</h1>
-            <h3 class="
-              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
-              md:text-3xl
-              lg:text-4xl
-              xl:text-5xl
-            ">{{ __('Agribusiness, Farming, Plantation') }}</h3>
-          </div>
-        </div> --}}
         
         <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
         <a class="next" onclick="changeSlide(1)">&#10095;</a>
@@ -198,7 +113,7 @@
           ">{{__("We develop existing entrepreneurship to match the changes in the business environment without neglecting the spirit of team working and cooperation")}}</p>
           <div class="section-content-wrap flex justify-center">
             <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-              <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (4 of 8).jpg') }}" alt="" class="
+              <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (2 of 8).jpg') }}" alt="" class="
                 border-4 border-white -my-8 flex-1 w-11/12
                 lg:w-5/12
               ">
@@ -267,7 +182,7 @@
             md:w-9/12
             lg:w-1/3
           ">
-            <img src="https://cdn.wallpapersafari.com/88/29/iBFYXG.jpg" alt="" srcset="">
+            <img src="{{asset('/fe/img/9.png')}}" alt="" srcset="">
             <a href="" class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">{{__("PROFILE")}}</div>
               <p class="font-medium text-white">{{__("To know more about us")}}</p>
@@ -278,7 +193,7 @@
             md:w-9/12
             lg:w-1/3
           ">
-            <img src="https://wallpapercave.com/wp/wp5588850.jpg" alt="" srcset="">
+            <img src="{{asset('/fe/img/10.png')}}" alt="" srcset="">
             <a href="" class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">{{__("TRAINING")}}</div>
               <p class="font-medium text-white">{{__("To join our training in agribusiness")}}</p>
@@ -289,7 +204,7 @@
             md:w-9/12
             lg:w-1/3
           ">
-            <img src="https://free4kwallpapers.com/uploads/originals/2020/01/05/illustration-wallpaper.jpg" alt="" srcset="">
+            <img src="{{asset('/fe/img/11.png')}}" alt="" srcset="">
             <a href="" class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">{{__("GALLERY")}}</div>
               <p class="font-medium text-white">{{__("To see the documentations of our programs")}}</p>
@@ -332,8 +247,7 @@
                   <h5 class="w-full text-lg text-left font-bold">{{ $article->judul }}</h5>
                   <p class="w-full text-left text-sm">Dibuat oleh {{ $article->user->name }} pada {{ \Carbon\Carbon::parse($article->tanggal)->format('d F Y')}}</p>
                   <p class="pt-4">{!! Str::limit( html_entity_decode ($article->deskripsi) , 200) !!}</p>
-                  {{-- <a href="{{ route('article', $article->id) }}" class="primary-button text-right w-min rounded-full mt-4">{{__("More..")}}</a> --}}
-                  {{-- <a href="{{ route('article', app()->getLocale(), $article->id) }}" class="primary-button text-right w-min rounded-full mt-4">{{__("More..")}}</a> --}}
+                  <a href="{{ route('article', ['language' => app()->getLocale(), 'link' => $article->id]) }}" class="primary-button text-right w-min rounded-full mt-4">{{__("More..")}}</a>
                 </div>
               </div>
             @endforeach

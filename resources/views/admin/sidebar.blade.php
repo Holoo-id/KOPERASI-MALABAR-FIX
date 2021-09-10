@@ -29,25 +29,25 @@
         </div>
         <div class="sidebar-wrapper">
           <ul class="nav">
-            <li class="nav-item ">
+            <li class="nav-item {{ Route::currentRouteName() == 'dashboard-admin' ? 'active' : '' }}">
               <a class="nav-link" href="{{ route('dashboard-admin') }}">
                 <i class="material-icons">dashboard</i>
                 <p> Dashboard </p>
               </a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item {{ Route::currentRouteName() == 'allArticle' ? 'active' : '' }}">
               <a class="nav-link" href="{{ route('allArticle') }}">
                 <i class="material-icons">assignment</i>
                 <p> Data Artikel </p>
               </a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item {{ Route::currentRouteName() == 'show-gambar' ? 'active' : '' }}">
               <a class="nav-link" href="{{ route('show-gambar') }}">
                 <i class="material-icons">assignment</i>
                 <p> Data Galeri </p>
               </a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item ">
               <a class="nav-link" href="#">
                 <i class="material-icons">assignment</i>
                 <p> Request Gambar </p>

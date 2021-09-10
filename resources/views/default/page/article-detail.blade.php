@@ -8,7 +8,7 @@
       <div class="article-content w-9/12">
         {!! html_entity_decode ($article->deskripsi) !!}
       </div>
-      <a href="{{ route('articles') }}" class="primary-button rounded-full w-max">Kembali ke Artikel</a>
+      <a href="{{ route('articles', app()->getLocale()) }}" class="primary-button rounded-full w-max">Kembali ke Artikel</a>
     </div>
   </div>
 @endsection
