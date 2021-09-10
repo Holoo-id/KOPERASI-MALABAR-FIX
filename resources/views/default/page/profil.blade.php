@@ -51,14 +51,14 @@
               ">2009 - Titik Tolak</h4> --}}
               <p class="py-4 text-right text-gray-800">
                 Fokus pada peningkatan 
-                <span class="font-bold">nilai tambah</span> produk-produk hasil 
-                <span class="font-bold">pertanian & perkebunan</span> untuk meningkatkan 
-                <span class="font-bold">kesejahteraan</span> anggota bersama dengan masyarakat secara umum.
+                nilai tambah produk-produk hasil 
+                pertanian & perkebunan untuk meningkatkan 
+                kesejahteraan anggota bersama dengan masyarakat secara umum.
               </p>
               <p class="py-4 text-right text-gray-800">
                 Melalui koperasi inilah 
-                <span class="font-bold">berwirausaha</span> akan dikembangkan sesuai perubahan lingkungan bisnis, tanpa meninggalkan 
-                <span class="font-bold">semangat gotong royong</span> dan semangat berjamaah.
+                berwirausaha akan dikembangkan sesuai perubahan lingkungan bisnis, tanpa meninggalkan 
+                semangat gotong royong dan semangat berjamaah.
               </p>
             </div>
           </div>
