@@ -34,14 +34,6 @@
                       <h4 class="card-title">{{ $g->judul }}</h4>
                     </a>
                   </div>
-                  <div class="card-footer">
-                    <a href="{{ route('show-gambar') }}" class="btn btn-primary">
-                      <i class="material-icons">assignment</i>
-                    </a>
-                    <a href="{{ route('show-gambar') }}" class="btn btn-green">
-                      <i class="material-icons">assignment</i>
-                    </a>
-                  </div>
                 </div>
               </div>
             @endforeach

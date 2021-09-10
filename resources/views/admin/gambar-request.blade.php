@@ -25,16 +25,13 @@
               <div class="col-lg-4 col-md-6 mt-5 mt-md-0" >
                 <div class="card" >
                   <div class="card-header card-header-danger">
-
                       <img src="{{ asset('storage/images/contents/'.$g->gambar) }}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
-               
                   </div>
-                  <div class="card-body">
-                  <button class="btn btn-link text-info me-auto border-0" data-toggle="modal" data-target="#modalEdit{{ $g->id }}">
-                        <i class="material-icons text-lg">edit</i>
-                      </button>
-                      <h4 class="card-title">{{ $g->judul }}</h4>
-              
+                  <div class="card-footer">
+                    <h4 class="card-title">{{ $g->judul }}</h4>
+                    <button class="btn bg-primary btn-primary me-auto border-0" data-toggle="modal" data-target="#modalEdit{{ $g->id }}">
+                      <i class="material-icons text-lg">edit</i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -79,7 +76,7 @@
             <label class="col-sm-4 col-form-label">Status</label>
             <div class="col-sm-8">
               <div class="form-group">
-                <select class="form control" name="status" id="status" >
+                <select class="form-control" name="status" id="status" >
                   <option value="0">Jangan Tampilkan</option>
                   <option value="1">Tampilkan</option>
                 </select>

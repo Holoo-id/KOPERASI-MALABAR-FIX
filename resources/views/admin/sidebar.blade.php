@@ -37,19 +37,19 @@
             </li>
             <li class="nav-item {{ Route::currentRouteName() == 'allArticle' ? 'active' : '' }}">
               <a class="nav-link" href="{{ route('allArticle') }}">
-                <i class="material-icons">assignment</i>
+                <i class="material-icons">article</i>
                 <p> Data Artikel </p>
               </a>
             </li>
             <li class="nav-item {{ Route::currentRouteName() == 'show-gambar' ? 'active' : '' }}">
               <a class="nav-link" href="{{ route('show-gambar') }}">
-                <i class="material-icons">assignment</i>
+                <i class="material-icons">collections</i>
                 <p> Data Galeri </p>
               </a>
             </li>
-            <li class="nav-item {{ Route::currentRouteName() == 'show-gambar' ? 'active' : '' }}">
+            <li class="nav-item {{ Route::currentRouteName() == 'req-gambar' ? 'active' : '' }}">
               <a class="nav-link" href="{{ route('req-gambar') }}">
-                <i class="material-icons">assignment</i>
+                <i class="material-icons">insert_photo</i>
                 <p> Request Gambar </p>
               </a>
             </li>
@@ -229,7 +229,7 @@
         @include('confirmation-popup')
       </div>
     </div>
-    <div class="fixed-plugin">
+    {{-- <div class="fixed-plugin">
       <div class="dropdown show-dropdown">
         <a href="#" data-toggle="dropdown">
           <i class="fa fa-cog fa-2x"> </i>
@@ -330,7 +330,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> --}}
     <!--   Core JS Files   -->
     <script src="{{asset('/be/js/core/jquery.min.js')}}"></script>
     <script src="{{asset('/be/js/core/popper.min.js')}}"></script>
