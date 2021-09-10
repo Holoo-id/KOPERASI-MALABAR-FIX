@@ -39,4 +39,7 @@ Route::prefix('/admin')->group(function () {
     Route::post('/post-artikel', 'App\Http\Controllers\AdminController@buatArtikel')->name('buatArtikel');
     Route::post('/upload-gambar', 'App\Http\Controllers\AdminController@uploadGambar')->name('upload-gambar');
     Route::get('/gambar', 'App\Http\Controllers\AdminController@showGambar')->name('show-gambar');
+    Route::post('/gambar/postGambar', 'App\Http\Controllers\AdminController@postGambar')->name('post-gambar');
+    Route::get('/gambar/request', 'App\Http\Controllers\AdminController@reqGambar')->name('req-gambar');
+    Route::post('/gambar/postReqGambar', 'App\Http\Controllers\AdminController@postReqGambar')->name('post-req-gambar');
 });

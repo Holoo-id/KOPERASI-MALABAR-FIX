@@ -47,8 +47,8 @@
                 <p> Data Galeri </p>
               </a>
             </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="#">
+            <li class="nav-item {{ Route::currentRouteName() == 'show-gambar' ? 'active' : '' }}">
+              <a class="nav-link" href="{{ route('req-gambar') }}">
                 <i class="material-icons">assignment</i>
                 <p> Request Gambar </p>
               </a>
