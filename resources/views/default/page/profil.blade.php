@@ -14,7 +14,7 @@
         ">Tentang Kami</h2>
         <div class="section-content-wrap flex justify-center mb-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <img src="https://wallpapercave.com/wp/wp7303165.jpg" alt="" class="
+            <img src="{{asset('/fe/img/9.png')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
               lg:w-5/12
             ">
@@ -39,7 +39,7 @@
         </div>
         <div class="section-content-wrap flex justify-center">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row-reverse">
-            <img src="https://www.xtrafondos.com/en/descargar.php?id=6348&resolucion=3840x2160" alt="" class="
+            <img src="{{asset('/fe/img/Aset_MitraMalabar_ (6 of 8).jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
               lg:w-5/12
             ">

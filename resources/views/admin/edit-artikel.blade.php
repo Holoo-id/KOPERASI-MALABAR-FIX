@@ -8,12 +8,25 @@
           <div class="card-icon">
             <i class="material-icons">assignment</i>
           </div>
-          <h4 class="card-title">Edit Artikel</h4>
+          <h4 class="card-title">Artikel Baru</h4>
         </div>
-        {{-- <form action="{{ route('') }}" method="post" enctype="multipart/form-data" class="form-horizontal"> --}}
-        <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+        <form action="{{ route('post-edit-article') }}" method="post" enctype="multipart/form-data" class="form-horizontal">
           @csrf
           <div class="card-body">
+            {{-- <div class="toolbar">
+              <div class="row mt-3">
+                <div class="col">
+                  <button class="btn bg-primary" data-toggle="modal" data-target="#artikelBaru">
+                    Edit Artikel
+                  </button>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <a href="" class="btn btn-danger">Cetak Sebagai PDF</a>
+                  <a href="" class="btn btn-success">Cetak Sebagai EXCEL</a>
+                </div>
+              </div>
+              <!--        Here you can write extra buttons/actions for the toolbar              -->
+            </div> --}}
             <div class="row px-5">
               <div class="col-md-12">
                 <div class="row">
@@ -64,7 +77,7 @@
                   <label class="col-sm-1 col-form-label">Judul Gambar</label>
                   <div class="col-sm-11">
                     <div class="form-group">
-                      <input type="text" name="judul_gambar" class="form-control" value="{{ $article->galeri->gambar }}">
+                      <input type="text" name="judul_gambar" class="form-control" value="{{ $article->galeri->judul }}">
                       <span class="bmd-help">Errors message goes here</span>
                     </div>
                   </div>

@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" href="../../be/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-      Material Dashboard PRO by SIDAKM
+      Material Dashboard PRO by MITRA MALABAR
     </title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
@@ -99,7 +99,7 @@
               <ul>
                 <li>
                   <a href="">
-                    SIDAKM
+                    MITRA MALABAR
                   </a>
                 </li>
               </ul>
@@ -109,7 +109,7 @@
               <script>
                 document.write(new Date().getFullYear())
               </script>, made with <i class="material-icons">favorite</i> by
-              <a href=" " target="_blank">SIDAKM</a> for a better web.
+              <a href=" " target="_blank">MITRA MALABAR</a> for a better web.
             </div>
           </div>
         </footer>

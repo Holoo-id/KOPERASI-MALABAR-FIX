@@ -13,11 +13,11 @@
           <div class="toolbar">
             <div class="row mt-3">
               <div class="col">
-                <a href="{{ route('create-article') }}" class="btn bg-primary" > Tambah Artikel </a>
               </div>
               <div class="col d-flex justify-content-end">
-                <a href="" class="btn btn-danger">Cetak Sebagai PDF</a>
-                <a href="" class="btn btn-success">Cetak Sebagai EXCEL</a>
+                <a href="{{ route('create-article') }}" class="btn bg-primary" > Tambah Artikel </a>
+                {{-- <a href="" class="btn btn-danger">Cetak Sebagai PDF</a>
+                <a href="" class="btn btn-success">Cetak Sebagai EXCEL</a> --}}
               </div>
             </div>
             <!--        Here you can write extra buttons/actions for the toolbar              -->

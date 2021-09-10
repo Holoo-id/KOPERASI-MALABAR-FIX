@@ -13,6 +13,9 @@
         </div>
         @endforeach
       </div>
+      <div class="py-8 px-20">
+        {{ $images->links() }}
+      </div>
     </div>
   </div>
 </div>

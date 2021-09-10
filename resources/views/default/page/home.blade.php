@@ -2,38 +2,58 @@
 @section('content')
     <div class="home-page -mt-20">
       {{-- banner --}}
-      {{-- <div class="home-banner absolute flex flex-col justify-center items-center top-0 w-full">
-        <h1 class="
-          page-title w-11/12 text-white text-center font-black uppercase text-4xl
-          md:text-5xl
-          lg:text-6xl
-          xl:text-7xl
-        ">KOPERASI MITRA MALABAR</h1>
-        <h3 class="
-          page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
-          md:text-3xl
-          lg:text-4xl
-          xl:text-5xl
-        ">Agribisnis, Pertanian, Perkebunan</h3>
-      </div> --}}
       <div class="slideshow-container">
 
         <div class="homeSlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="https://wepik.com/storage/previews/1460817/cute-city-illustration-general-desktop-wallpaper-r-1487545516page1.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
+          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (2 of 8).jpg') }}">
+          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
+            <h1 class="
+              page-title w-11/12 text-white text-center font-black uppercase text-4xl
+              md:text-5xl
+              lg:text-6xl
+              xl:text-7xl
+            ">KOPERASI MITRA MALABAR</h1>
+            <h3 class="
+              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
+              md:text-3xl
+              lg:text-4xl
+              xl:text-5xl
+            ">{{ __('Agribusiness, Farming, Plantation') }}</h3>
+          </div>
         </div>
-        
         <div class="homeSlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="https://wallpapercave.com/wp/wp2072891.jpg" style="width:100%">
-          <div class="text">Caption Two</div>
+          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (1 of 8).jpg') }}">
+          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
+            <h1 class="
+              page-title w-11/12 text-white text-center font-black uppercase text-4xl
+              md:text-5xl
+              lg:text-6xl
+              xl:text-7xl
+            ">KOPERASI MITRA MALABAR</h1>
+            <h3 class="
+              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
+              md:text-3xl
+              lg:text-4xl
+              xl:text-5xl
+            ">{{ __('Agribusiness, Farming, Plantation') }}</h3>
+          </div>
         </div>
-        
         <div class="homeSlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="https://www.wallpapertip.com/wmimgs/92-929402_illustration-wallpaper.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
+          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (3 of 8).jpg') }}">
+          <div class="absolute bottom-1/2 text-center w-full text-2xl flex flex-col items-center">
+            <h1 class="
+              page-title w-11/12 text-white text-center font-black uppercase text-4xl
+              md:text-5xl
+              lg:text-6xl
+              xl:text-7xl
+            ">KOPERASI MITRA MALABAR</h1>
+            <h3 class="
+              page-subtitle w-11/12 text-white text-center font-light text-2xl capitalize
+              md:text-3xl
+              lg:text-4xl
+              xl:text-5xl
+            ">{{ __('Agribusiness, Farming, Plantation') }}</h3>
+          </div>
         </div>
         
         <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
@@ -42,11 +62,11 @@
       </div>
         <br>
         
-      <div style="text-align:center">
+      {{-- <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
+      </div> --}}
       <div class="page-section relative">
         {{-- card --}}
         <div class="
@@ -57,18 +77,18 @@
         ">
           <div class="card-item flex-1">
             <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl">1</div>
-            <div class="card-item-title font-bold">BERMITRA</div>
-            <p class="card-item-text text-gray-600">Koperasi Mitra Malabar siap bermitra dengan berbagai pihak berdasarkan prinsip-prinsip koperasi</p>
+            <div class="card-item-title font-bold">{{ __('PARTNER') }}</div>
+            <p class="card-item-text text-gray-600">{{ __('Based upon the principles of cooperation, We are ready to become partners with various parties') }}</p>
           </div>
           <div class="card-item flex-1">
             <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl">2</div>
-            <div class="card-item-title font-bold">BERBAGI</div>
-            <p class="card-item-text text-gray-600">Berkomitmen untuk menginisiasi dan menghidupkan budaya berbagi kepada masyarakat</p>
+            <div class="card-item-title font-bold">{{ __('SHARING') }}</div>
+            <p class="card-item-text text-gray-600">{{ __("We are committed to initiate and liven up 'the culture of sharing' to the public") }}</p>
           </div>
           <div class="card-item flex-1">
             <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl">3</div>
-            <div class="card-item-title font-bold">PEDULI</div>
-            <p class="card-item-text text-gray-600">Berusaha menghadirkan kesejahteraan dan kebahagiaan untuk sesama</p>
+            <div class="card-item-title font-bold">{{ __('CARING') }}</div>
+            <p class="card-item-text text-gray-600">{{ __('Try to bring prosperity and hapiness to all side') }}</p>
           </div>
         </div>
         {{-- tentang kami --}}
@@ -78,22 +98,22 @@
             md:text-3xl
             lg:text-4xl
             xl:text-5xl
-          ">Tentang Kami</h2>
+          ">{{__('About Us')}}</h2>
           <p class="
             text-center w-10/12 text-lg mb-4 text-gray-800
             md:text-xl md:w-9/12
             lg:text-2xl
             xl:text-3xl
             2xl:w-7/12
-          ">Koperasi Mitra Malabar merupakan jenis koperasi produksi yang memilik potensi besar dalam mendukung kesejahteraan ekonomi masyarakat Jawa Barat</p>
+          ">{{__("Koperasi Mitra Malabar is a cooperatives production that has massive potential in supporting the well-being of West Java people's social economy")}}</p>
           <p class="
             text-center w-10/12 mt-4 mb-36 text-gray-800
             md:w-9/12
             2xl:w-7/12
-          ">Melalui koperasi inilah berwirausaha akan dikembangkan sesuai perubahan lingkungan bisnis, tanpa meninggalkan semangat gotong royong dan semangat berjamaah.</p>
+          ">{{__("We develop existing entrepreneurship to match the changes in the business environment without neglecting the spirit of team working and cooperation")}}</p>
           <div class="section-content-wrap flex justify-center">
             <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-              <img src="https://cdn.wallpapersafari.com/76/65/DN2Owl.jpg" alt="" class="
+              <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (2 of 8).jpg') }}" alt="" class="
                 border-4 border-white -my-8 flex-1 w-11/12
                 lg:w-5/12
               ">
@@ -126,33 +146,33 @@
             lg:text-4xl
             xl:text-5xl xl:w-9/12
             2xl:w-8/12
-          ">Divisi Kami</h2>
+          ">{{__("Our Division")}}</h2>
           <p class="
             text-center text-lg mb-4 text-gray-800 w-11/12
             md:text-xl md:w-10/12
             lg:text-2xl
             xl:text-3xl xl:w-9/12
-          ">Koperasi Mitra Malabar memiliki beberapa unit divisi unggulan yang ada saat ini, antara lain:</p>
+          ">{{__("Koperasi Mitra Malabar has its finest division units, which is :")}}</p>
           <div class="flex flex-nowrap md:flex-row flex-col text-center gap-8 mt-16 mb-24">
             <div class="card-item flex-1 bg-gray-100 p-4">
               <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">1</div>
-              <div class="card-item-title font-bold -mt-4 pb-4">BERMITRA</div>
-              <p class="card-item-text text-gray-600">Koperasi Mitra Malabar siap bermitra dengan berbagai pihak berdasarkan prinsip-prinsip koperasi</p>
+              <div class="card-item-title font-bold -mt-4 pb-4">{{__("COFFEE")}}</div>
+              {{-- <p class="card-item-text text-gray-600">Koperasi Mitra Malabar siap bermitra dengan berbagai pihak berdasarkan prinsip-prinsip koperasi</p> --}}
             </div>
             <div class="card-item flex-1 bg-gray-100 p-4">
               <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">2</div>
-              <div class="card-item-title font-bold -mt-4 pb-4">BERBAGI</div>
-              <p class="card-item-text text-gray-600">Berkomitmen untuk menginisiasi dan menghidupkan budaya berbagi kepada masyarakat</p>
+              <div class="card-item-title font-bold -mt-4 pb-4">{{__("ESSENTIAL OIL")}}</div>
+              {{-- <p class="card-item-text text-gray-600">Berkomitmen untuk menginisiasi dan menghidupkan budaya berbagi kepada masyarakat</p> --}}
             </div>
             <div class="card-item flex-1 bg-gray-100 p-4">
               <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">3</div>
-              <div class="card-item-title font-bold -mt-4 pb-4">PEDULI</div>
-              <p class="card-item-text text-gray-600">Berusaha menghadirkan kesejahteraan dan kebahagiaan untuk sesama</p>
+              <div class="card-item-title font-bold -mt-4 pb-4">{{__("COCONUT")}}</div>
+              {{-- <p class="card-item-text text-gray-600">Berusaha menghadirkan kesejahteraan dan kebahagiaan untuk sesama</p> --}}
             </div>
             <div class="card-item flex-1 bg-gray-100 p-4">
               <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">3</div>
-              <div class="card-item-title font-bold -mt-4 pb-4">PEDULI</div>
-              <p class="card-item-text text-gray-600">Berusaha menghadirkan kesejahteraan dan kebahagiaan untuk sesama</p>
+              <div class="card-item-title font-bold -mt-4 pb-4">{{__("PREMIUM RICE")}}</div>
+              {{-- <p class="card-item-text text-gray-600">Berusaha menghadirkan kesejahteraan dan kebahagiaan untuk sesama</p> --}}
             </div>
           </div>
         </div>
@@ -162,10 +182,10 @@
             md:w-9/12
             lg:w-1/3
           ">
-            <img src="https://cdn.wallpapersafari.com/88/29/iBFYXG.jpg" alt="" srcset="">
+            <img src="{{asset('/fe/img/9.png')}}" alt="" srcset="">
             <a href="" class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">PROFIL</div>
-              <p class="font-medium text-white">Ketahui lebih lanjut informasi tentang Koperasi Mitra Malabar</p>
+              <div class="text-white font-black">{{__("PROFILE")}}</div>
+              <p class="font-medium text-white">{{__("To know more about us")}}</p>
             </a>
           </div>
           <div class="
@@ -173,10 +193,10 @@
             md:w-9/12
             lg:w-1/3
           ">
-            <img src="https://wallpapercave.com/wp/wp5588850.jpg" alt="" srcset="">
+            <img src="{{asset('/fe/img/10.png')}}" alt="" srcset="">
             <a href="" class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">PELATIHAN</div>
-              <p class="font-medium text-white">Ikuti pelatihan agribisnis bersama Koperasi Mitra Malabar</p>
+              <div class="text-white font-black">{{__("TRAINING")}}</div>
+              <p class="font-medium text-white">{{__("To join our training in agribusiness")}}</p>
             </a>
           </div>
           <div class="
@@ -184,10 +204,10 @@
             md:w-9/12
             lg:w-1/3
           ">
-            <img src="https://free4kwallpapers.com/uploads/originals/2020/01/05/illustration-wallpaper.jpg" alt="" srcset="">
+            <img src="{{asset('/fe/img/11.png')}}" alt="" srcset="">
             <a href="" class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">GALERI</div>
-              <p class="font-medium text-white">Dokumentasi kegiatan-kegiatan Koperasi Mitra Malabar</p>
+              <div class="text-white font-black">{{__("GALLERY")}}</div>
+              <p class="font-medium text-white">{{__("To see the documentations of our programs")}}</p>
             </a>
           </div>
         </div>
@@ -206,9 +226,9 @@
             md:text-3xl
             lg:text-4xl
             xl:text-5xl
-          ">Bergabung Bersama Kami</h2>
-          <p class="text-center text-white">Koperasi Mitra Malabar merupakan jenis koperasi produksi yang memilik potensi besar dalam mendukung kesejahteraan ekonomi masyarakat Jawa Barat</p>
-          <a href="text-center" class="primary-button rounded-full mt-8">Hubungi Kami</a>
+          ">{{__("Join Us")}}</h2>
+          <p class="text-center text-white">{{__("")}}</p>
+          <a href="text-center" class="primary-button rounded-full mt-8">{{__("")}}</a>
         </div>
         {{-- info --}}
         <div class="mx-auto bg-gray-200 py-32">
@@ -217,7 +237,7 @@
             md:text-3xl
             lg:text-4xl
             xl:text-5xl
-          ">Informasi Terbaru</h2>
+          ">{{__("Latest Information")}}</h2>
           {{-- start articles grid --}}
           <div class="w-11/12 mx-auto grid auto-rows-auto items-center gap-8 md:grid-cols-2 xl:grid-cols-3">
             @foreach ($articles as $article)
@@ -227,7 +247,7 @@
                   <h5 class="w-full text-lg text-left font-bold">{{ $article->judul }}</h5>
                   <p class="w-full text-left text-sm">Dibuat oleh {{ $article->user->name }} pada {{ \Carbon\Carbon::parse($article->tanggal)->format('d F Y')}}</p>
                   <p class="pt-4">{!! Str::limit( html_entity_decode ($article->deskripsi) , 200) !!}</p>
-                  <a href="{{ route('article', $article->id) }}" class="primary-button text-right w-min rounded-full mt-4">Selengkapnya</a>
+                  <a href="{{ route('article', ['language' => app()->getLocale(), 'link' => $article->id]) }}" class="primary-button text-right w-min rounded-full mt-4">{{__("More..")}}</a>
                 </div>
               </div>
             @endforeach

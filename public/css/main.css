@@ -23,8 +23,12 @@ h3.page-subtitle {
   background: #0C94A4;
 }
 
+.nav-wrap {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .page-banner {
-  background: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2a348a61432093.5a6ecd817d781.png) no-repeat center center fixed;
+  background: url("/fe/img/Aset_MitraMalabar_ (2 of 8).jpg") no-repeat center center fixed;
   height: 465px;
 }
 
@@ -59,6 +63,13 @@ h3.page-subtitle {
   min-width: 45%;
   max-width: 50%;
 }
+.content-image2 img {
+  aspect-ratio: 3/4;
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 @media screen and (min-width: 768px) {
   .content-image2 {
     min-width: 30%;
@@ -69,12 +80,6 @@ h3.page-subtitle {
   .content-image2 {
     min-width: 23%;
     max-width: 25%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .content-image2 {
-    min-width: 18%;
-    max-width: 20%;
   }
 }
 
@@ -123,19 +128,21 @@ h3.page-subtitle {
   box-sizing: border-box;
 }
 
-.homeSlides {
-  display: none;
-}
-
-img {
-  vertical-align: middle;
-}
-
 /* Slideshow container */
 .slideshow-container {
-  max-height: 100vh;
+  max-height: 85vh;
   position: relative;
   margin: auto;
+}
+.slideshow-container .homeSlides {
+  display: none;
+}
+.slideshow-container .homeSlides img {
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 85vh;
+  width: 100%;
 }
 
 /* Next & previous buttons */

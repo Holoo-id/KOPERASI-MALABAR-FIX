@@ -13,10 +13,13 @@
               <h5 class="w-full text-lg text-left font-bold">{{ $article->judul }}</h5>
               <p class="w-full text-left text-sm">Dibuat oleh {{ $article->user->name }} pada {{ \Carbon\Carbon::parse($article->tanggal)->format('d F Y')}}</p>
               <p class="pt-4">{!! Str::limit( html_entity_decode ($article->deskripsi) , 200) !!}</p>
-              <a href="{{ route('article', $article->id) }}" class="primary-button text-right w-min rounded-full mt-4">Selengkapnya</a>
+              <a href="{{ route('article', ['language' => app()->getLocale(), 'link' => $article->id]) }}" class="primary-button text-right w-min rounded-full mt-4">Selengkapnya</a>
             </div>
           </div>
         @endforeach
+      </div>
+      <div class="py-8 px-20">
+        {{ $articles->links() }}
       </div>
     </div>
   </div>
