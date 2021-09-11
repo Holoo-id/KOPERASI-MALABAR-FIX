@@ -7,6 +7,7 @@
   <title>Koperasi Mitra Malabar</title>
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
   @include('default.navbar')
@@ -52,6 +53,22 @@
           $(".nav-wrap").removeClass("bg-white");
         }
       });
+    });
+  </script>
+  <script>
+    var modal = document.querySelector("#mobileMenu");
+    var modalOverlay = document.querySelector("#menuOverlay");
+    var closeButton = document.querySelector("#closeMenu");
+    var openButton = document.querySelector("#openMenu");
+
+    closeButton.addEventListener("click", function() {
+      modal.classList.toggle("hidden");
+      modalOverlay.classList.toggle("hidden");
+    });
+
+    openButton.addEventListener("click", function() {
+      modal.classList.toggle("hidden");
+      modalOverlay.classList.toggle("hidden");
     });
   </script>
 </body>

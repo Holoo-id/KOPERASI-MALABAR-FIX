@@ -76,17 +76,23 @@
           2xl:w-8/12
         ">
           <div class="card-item flex-1">
-            <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl">1</div>
+            <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl">
+              <i class="material-icons">group</i>
+            </div>
             <div class="card-item-title font-bold">{{ __('PARTNER') }}</div>
             <p class="card-item-text text-gray-600">{{ __('Based upon the principles of cooperation, We are ready to become partners with various parties') }}</p>
           </div>
           <div class="card-item flex-1">
-            <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl">2</div>
+            <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl">
+              <i class="material-icons">card_giftcard</i>
+            </div>
             <div class="card-item-title font-bold">{{ __('SHARING') }}</div>
-            <p class="card-item-text text-gray-600">{{ __("We are committed to initiate and liven up 'the culture of sharing' to the public") }}</p>
+            <p class="card-item-text text-gray-600">{{ __("We are committed to initiate and liven up \"the culture of sharing\" to the public") }}</p>
           </div>
           <div class="card-item flex-1">
-            <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl">3</div>
+            <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl">
+              <i class="material-icons">favorite</i>
+            </div>
             <div class="card-item-title font-bold">{{ __('CARING') }}</div>
             <p class="card-item-text text-gray-600">{{ __('Try to bring prosperity and hapiness to all side') }}</p>
           </div>
@@ -94,23 +100,23 @@
         {{-- tentang kami --}}
         <div class="mx-auto flex flex-col items-center justify-center">
           <h2 class="
-            section-title py-8 text-center font-black capitalize text-2xl mt-16
+            section-title py-8 text-center font-black capitalize text-2xl mt-16 mb-8
             md:text-3xl
             lg:text-4xl
             xl:text-5xl
           ">{{__('About Us')}}</h2>
-          <p class="
-            text-center w-10/12 text-lg mb-4 text-gray-800
+          {{-- <p class="
+            text-center w-10/12 text-lg mb-36 text-gray-800
             md:text-xl md:w-9/12
             lg:text-2xl
             xl:text-3xl
             2xl:w-7/12
-          ">{{__("Koperasi Mitra Malabar is a cooperatives production that has massive potential in supporting the well-being of West Java people's social economy")}}</p>
-          <p class="
+          ">{{__("Koperasi Mitra Malabar is a cooperatives production that has massive potential in supporting the well-being of West Java people's social economy")}}</p> --}}
+          {{-- <p class="
             text-center w-10/12 mt-4 mb-36 text-gray-800
             md:w-9/12
             2xl:w-7/12
-          ">{{__("We develop existing entrepreneurship to match the changes in the business environment without neglecting the spirit of team working and cooperation")}}</p>
+          ">{{__("We develop existing entrepreneurship to match the changes in the business environment without neglecting the spirit of team working and cooperation")}}</p> --}}
           <div class="section-content-wrap flex justify-center">
             <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
               <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (2 of 8).jpg') }}" alt="" class="
@@ -118,21 +124,11 @@
                 lg:w-5/12
               ">
               <div class="section-content">
-                {{-- <h4 class="text-black font-black py-4 text-xl
-                  md:text-2xl
-                  lg:text-3xl
-                  xl:text-4xl
-                ">2009 - Titik Tolak</h4> --}}
                 <p class="py-4 text-gray-800">
-                  Jawa Barat merupakan provinsi pertama yang dibentuk sejak masa kolonial 
-                  Undang-Undang Nomor 11 tahun 1950, Provinsi Jawa Barat berdiri pada tanggal 4 Juli 1950, saat ditetapkan dan mulai diberlakukan oleh pemerintah. Pusat pemerintahannya berada di 
-                  Belanda tahun 1925. Namun demikian, sesuai dengan
-                  Bandung.
+                  {{__("Koperasi Mitra Malabar is a cooperatives production that has massive potential in supporting the well-being of West Java people's social economy")}}
                 </p>
                 <p class="py-4 text-gray-800">
-                  Dengan luas 
-                  35.377,76 kilometer persegi atau sekitar 
-                  1,85 persen dari luas daratan Indonesia, Jawa Barat terluas kedua di Pulau Jawa setelah Jawa Timur (47.921 km²). Populasi penduduknya mencapai 49,93 juta jiwa (BPS 2019) dan terbanyak di Indonesia.
+                  {{__("We develop existing entrepreneurship to match the changes in the business environment without neglecting the spirit of team working and cooperation")}}
                 </p>
               </div>
             </div>
@@ -155,22 +151,30 @@
           ">{{__("Koperasi Mitra Malabar has its finest division units, which is :")}}</p>
           <div class="flex flex-nowrap md:flex-row flex-col text-center gap-8 mt-16 mb-24">
             <div class="card-item flex-1 bg-gray-100 p-4">
-              <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">1</div>
+              <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">
+                <i class="material-icons">coffee</i>
+              </div>
               <div class="card-item-title font-bold -mt-4 pb-4">{{__("COFFEE")}}</div>
               {{-- <p class="card-item-text text-gray-600">Koperasi Mitra Malabar siap bermitra dengan berbagai pihak berdasarkan prinsip-prinsip koperasi</p> --}}
             </div>
             <div class="card-item flex-1 bg-gray-100 p-4">
-              <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">2</div>
+              <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">
+                <i class="material-icons">liquor</i>
+              </div>
               <div class="card-item-title font-bold -mt-4 pb-4">{{__("ESSENTIAL OIL")}}</div>
               {{-- <p class="card-item-text text-gray-600">Berkomitmen untuk menginisiasi dan menghidupkan budaya berbagi kepada masyarakat</p> --}}
             </div>
             <div class="card-item flex-1 bg-gray-100 p-4">
-              <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">3</div>
+              <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">
+                <i class="material-icons">sports_rugby</i>
+              </div>
               <div class="card-item-title font-bold -mt-4 pb-4">{{__("COCONUT")}}</div>
               {{-- <p class="card-item-text text-gray-600">Berusaha menghadirkan kesejahteraan dan kebahagiaan untuk sesama</p> --}}
             </div>
             <div class="card-item flex-1 bg-gray-100 p-4">
-              <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">3</div>
+              <div class="mark p-8 bg-blue-100 text-4xl w-min rounded-2xl -mt-16">
+                <i class="material-icons">rice_bowl</i>
+              </div>
               <div class="card-item-title font-bold -mt-4 pb-4">{{__("PREMIUM RICE")}}</div>
               {{-- <p class="card-item-text text-gray-600">Berusaha menghadirkan kesejahteraan dan kebahagiaan untuk sesama</p> --}}
             </div>

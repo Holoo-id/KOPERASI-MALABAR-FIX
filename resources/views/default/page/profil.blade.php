@@ -11,7 +11,7 @@
           md:text-3xl
           lg:text-4xl
           xl:text-5xl
-        ">Tentang Kami</h2>
+        ">{{__('About Us')}}</h2>
         <div class="section-content-wrap flex justify-center mb-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
             <img src="{{asset('/fe/img/9.png')}}" alt="" class="
@@ -19,20 +19,11 @@
               lg:w-5/12
             ">
             <div class="section-content">
-              {{-- <h4 class="text-black font-black py-4 text-xl
-                md:text-2xl
-                lg:text-3xl
-                xl:text-4xl
-              ">2009 - Titik Tolak</h4> --}}
               <p class="py-4 text-gray-800">
-                Sebuah badan usaha koperasi yang bergerak di bidang
-                agribisnis beranggotakan orang-orang yang peduli dengan 
-                ekonomi kerakyatan dan 
-                pengembangan pertanian-perkebunan Indonesia, terdiri dari berbagai lintas profesi.
+                {{__("A cooperatives production that specialized in agribusiness consist of people that cares in Indonesian social economy and plantation and agricultural development, involving people from various professions")}}
               </p>
               <p class="py-4 text-gray-800">
-                Koperasi Mitra Malabar (KMM) Jawa Barat berangkat dari kepedulian pada petani dan masyarakat desa. Melalui pendirian Koperasi diharapkan mampu 
-                menumbuh-kembangkan perekonomian di desa dan meningkatkan kesejahteraan petani.
+                {{__("West Java Koperasi Mitra Malabar (KMM) was established based on the concern of farmers and villagers. We hope that starting this cooperatives production will make the village's economy and the farmer's prosperity thrive fluently.")}}
               </p>
             </div>
           </div>
@@ -44,21 +35,11 @@
               lg:w-5/12
             ">
             <div class="section-content">
-              {{-- <h4 class="text-black font-black py-4 text-xl
-                md:text-2xl
-                lg:text-3xl
-                xl:text-4xl
-              ">2009 - Titik Tolak</h4> --}}
               <p class="py-4 text-right text-gray-800">
-                Fokus pada peningkatan 
-                nilai tambah produk-produk hasil 
-                pertanian & perkebunan untuk meningkatkan 
-                kesejahteraan anggota bersama dengan masyarakat secara umum.
+                {{__("Focused on the enhancement of the added value of plantation and agricultural products to improve the prosperity of our members and also society in general")}}
               </p>
               <p class="py-4 text-right text-gray-800">
-                Melalui koperasi inilah 
-                berwirausaha akan dikembangkan sesuai perubahan lingkungan bisnis, tanpa meninggalkan 
-                semangat gotong royong dan semangat berjamaah.
+                {{__("We develop existing entrepreneurship to match the changes in the business environment without neglecting the spirit of team working and cooperation")}}
               </p>
             </div>
           </div>
@@ -71,18 +52,13 @@
           md:text-3xl
           lg:text-4xl
           xl:text-5xl
-        ">Visi & Misi</h2>
+        ">{{__("Vision & Mission")}}</h2>
         <p class="
           text-center w-10/12 text-lg text-gray-800
           md:text-xl
           lg:text-2xl
           xl:text-3xl
-          ">Menjadi 
-            <span class="font-bold">jaringan koperasi produksi</span> terbesar di Jawa Barat 
-            <span class="font-bold">pada tahun 2025</span>, mampu mengintegrasikan para pihak yang peduli dengan 
-            <span class="font-bold">ekonomi kerakyatan</span> dan 
-            <span class="font-bold">komoditi unggulan</span> Indonesia, serta bermitra dengan 
-            <span class="font-bold">falsafah berbagi</span> yang berkeadilan dan ramah lingkungan.
+          ">{{__("To become the biggest cooperatives production network in West Java in 2025, integrate with other parties that also concern with social economy and indonesian prime commodity, and become partnership using the \"philosophy of sharing\" that is fair and environmentally friendly.")}}
         </p>
         <div class="border-1 border-black w-8/12 h-px bg-black my-12"></div>
         <ul class="
@@ -91,12 +67,12 @@
           lg:text-2xl
           xl:text-3xl
           ">
-          <li>Meningkatkan kesejahteraan bersama dengan <span class="font-bold">petani, pengolah & pemasar</span>.</li>
-          <li>Mengangkat <span class="font-bold">komoditi lokal</span> yang berkualitas, memiliki nilai tambah dan bermanfaat.</li>
-          <li>Mengintegrasikan kegiatan <span class="font-bold">hulu, pengolahan</span> dan <span class="font-bold">kegiatan hilir</span>.</li>
-          <li>Memberikan produk yang <span class="font-bold">bermanfaat</span> dan <span class="font-bold">berkualitas</span> pada konsumen.</li>
-          <li>Menumbuhkan semangat dan <span class="font-bold">jiwa berkoperasi</span> bagi <span class="font-bold">generasi muda</span>.</li>
-          <li>Membangun <span class="font-bold">agroforestry</span> dan <span class="font-bold">agroindustry</span> terpadu di <span class="font-bold">DAS Hulu, Tengah</span> dan <span class="font-bold">Hilir</span>.</li>
+          <li>{{__("Improve the prosperity of farmer, food processor, and marketer")}}</li>
+          <li>{{__("Uplift excellent local commodities that have added value and are beneficial")}}</li>
+          <li>{{__("Integrate upstream, processing, and downstream activities.")}}</li>
+          <li>{{__("Give excellent and beneficial products to consumers")}}</li>
+          <li>{{__("Grow the spirit of \"cooperating\" to the young generation.")}}</li>
+          <li>{{__("Build integrated agroforestry and agro-industry in the upstream, midstream, and downstream drainage basin.")}}</li>
         </ul>
       </div>
       {{-- struktur --}}
@@ -106,89 +82,89 @@
           md:text-3xl
           lg:text-4xl
           xl:text-5xl
-        ">Struktur Organisasi</h2>
+        ">{{__("Organizational Structure")}}</h2>
         <div class="flex flex-wrap flex-row items-center sm:gap-6">
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
             <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2lkZSUyMHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">DEWAN PAKAR</div>
+              <div class="text-white font-black">{{__("Expert Council")}}</div>
               <p class="font-medium text-white">Drs. Dodi Syaripudin, S.AK, MBA.</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
             <img src="http://fc05.deviantart.net/fs70/f/2011/070/0/d/katerina2_by_nerysoul-d3bezxd.jpg" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">DEWAN PAKAR</div>
+              <div class="text-white font-black">{{__("Expert Council")}}</div>
               <p class="font-medium text-white">DR. Sulistyo Rabono</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR71_ym1PTYZqW18pZbzxmOMvL3mBSx6lKq9g&usqp=CAU" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">DEWAN PAKAR</div>
+              <div class="text-white font-black">{{__("Expert Council")}}</div>
               <p class="font-medium text-white">Prof. Wisnu Gardjito, M.Sc</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
             <img src="https://buffer.com/library/content/images/2020/05/Ash-Read.png" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">DEWAN PAKAR</div>
+              <div class="text-white font-black">{{__("Expert Council")}}</div>
               <p class="font-medium text-white">Ir. Elly Amalia, MP</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
             <img src="https://www.adobe.com/express/create/media_141efea30cca217e8cb7fb3abb8ed9d663c29d550.jpeg?width=2000&format=webply&optimize=medium" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">PENGURUS</div>
+              <div class="text-white font-black">{{__("Administrator")}}</div>
               <p class="font-medium text-white">Ketua: Ir. Jayagama ME</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
             <img src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_1.jpg" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">PENGURUS</div>
+              <div class="text-white font-black">{{__("Administrator")}}</div>
               <p class="font-medium text-white">Sekretaris: Dhanny R. N, S.Hut</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
             <img src="https://media.istockphoto.com/vectors/profile-picture-vector-illustration-vector-id587805156?k=20&m=587805156&s=612x612&w=0&h=Ok_jDFC5J1NgH20plEgbQZ46XheiAF8sVUKPvocne6Y=" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">PENGURUS</div>
+              <div class="text-white font-black">{{__("Administrator")}}</div>
               <p class="font-medium text-white">Bendahara: Evi Sri Mulyati</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
             <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">PENGAWAS</div>
+              <div class="text-white font-black">{{__("Supervisor")}}</div>
               <p class="font-medium text-white">Dr.Deni Heriyadi Ir. MS (Ketua)</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx5miKgDTr7Gyopi7_Wd0-viiy9SvhuL4o5Q&usqp=CAU" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">PENGAWAS</div>
+              <div class="text-white font-black">{{__("Supervisor")}}</div>
               <p class="font-medium text-white">Drs. Daeng M Ma’mur Thahir</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
             <img src="https://www.nationalgallery.org.uk/media/33502/n-2082-00-000020-hd.jpg?center=0.3190984578884935,0.65248226950354615&mode=crop&width=350&height=350&rnd=132385865221430000&bgcolor=fff" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">PENGAWAS</div>
+              <div class="text-white font-black">{{__("Supervisor")}}</div>
               <p class="font-medium text-white">Ir. Muhammad Sholeh</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
             <img src="https://cdn.idntimes.com/content-images/community/2020/10/lino9-283697ddadbf954d93a7ac66876270be.jpg" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">MANAJEMEN</div>
+              <div class="text-white font-black">{{__("Manager")}}</div>
               <p class="font-medium text-white">Kepala Divisi Trading: Robbie Sartana</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFDYWTmPfgdRdqBuJIpKmMxxtvqd8JaffZhQ&usqp=CAU" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">MANAJEMEN</div>
+              <div class="text-white font-black">{{__("Manager")}}</div>
               <p class="font-medium text-white">Kepala Divisi Community Dev: Faqih Asyikin</p>
             </div>
           </div>
@@ -201,7 +177,7 @@
           md:text-3xl
           lg:text-4xl
           xl:text-5xl
-        ">SEJARAH</h2>
+        ">{{__("HISTORY")}}</h2>
         <div class="video-content-wrap flex flex-col items-center p-8 mt-36 w-full">
           <div class="
             video-thumbnail border-white w-full
@@ -212,11 +188,11 @@
             <video class="w-full" src="https://www.youtube.com/watch?v=8kiPjEeTaW4" controls playsinline></video>
           </div>
           <h2 class="
-            py-8 text-center font-black capitalize text-2xl text-white
+            py-8 text-center font-normal capitalize text-2xl text-white
             md:text-3xl
             lg:text-4xl
             xl:text-5xl
-          "><span class="font-normal">Video Profile</span> Kopi Mitra Malabar</h2>
+          ">{{__("Kopi Mitra Malabar Video Profile")}}
         </div>
         {{-- lompat --}}
         <div class="section-content-wrap flex justify-center my-28">
@@ -230,19 +206,15 @@
                 md:text-2xl
                 lg:text-3xl
                 xl:text-4xl
-              ">2009 - Titik Tolak</h4>
+              ">{{__("2009 - Starting Point")}}</h4>
               <p class="py-4 text-gray-800">
-                Hikmah dari setiap peristiwa. Tahun 2009 terjadi bencana gempa di 
-                <span class="font-bold">Pangalengan, Bandung Selatan</span>.
+                {{__("\"There is always wisdom in every event\". In the year 2009, an earthquake happened in Pangalengan, South Bandung.")}}
               </p>
               <p class="py-4 text-gray-800">
-                <span class="font-bold">Haji Jayagama</span> bersama dengan komunitasnya, melakukan 
-                <span class="font-bold">kegiatan recovery</span> pasca gempa disana.
+                {{__("Haji Jayagama with his community did some post-earthquake recovery activities there.")}}
               </p>
               <p class="py-4 text-gray-800">
-                Dipertemukan dengan tokoh-tokoh masyarakat disana yang memiliki 
-                <span class="font-bold">komitmen</span> dan 
-                <span class="font-bold">semangat</span> yang luar biasa untuk membangun kembali desa-nya yang terdampak bencana gempa bumi.
+                {{__("He met various public figures who have remarkable commitment and passion in revitalizing villages after being badly affected by the earthquake.")}}
               </p>
             </div>
           </div>
@@ -258,17 +230,12 @@
                 md:text-2xl
                 lg:text-3xl
                 xl:text-4xl
-              ">2010-2011 - Mengangkat Potensi Ekonomi Desa</h4>
+              ">{{__("2010-2011 - Uplifting The Village Economy Potention")}}</h4>
               <p class="py-4 text-right text-gray-800">
-                Salah satu kegiatan recovery pasca gempa dibidang ekonomi adalah 
-                <span class="font-bold">mengembangkan potensi</span> perkebunan rakyat di daerah 
-                <span class="font-bold">Pangalengan</span> yang telah terkenal sebagai salah satu 
-                <span class="font-bold">sentra produksi kopi</span> Jawa Barat.
+                {{__("One of the post-earthquake recovery activities relevant to the economic sector was developing public plantations in the Pangalengan region, one of the famous production centers of coffee in West Java.")}}
               </p>
               <p class="py-4 text-right text-gray-800">
-                2 tahun membangun 
-                <span class="font-bold">Kopi Malabar</span>, banyak hal yang diluar dugaan, disamping peluang ekonominya yang tinggi, disisi lain banyak 
-                <span class="font-bold">‘ilmu’</span> yang tidak diketahui oleh petani dan masyarakat awam tentang kopi dan seluk beluknya.
+                {{__("Two years building the Kopi Malabar, many unexpected things happened. Besides the surprisingly high economic opportunity, it turns out there were lots of knowledge about coffee and its ins and outs that were unknown to farmers and people.")}}
               </p>
             </div>
           </div>
@@ -284,18 +251,12 @@
                 md:text-2xl
                 lg:text-3xl
                 xl:text-4xl
-              ">2012 - Mendirikan Koperasi</h4>
+              ">{{__("2012 - Establishing the Cooperatives")}}</h4>
               <p class="py-4 text-gray-800">
-                Selama 2 tahun mengangkat potensi ekonomi desa, para pendiri 
-                <span class="font-bold">Kopi Malabar</span> sepakat mendirikan 
-                <span class="font-bold">koperasi</span> yang akan mewadahi petani dan pengolah kopi di Bandung.
+                {{__("During the two years in uplifting the village economic potential, Kopi Malabar founders agree to establish cooperatives that accommodate Bandung's farmers and coffee processors.")}}
               </p>
               <p class="py-4 text-gray-800">
-                Hasil konsultasi dengan para 
-                <span class="font-bold">tokoh perkoperasian Jawa Barat</span> dan 
-                <span class="font-bold">Dinas Koperasi Provinsi</span>, disarankan untuk pendirian koperasi ini setingkat provinsi agar dapat menjadi wadah bagi seluruh 
-                <span class="font-bold">petani, prosesor</span> dan 
-                <span class="font-bold">penggiat kopi se-Jawa Barat</span>.
+                {{__("After consulting with many West Java cooperatives figures and the provincial cooperative service, they advised establishing these cooperatives as provincial-level cooperatives. The reason was to accommodate all farmers, processors, and activists in West Java.")}}
               </p>
             </div>
           </div>
@@ -311,15 +272,12 @@
                 md:text-2xl
                 lg:text-3xl
                 xl:text-4xl
-              ">2012-2013 - Lompatan Pertama</h4>
+              ">{{__("2012-2013 - The First Leap")}}</h4>
               <p class="py-4 text-right text-gray-800">
-                Keunggulan dan popularitas kopi 
-                <span class="font-bold">Java Preanger</span> didalam negeri sudah lama menjadi “cerita”, tapi tidak semua kopi yang dibudidayakan dan diolah sebagai kopi unggul dengan citarasa seperti jaman dulu.
+                {{__("The excellence and popularity of the Java Preanger Coffee have been a legend in our country since the old days. The excellence and popularity of the Java Preanger Coffee have been a legend in our country since the old days. But not all coffee can be cultivated and processed to become an excellent coffee with the old day's taste.")}}
               </p>
               <p class="py-4 text-right text-gray-800">
-                Pemuliaan tanaman kopi inilah salah satu pondasi yang harus disiapkan oleh masyarakat perkopian 
-                <span class="font-bold">Jawa Barat</span>, dilakukan dengan swadaya untuk 
-                <span class="font-bold">‘menggelitik’</span> para stakeholders agar peduli terhadap pentingnya bibit unggul dalam budidaya kopi.
+                {{__("This fact in the ways of breeding coffee was one of the foundations that the coffee society needs to prepare by empowering resources to stimulate the stakeholders to have concern on the importance of excel seeds in coffee cultivation.")}}
               </p>
             </div>
           </div>
@@ -335,9 +293,9 @@
                 md:text-2xl
                 lg:text-3xl
                 xl:text-4xl
-              ">2013 - Melompat Bersama</h4>
+              ">{{__("2013 - Leaping Together")}}</h4>
               <p class="py-4 text-gray-800">
-                sadar masalah perkopian di hulu, tengah dan hilir ini tidak sedikit dan kompleks. KMM menginisiasi terbentuknya Forum Clearing House Kopi Jawa Barat (CHK Jabar). Forum yang dimaksudkan untuk media berkumpulnya para stakeholders lintas profesi & tugas, mencakup dari hulu sampai hilir. Forum yang diharapkan mampu mengurai bersama benangkusut yang selama ini tidak ketemu ujung-pangkalnya. Forum yang diharapkan dapat memberikan informasi yang ‘clear’ dan sekaligus mendistribusikan informasi ini ke semua pihak, sehingga perdagangan kopi jawa barat akan tertata dengan baik.
+                {{__("We realize that problems in upstream, midstream, and downstream coffee production stages were complex and not just a few. KMM initiate the forming the \"Clearing House Kopi Jawa Barat\" forum (CHK Jabar). This forum was for mediating stakeholders with various professions and jobs, covering from upstream to downstream production. We hoped that this forum would solve the likely-unsolvable dire straits. We also hoped that this forum would give us clear information while also distribute it to all involving parties so that West Java's coffee trading would be well-arranged.")}}
               </p>
             </div>
           </div>
@@ -353,9 +311,9 @@
                 md:text-2xl
                 lg:text-3xl
                 xl:text-4xl
-              ">2013 - Lompatan Ketiga yang Beresiko Tinggi</h4>
+              ">{{__("2013 - The High-Risk Third Leap")}}</h4>
               <p class="py-4 text-right text-gray-800">
-                forum clearing house kopi jawa barat dilantik oleh gubernur Jawa Barat, pada tahun yang sama kopi rakyat jawa barat memperoleh order dari maroko. Skema perdagangan yang dibangun dengan pola fair-trade (perdagangan yang berkeadilan). Konsep kemitraan yang dibangun adalah harga dari petani jawa barat dibuka apa adanya dan harga jual di maroko akan dibuka apa adanya oleh buyer/importir. Beresiko karena barang dilepas tanpa LC, dibayar setelah laku di maroko.
+                {{__("The Clearing House Kopi Jawa Barat forum was appointed by the governor of West Java in the same year when West Java society's coffee got an order from Morocco. The trading scheme was built upon fair-trade patterned trading. The partnership concept was disclosing the price from the West Java farmers without concealing it, the same as for Morocco's buyer or importer. This trade was hazardous because the product was not using any letter of credit and would only be paid after it was sold in Morocco.")}}
               </p>
             </div>
           </div>
@@ -371,9 +329,9 @@
                 md:text-2xl
                 lg:text-3xl
                 xl:text-4xl
-              ">2014-2015 - Lompatan Keempat</h4>
+              ">{{__("2014-2015 - The Fourth Leap")}}</h4>
               <p class="py-4 text-gray-800">
-                Budaya kopi nusantara tidak dapat dipisahkan dengan ke-arifan lokal yang sangat beragam di bumi Indonesia. KMM bersama dengan Kementerian Koperasi dan UKM menginisiasi forum pemasaran bersama kopi petani Indonesia, pertemuan awal di akhir 2013 dilakukan di Bandung. Tahun 2014 bersama dengan kementerian koperasi dan UKM melalui program promosi produk unggulan daerah, dengan membuka Rumah Kopi Nusantara di Taman Mini Indonesia Indah Jakarta.
+                {{__("We cannot simply separate Nusantara's Coffee Culture from the various local wisdom in Indonesia. KMM with the Ministry of Cooperative and SMEs initiate the market's forum with Indonesian coffee farmers. Our first meeting regarding the topic was at Bandung in late 2003. In 2014, through the Promotion of Excel Products in the Region with SMEs and the Ministry of Cooperative, we opened the Rumah Kopi Nusantara in Jakarta's Taman Mini Indonesia Indah.")}}
               </p>
             </div>
           </div>
@@ -389,9 +347,9 @@
                 md:text-2xl
                 lg:text-3xl
                 xl:text-4xl
-              ">2016-2017 - Lompatan Kelima</h4>
+              ">{{__("2016-2017 - The Fifth Leap")}}</h4>
               <p class="py-4 text-right text-gray-800">
-                Sejak awal tahun 2016, Pengurus Koperasi Mitra Malabar Jawa Barat melakukan diskusi dengan petani dan tokoh masyarakat di kecamatan parigi, kabupaten pangandaran, jawa barat yang memiliki potensi komoditas kelapa tapi belum optimal dalam pengembangan peluangnya, maka pada Nopember tahun 2016 KMM menginisiasi pembentukan Koperasi Produsen Mitra Kelapa (KPMK) Kabupaten Pangandaran. Setahun kemudian di Oktober 2017, KMM mendirikan pabrik pengolahan kelapa terpadu yang bertujuan untuk meningkatkan nilai tambah kelapa.
+                {{__("In early 2016, Koperasi Mitra Malabar Jawa Barat was discussing with farmers and other public figures at Parigi, District Pangandaran, West Java, which is a region that was known to have coconut commodity potential but yet to optimized its potential. And so in November 2016, KMM established of Koperasi Produsen Mitra Kelapa (KPMK) of Pangandaran District. A year later, in October 2017, KMM built an integrated coconut processing factory to increase the added value of coconut.")}}
               </p>
             </div>
           </div>
@@ -407,9 +365,9 @@
                 md:text-2xl
                 lg:text-3xl
                 xl:text-4xl
-              ">2017-2018 - Lompatan Keenam</h4>
+              ">{{__("2017-2018 - The Sixth Leap")}}</h4>
               <p class="py-4 text-gray-800">
-                Optimalisasi lahan sekitar kebun kelapa, untuk budidaya sereh wangi. Sebagai alternatif sumber pendapatan petani saat tidak panen kelapa. Untuk meningkatkan nilai tambah daun sereh wangi setelah disuling menjad minyak atsiri (essential oil), diolah menjadi produk-produk turunan sereh wangi, seperti: sabun dan karbol.
+                {{__("We optimized the land around the coconut plantation for cultivating fragrant lemongrass as an alternative source of income for farmers when not harvesting coconut. We optimized the land around the coconut plantation for cultivating fragrant lemongrass as an alternative source of income for farmers when not harvesting coconut. To raise the added value of the leaf of fragrant lemongrass, the leaf will be distilled and turn into essential oil. And then, it will be processed into derivative products like soap or carbolic acid.")}}
               </p>
             </div>
           </div>
@@ -425,9 +383,9 @@
                 md:text-2xl
                 lg:text-3xl
                 xl:text-4xl
-              ">2019-2020 - Lompatan Ketujuh</h4>
+              ">{{__("2019-2020 - The Seventh Leap")}}</h4>
               <p class="py-4 text-right text-gray-800">
-                Program Perhutanan Sosial Kementerian Lingkungan Hidup & Kehutanan RI sudah dikampanyekan sejak 4 tahun terakhir, dalam rangka mendukung program PS ini KMM memberikan pendampingan ke beberapa desa dan lembaga masyarakat desa hutan (LMDH) di provinsi jawa barat. Salah satunya di desa loa dan drawati, kecamatan paseh, kabupaten bandung, yang memiliki potensi agribisnis kopi dan hasil hutan lainnya. Pendampingan dimulai sejak pengajuan Perhutanan Sosial, kemudian penguatan kelembagaan petani dengan mendirikan koperasi produsen, sampai ke tahapan pendampingan pengolahan kopi (pasca panen).
+                {{__("The Ministry of Environment & Forestry's Social Forestry Program campaigned in the last four years. To support this Social Forestry Program, KMM gives guidance to several villages and the Lembaga Masyarakat Desa Hutan (LMDH) in West Java. One of the villages was Loa and Drawati in Paseh, Bandung, which has agribusiness potential in coffee and other forest products. The guidance starts from the submission of the Social Forestry Program, enforcement of farmer institutions by making producer cooperatives until the guidance in the coffee processing phase (post-harvest phase).")}}
               </p>
             </div>
           </div>
