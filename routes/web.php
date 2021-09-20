@@ -12,6 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/login', 'App\Http\Controllers\LoginController@feLogin')->name('loginPage');
+Route::get('/post-login', 'App\Http\Controllers\LoginController@login')->name('login');
+Route::get('/logout', 'App\Http\Controllers\LoginController@logout')->name('logout');
+
 Route::redirect('/', '/id');
 Route::group(['prefix' => '{language}'], function () {
     Route::get('/', 'App\Http\Controllers\FrontendController@index')->name('home');
@@ -22,9 +26,7 @@ Route::group(['prefix' => '{language}'], function () {
     Route::get('/contact', 'App\Http\Controllers\FrontendController@contact')->name('contact');
 });
 
-Route::get('/login', 'App\Http\Controllers\LoginController@index')->name('loginPage');
-Route::get('/post-login', 'App\Http\Controllers\LoginController@login')->name('login');
-Route::get('/logout', 'App\Http\Controllers\LoginController@logout')->name('logout');
+
 
 Route::post('/super-admin', 'App\Http\Controllers\SuperAdminController@index')->name('dashboard');
 Route::post('/super-admin/post-akun', 'App\Http\Controllers\SuperAdminController@buatAkun')->name('buatAkun');

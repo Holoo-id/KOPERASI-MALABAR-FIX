@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Artikel;
 use App\Models\Galeri;
 use Illuminate\Support\Str;
+use Validator;
 
 class AdminController extends Controller
 {
@@ -42,10 +43,29 @@ class AdminController extends Controller
         return view('admin.edit-artikel', compact('article'));
     }
     public function buatArtikel(Request $request){
+        $messages = [
+            'required'=> 'Judul Wajib Diisi.',
+            'deskripsi.required'=> 'Deskripsi Wajib Diisi.',
+            'tanggal.required' => 'Tanggal Wajib Diisi.',
+            'gambar.required' => 'Gambar Wajib Diisi.',
+            'judul_gambar.required' => 'Judul Gambar Wajib Diisi.',
+            'min' => 'Harus Diisi minimal :min'
+        ];
+        $request->validate([
+            'judul'=> 'required|min:7',
+            'deskripsi'=> 'required',
+            'tanggal' => 'required',
+            'gambar' => 'required',
+            'judul_gambar' => 'required'
+        ],$messages);
+       
+
+
         $uploadedFile = $request->file('gambar');
         $uploadedFile->storePubliclyAs('public/images/contents/', $uploadedFile->getClientOriginalName());
         $image_path = "storage/images/contents/".$request->in_img_title;
         $tanggal = date('Y-m-d');
+        
 
 
         $uploadGambar = Galeri::create([
@@ -71,6 +91,23 @@ class AdminController extends Controller
         return view('admin.dashboard');
     }
     public function postEditArtikel(Request $request){
+        $messages = [
+            'required'=> 'Judul Wajib Diisi.',
+            'deskripsi.required'=> 'Deskripsi Wajib Diisi.',
+            'tanggal.required' => 'Tanggal Wajib Diisi.',
+            'gambar.required' => 'Gambar Wajib Diisi.',
+            'judul_gambar.required' => 'Judul Gambar Wajib Diisi.',
+            'min' => 'Harus Diisi minimal :min'
+        ];
+
+        $request->validate([
+            'judul'=> 'required|min:7',
+            'deskripsi'=> 'required',
+            'tanggal' => 'required',
+            'gambar' => 'required',
+            'judul_gambar' => 'required'
+        ],$messages);
+
         $uploadedFile = $request->file('gambar');
         $uploadedFile->storePubliclyAs('public/images/contents/', $uploadedFile->getClientOriginalName());
         $image_path = "storage/images/contents/".$request->in_img_title;
@@ -99,6 +136,17 @@ class AdminController extends Controller
         return view('admin.data-gambar', compact('gambar'));
     }
     public function postGambar(Request $request){
+        $messages = [
+            'judul_gambar.required'=> 'Judul Gambar Wajib Diisi.',
+            'min' => 'Harus Diisi minimal :min',
+            'gambar.required'=> 'Gambar Wajib Diisi.',
+        ];
+
+        $request->validate([
+            'judul_gambar'=> 'required|min:7',
+            'gambar'=> 'required',
+        ],$messages);
+        
         $uploadedFile = $request->file('gambar');
         $uploadedFile->storePubliclyAs('public/images/contents/', $uploadedFile->getClientOriginalName());
         $image_path = "storage/images/contents/".$request->in_img_title;

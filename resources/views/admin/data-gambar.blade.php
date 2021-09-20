@@ -72,7 +72,9 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <input type="text" name="judul_gambar" class="form-control">
-                <span class="bmd-help">Errors message goes here</span>
+                @if($errors->has('judul_gambar'))
+                      <span class="text-danger">{{ $errors->first('judul_gambar') }}</span>
+                      @endif
               </div>
             </div>
           </div>
@@ -81,7 +83,9 @@
             <div class="col-sm-8">
               
                 <input type="file" name="gambar" class="form-control">
-                <span class="bmd-help">Errors message goes here</span>
+                @if($errors->has('gambar'))
+                      <span class="text-danger">{{ $errors->first('gambar') }}</span>
+                      @endif
             
             </div>
           </div>
