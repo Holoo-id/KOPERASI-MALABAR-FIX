@@ -18,6 +18,7 @@ class CreateArtikelTable extends Migration
             $table->foreignId('added_by');
             $table->string('judul');
             $table->text('deskripsi');
+            $table->string('kategori');
             $table->string('tanggal');
             // $table->string('gambar');
             // $table->string('gambar_path');

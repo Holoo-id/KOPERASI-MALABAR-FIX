@@ -21,6 +21,7 @@ class ArtikelSeeder extends Seeder
             'added_by'=>'1',
             'judul'=>Str::random(10),
             'deskripsi'=>Str::random(10),
+            'kategori'=>Str::random(10),
             'tanggal'=> Carbon::now(),
             'gambar_sampul'=>null,
             'created_at'=>Carbon::now(),
