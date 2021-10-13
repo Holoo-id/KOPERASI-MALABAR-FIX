@@ -6,6 +6,7 @@
     <div class="page-section flex flex-col justify-center relative items-center">
       {{-- content article start --}}
       <div class="article-content w-9/12">
+          <br><br><br>
         {!! html_entity_decode ($article->deskripsi) !!}
       </div>
       <a href="{{ route('articles', app()->getLocale()) }}" class="primary-button rounded-full w-max">Kembali ke Artikel</a>

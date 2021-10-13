@@ -10,7 +10,7 @@
 
 
     "__article.banner":"__article.banner",
-    "Di posting tanggal: ":"Posted at",
+    "Posted at: ":"Di posting tanggal:",
 
 
     "__home.blade":"__home.blade",
@@ -23,7 +23,7 @@
     "Try to bring prosperity and hapiness to all side":"Berusaha menghadirkan kesejahteraan dan kebahagiaan untuk sesama",
 
     "About Us":"Tentang Kami",
-    "Koperasi Mitra Malabar is a cooperatives production that has massive potential in supporting the well-being of West Java people's social economy":"Koperasi Mitra Malabar merupakan jenis koperasi produksi yang memilik potensi besar dalam mendukung kesejahteraan ekonomi masyarakat Jawa Barat",
+    "Koperasi Mitra Malabar is a cooperatives production that has massive potential in supporting the well-being of West Java people's social economy":"Koperasi Mitra Malabar merupakan jenis koperasi produksi yang memilik potensi besar dalam mendukung kesejahteraan ekonomi masyarakat Jawa Barat.",
     "We develop existing entrepreneurship to match the changes in the business environment without neglecting the spirit of team working and cooperation":"Melalui koperasi inilah berwirausaha akan dikembangkan sesuai perubahan lingkungan bisnis, tanpa meninggalkan semangat gotong royong dan semangat berjamaah.",
     
     "__skipped__":"__skip__",
@@ -47,6 +47,7 @@
     "To see the documentations of our programs":"Dokumentasi kegiatan-kegiatan Koperasi Mitra Malabar",
 
     "Join Us":"Bergabung Bersama Kami",
+    "We are open to anyone who wants to join the Malabar Partner Cooperative":"Kami terbuka untuk siapa saja yang ingin bergabung dengan Koperasi Mitra Malabar",
     
     "Latest Information":"Informasi Terbaru",
     "More..":"Selengkapnya",
@@ -57,7 +58,7 @@
     "West Java Koperasi Mitra Malabar (KMM) was established based on the concern of farmers and villagers. We hope that starting this cooperatives production will make the village's economy and the farmer's prosperity thrive fluently.":"Koperasi Mitra Malabar (KMM) Jawa Barat berangkat dari kepedulian pada petani dan masyarakat desa. Melalui pendirian Koperasi diharapkan mampu menumbuh-kembangkan perekonomian di desa dan meningkatkan kesejahteraan petani.",
     "Focused on the enhancement of the added value of plantation and agricultural products to improve the prosperity of our members and also society in general":"Fokus pada peningkatan nilai tambah produk-produk hasil pertanian & perkebunan untuk meningkatkan kesejahteraan anggota bersama dengan masyarakat secara umum",
     
-    "Visi & Misi":"Vision & Mission",
+    "Vision & Mission":"Visi & Misi",
     "To become the biggest cooperatives production network in West Java in 2025, integrate with other parties that also concern with social economy and indonesian prime commodity, and become partnership using the \"philosophy of sharing\" that is fair and environmentally friendly.":"Menjadi jaringan koperasi produksi terbesar di Jawa Barat pada tahun 2025, mampu mengintegrasikan para pihak yang peduli dengan ekonomi kerakyatan dan komoditi unggulan Indonesia, serta bermitra dengan falsafah berbagi yang berkeadilan dan ramah lingkungan.",
     "Improve the prosperity of farmer, food processor, and marketer":"Meningkatkan kesejahteraan bersama dengan petani, pengolah & pemasar.",
     "Uplift excellent local commodities that have added value and are beneficial":"Mengangkat komoditi lokal yang berkualitas, memiliki nilai tambah dan bermanfaat",
@@ -108,5 +109,18 @@
     "We optimized the land around the coconut plantation for cultivating fragrant lemongrass as an alternative source of income for farmers when not harvesting coconut. We optimized the land around the coconut plantation for cultivating fragrant lemongrass as an alternative source of income for farmers when not harvesting coconut. To raise the added value of the leaf of fragrant lemongrass, the leaf will be distilled and turn into essential oil. And then, it will be processed into derivative products like soap or carbolic acid.":"Optimalisasi lahan sekitar kebun kelapa, untuk budidaya sereh wangi. Sebagai alternatif sumber pendapatan petani saat tidak panen kelapa. Untuk meningkatkan nilai tambah daun sereh wangi setelah disuling menjad minyak atsiri (essential oil), diolah menjadi produk-produk turunan sereh wangi, seperti: sabun dan karbol.",
 
     "2019-2020 - The Seventh Leap":"2019-2020 - Lompatan Ketujuh",
-    "The Ministry of Environment & Forestry's Social Forestry Program campaigned in the last four years. To support this Social Forestry Program, KMM gives guidance to several villages and the Lembaga Masyarakat Desa Hutan (LMDH) in West Java. One of the villages was Loa and Drawati in Paseh, Bandung, which has agribusiness potential in coffee and other forest products. The guidance starts from the submission of the Social Forestry Program, enforcement of farmer institutions by making producer cooperatives until the guidance in the coffee processing phase (post-harvest phase).":"Program Perhutanan Sosial Kementerian Lingkungan Hidup & Kehutanan RI sudah dikampanyekan sejak 4 tahun terakhir, dalam rangka mendukung program PS ini KMM memberikan pendampingan ke beberapa desa dan lembaga masyarakat desa hutan (LMDH) di provinsi jawa barat. Salah satunya di desa loa dan drawati, kecamatan paseh, kabupaten bandung, yang memiliki potensi agribisnis kopi dan hasil hutan lainnya. Pendampingan dimulai sejak pengajuan Perhutanan Sosial, kemudian penguatan kelembagaan petani dengan mendirikan koperasi produsen, sampai ke tahapan pendampingan pengolahan kopi (pasca panen)."
+    "The Ministry of Environment & Forestry's Social Forestry Program campaigned in the last four years. To support this Social Forestry Program, KMM gives guidance to several villages and the Lembaga Masyarakat Desa Hutan (LMDH) in West Java. One of the villages was Loa and Drawati in Paseh, Bandung, which has agribusiness potential in coffee and other forest products. The guidance starts from the submission of the Social Forestry Program, enforcement of farmer institutions by making producer cooperatives until the guidance in the coffee processing phase (post-harvest phase).":"Program Perhutanan Sosial Kementerian Lingkungan Hidup & Kehutanan RI sudah dikampanyekan sejak 4 tahun terakhir, dalam rangka mendukung program PS ini KMM memberikan pendampingan ke beberapa desa dan lembaga masyarakat desa hutan (LMDH) di provinsi jawa barat. Salah satunya di desa loa dan drawati, kecamatan paseh, kabupaten bandung, yang memiliki potensi agribisnis kopi dan hasil hutan lainnya. Pendampingan dimulai sejak pengajuan Perhutanan Sosial, kemudian penguatan kelembagaan petani dengan mendirikan koperasi produsen, sampai ke tahapan pendampingan pengolahan kopi (pasca panen).",
+
+
+    "__gallery.blade":"__gallery.blade",
+    "Activity Documentation":"Dokumentasi Kegiatan",
+
+
+    "__contact.blade":"__contact.blade",
+    "Contact Us":"Hubungi Kami",
+    "Address":"Alamat",
+    "Name":"Nama",
+    "Phone":"Telepon",
+    "Your Message":"Pesan Anda",
+    "Send":"Kirim"
 }

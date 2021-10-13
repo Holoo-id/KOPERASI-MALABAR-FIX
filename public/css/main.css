@@ -1,9 +1,10 @@
+@import url(https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 h2.section-title {
-  color: #0C94A4;
+  color: #DFBE77;
 }
 
 h1.page-title, h2.section-title-alt, h3.page-subtitle {
@@ -43,7 +44,7 @@ h3.page-subtitle {
 }
 
 .default-page .page-section {
-  margin-top: calc( 465px - 5rem );
+  margin-top: calc(465px - 5rem);
 }
 
 .section-content-wrap {
@@ -73,7 +74,7 @@ h3.page-subtitle {
 @media screen and (min-width: 768px) {
   .content-image2 {
     min-width: 30%;
-    max-width: calc( 100vw / 3 );
+    max-width: 33.3333333333vw;
   }
 }
 @media screen and (min-width: 1024px) {

@@ -85,84 +85,84 @@
         ">{{__("Organizational Structure")}}</h2>
         <div class="flex flex-wrap flex-row items-center sm:gap-6">
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2lkZSUyMHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" srcset="">
+            <img src="https://media.istockphoto.com/vectors/profile-picture-vector-illustration-vector-id587805156?k=20&m=587805156&s=612x612&w=0&h=Ok_jDFC5J1NgH20plEgbQZ46XheiAF8sVUKPvocne6Y=" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">{{__("Expert Council")}}</div>
               <p class="font-medium text-white">Drs. Dodi Syaripudin, S.AK, MBA.</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="http://fc05.deviantart.net/fs70/f/2011/070/0/d/katerina2_by_nerysoul-d3bezxd.jpg" alt="" srcset="">
+            <img src="https://media.istockphoto.com/vectors/profile-picture-vector-illustration-vector-id587805156?k=20&m=587805156&s=612x612&w=0&h=Ok_jDFC5J1NgH20plEgbQZ46XheiAF8sVUKPvocne6Y=" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">{{__("Expert Council")}}</div>
               <p class="font-medium text-white">DR. Sulistyo Rabono</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR71_ym1PTYZqW18pZbzxmOMvL3mBSx6lKq9g&usqp=CAU" alt="" srcset="">
+            <img src="https://media.istockphoto.com/vectors/profile-picture-vector-illustration-vector-id587805156?k=20&m=587805156&s=612x612&w=0&h=Ok_jDFC5J1NgH20plEgbQZ46XheiAF8sVUKPvocne6Y=" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">{{__("Expert Council")}}</div>
               <p class="font-medium text-white">Prof. Wisnu Gardjito, M.Sc</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="https://buffer.com/library/content/images/2020/05/Ash-Read.png" alt="" srcset="">
+            <img src="https://media.istockphoto.com/vectors/profile-picture-vector-illustration-vector-id587805156?k=20&m=587805156&s=612x612&w=0&h=Ok_jDFC5J1NgH20plEgbQZ46XheiAF8sVUKPvocne6Y=" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">{{__("Expert Council")}}</div>
               <p class="font-medium text-white">Ir. Elly Amalia, MP</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="https://www.adobe.com/express/create/media_141efea30cca217e8cb7fb3abb8ed9d663c29d550.jpeg?width=2000&format=webply&optimize=medium" alt="" srcset="">
+            <img src="{{asset('/fe/img/organisasi/Jayagama_Masri.jpg')}}" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">{{__("Administrator")}}</div>
               <p class="font-medium text-white">Ketua: Ir. Jayagama ME</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_1.jpg" alt="" srcset="">
+            <img src="{{asset('/fe/img/organisasi/M_Dhanny_R_N_S_Hut.jpg')}}" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">{{__("Administrator")}}</div>
               <p class="font-medium text-white">Sekretaris: Dhanny R. N, S.Hut</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="https://media.istockphoto.com/vectors/profile-picture-vector-illustration-vector-id587805156?k=20&m=587805156&s=612x612&w=0&h=Ok_jDFC5J1NgH20plEgbQZ46XheiAF8sVUKPvocne6Y=" alt="" srcset="">
+            <img src="{{asset('/fe/img/organisasi/Evi_Sri_Mulyati.jpg')}}" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">{{__("Administrator")}}</div>
               <p class="font-medium text-white">Bendahara: Evi Sri Mulyati</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" srcset="">
+            <img src="{{asset('/fe/img/organisasi/Dr_Denie_Heriyadi_Ir_MS.jpg')}}" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">{{__("Supervisor")}}</div>
               <p class="font-medium text-white">Dr.Deni Heriyadi Ir. MS (Ketua)</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx5miKgDTr7Gyopi7_Wd0-viiy9SvhuL4o5Q&usqp=CAU" alt="" srcset="">
+            <img src="{{asset('/fe/img/organisasi/Drs_Daeng_M_Ma’mur_Thahir.jpg')}}" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">{{__("Supervisor")}}</div>
               <p class="font-medium text-white">Drs. Daeng M Ma’mur Thahir</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="https://www.nationalgallery.org.uk/media/33502/n-2082-00-000020-hd.jpg?center=0.3190984578884935,0.65248226950354615&mode=crop&width=350&height=350&rnd=132385865221430000&bgcolor=fff" alt="" srcset="">
+            <img src="{{asset('/fe/img/organisasi/Ir_Muhammad_Sholeh.jpg')}}" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">{{__("Supervisor")}}</div>
               <p class="font-medium text-white">Ir. Muhammad Sholeh</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="https://cdn.idntimes.com/content-images/community/2020/10/lino9-283697ddadbf954d93a7ac66876270be.jpg" alt="" srcset="">
+            <img src="{{asset('/fe/img/organisasi/Robbie_Sartana.jpg')}}" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">{{__("Manager")}}</div>
               <p class="font-medium text-white">Kepala Divisi Trading: Robbie Sartana</p>
             </div>
           </div>
           <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFDYWTmPfgdRdqBuJIpKmMxxtvqd8JaffZhQ&usqp=CAU" alt="" srcset="">
+            <img src="{{asset('/fe/img/organisasi/Faqih_Asyikin.jpg')}}" alt="" srcset="">
             <div class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">{{__("Manager")}}</div>
               <p class="font-medium text-white">Kepala Divisi Community Dev: Faqih Asyikin</p>
@@ -185,7 +185,7 @@
             xl:w-7/12
             2xl:w-6/12
           ">
-            <video class="w-full" src="https://www.youtube.com/watch?v=8kiPjEeTaW4" controls playsinline></video>
+            <iframe class="w-full h-96" src="https://www.youtube.com/embed/VhE8IKetDD0" controls playsinline></iframe>
           </div>
           <h2 class="
             py-8 text-center font-normal capitalize text-2xl text-white
@@ -195,13 +195,13 @@
           ">{{__("Kopi Mitra Malabar Video Profile")}}
         </div>
         {{-- lompat --}}
-        <div class="section-content-wrap flex justify-center my-28">
+        <div class="section-content-wrap flex justify-center min-w-full my-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <img src="https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg" alt="" class="
+            <img src="{{asset('/fe/img/lompat/1.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12
+              lg:w-5/12 lg:min-h-full
             ">
-            <div class="section-content">
+            <div class="section-content lg:w-7/12">
               <h4 class="text-black font-black py-4 text-xl
                 md:text-2xl
                 lg:text-3xl
@@ -219,13 +219,13 @@
             </div>
           </div>
         </div>
-        <div class="section-content-wrap flex justify-center">
+        <div class="section-content-wrap flex justify-center min-w-full">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row-reverse">
-            <img src="https://c4.wallpaperflare.com/wallpaper/760/955/638/artwork-landscape-sky-mountains-wallpaper-preview.jpg" alt="" class="
+            <img src="{{asset('/fe/img/lompat/2.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12
+              lg:w-5/12 lg:min-h-full
             ">
-            <div class="section-content">
+            <div class="section-content lg:w-7/12">
               <h4 class="text-black text-right font-black py-4 text-xl
                 md:text-2xl
                 lg:text-3xl
@@ -240,13 +240,13 @@
             </div>
           </div>
         </div>
-        <div class="section-content-wrap flex justify-center my-28">
+        <div class="section-content-wrap flex justify-center min-w-full my-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <img src="https://wallpapershome.com/images/pages/ico_h/21456.jpg" alt="" class="
+            <img src="{{asset('/fe/img/lompat/3.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12
+              lg:w-5/12 lg:min-h-full
             ">
-            <div class="section-content">
+            <div class="section-content lg:w-7/12">
               <h4 class="text-black font-black py-4 text-xl
                 md:text-2xl
                 lg:text-3xl
@@ -263,11 +263,11 @@
         </div>
         <div class="section-content-wrap flex justify-center">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row-reverse">
-            <img src="https://wallpaperaccess.com/full/12887.jpg" alt="" class="
+            <img src="{{asset('/fe/img/lompat/4.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12
+              lg:w-5/12 lg:min-h-full
             ">
-            <div class="section-content">
+            <div class="section-content lg:w-7/12">
               <h4 class="text-black text-right font-black py-4 text-xl
                 md:text-2xl
                 lg:text-3xl
@@ -284,11 +284,11 @@
         </div>
         <div class="section-content-wrap flex justify-center my-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <img src="https://c4.wallpaperflare.com/wallpaper/826/153/158/artwork-anime-landscape-painting-wallpaper-preview.jpg" alt="" class="
+            <img src="{{asset('/fe/img/lompat/5.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12
+              lg:w-5/12 lg:min-h-full
             ">
-            <div class="section-content">
+            <div class="section-content lg:w-7/12">
               <h4 class="text-black font-black py-4 text-xl
                 md:text-2xl
                 lg:text-3xl
@@ -302,11 +302,11 @@
         </div>
         <div class="section-content-wrap flex justify-center">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row-reverse">
-            <img src="https://cdn.dribbble.com/users/234525/screenshots/5853076/eggsacrosstheuniverse.jpg" alt="" class="
+            <img src="{{asset('/fe/img/lompat/6.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12
+              lg:w-5/12 lg:min-h-full
             ">
-            <div class="section-content">
+            <div class="section-content lg:w-7/12">
               <h4 class="text-black text-right font-black py-4 text-xl
                 md:text-2xl
                 lg:text-3xl
@@ -320,11 +320,11 @@
         </div>
         <div class="section-content-wrap flex justify-center my-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <img src="https://lh3.googleusercontent.com/proxy/BfZravpTqw6vyz_9fFjwlUxwLMAvEwEXBYy6IK8gGp0-h3aIpZn0-5BbmWCFw6NQaQl5Qtw3tMkAwatTLO-yLMmTyBF2RbK0K9E9DajPAsW0ge_LPTkN_rr-AtIGoI8wTKmCAT1jjuJFezi8" alt="" class="
+            <img src="{{asset('/fe/img/lompat/7.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12
+              lg:w-5/12 lg:min-h-full
             ">
-            <div class="section-content">
+            <div class="section-content lg:w-7/12">
               <h4 class="text-black font-black py-4 text-xl
                 md:text-2xl
                 lg:text-3xl
@@ -338,11 +338,11 @@
         </div>
         <div class="section-content-wrap flex justify-center">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row-reverse">
-            <img src="https://cdn.pixabay.com/photo/2020/03/17/14/59/illustration-4940622_960_720.jpg" alt="" class="
+            <img src="{{asset('/fe/img/lompat/8.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12
+              lg:w-5/12 lg:min-h-full
             ">
-            <div class="section-content">
+            <div class="section-content lg:w-7/12">
               <h4 class="text-black text-right font-black py-4 text-xl
                 md:text-2xl
                 lg:text-3xl
@@ -356,11 +356,11 @@
         </div>
         <div class="section-content-wrap flex justify-center my-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <img src="https://c4.wallpaperflare.com/wallpaper/531/951/621/digital-digital-art-artwork-illustration-minimalism-hd-wallpaper-preview.jpg" alt="" class="
+            <img src="{{asset('/fe/img/lompat/9.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12
+              lg:w-5/12 lg:min-h-full
             ">
-            <div class="section-content">
+            <div class="section-content lg:w-7/12">
               <h4 class="text-black font-black py-4 text-xl
                 md:text-2xl
                 lg:text-3xl
@@ -374,11 +374,11 @@
         </div>
         <div class="section-content-wrap flex justify-center mb-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row-reverse">
-            <img src="https://wallpapercave.com/wp/wp2072884.jpg" alt="" class="
+            <img src="{{asset('/fe/img/lompat/10.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12
+              lg:w-5/12 lg:min-h-full
             ">
-            <div class="section-content">
+            <div class="section-content lg:w-7/12">
               <h4 class="text-black text-right font-black py-4 text-xl
                 md:text-2xl
                 lg:text-3xl
