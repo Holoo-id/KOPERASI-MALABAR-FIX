@@ -4,8 +4,10 @@
     "Profile":"Profil",
     "Article":"Artikel",
     "Product":"Produk",
+    "Program":"Program",
     "Training":"Pelatihan",
     "Gallery":"Galeri",
+    "News":"Berita",
     "Contact":"Kontak",
 
 
@@ -15,6 +17,8 @@
 
     "__home.blade":"__home.blade",
     "Agribusiness, Farming, Plantation":"Agribisnis, Pertanian, Perkebunan",
+    "INDONESIAN MALABAR COFFEE":"KOPI MALABAR INDONESIA",
+    "Special Selection of Coffee From Indonesia Malabar Mountain - West Java":"Kopi Pilihan Istimewa Dari Gunung Malabar Indonesia - Jawa Barat",
     "PARTNER":"BERMITRA",
     "Based upon the principles of cooperation, We are ready to become partners with various parties":"Koperasi Mitra Malabar siap bermitra dengan berbagai pihak berdasarkan prinsip-prinsip koperasi",
     "SHARING":"BERBAGI",

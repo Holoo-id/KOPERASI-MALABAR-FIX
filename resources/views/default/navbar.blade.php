@@ -1,6 +1,6 @@
 <header class="sticky z-50 flex top-0 items-center px-8 w-full justify-between font-medium nav-wrap text-white">
   <a href="{{ route('home', app()->getLocale()) }}" class="">
-    <img src="{{ asset('/fe/img/kmm-logo.png') }}" alt="Logo Mitra Malabar" class="logo-image p-4 h-20">
+    <img src="{{ asset('/fe/img/kopi-logo.png') }}" alt="Logo Mitra Malabar" class="logo-image p-4 h-20">
   </a>
   <nav class="
     navbar justify-center px-4 hidden
@@ -8,10 +8,10 @@
   ">
     <a href="{{ route('home', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Home') }}</a>
     <a href="{{ route('profil', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Profile') }}</a>
+    <a href="{{ route('home', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Program') }}</a>
     <a href="{{ route('articles', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Article') }}</a>
-    {{-- <a href="{{ route('home', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Product') }}</a>
-    <a href="{{ route('home', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Program') }}</a> --}}
-    <a href="{{ route('gallery', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Gallery') }}</a>
+    <a href="{{ route('home', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('News') }}</a>
+    <a href="{{ route('home', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Product') }}</a>
     <a href="{{ route('contact', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Contact') }}</a>
   </nav>
   <div class="hidden lg:block lang-switcher px-4">
@@ -46,10 +46,10 @@
   <ul class="flex flex-col text-right text-white">
     <a href="{{ route('home', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Home') }}</a>
     <a href="{{ route('profil', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Profile') }}</a>
+    <a href="{{ route('home', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Program') }}</a>
     <a href="{{ route('articles', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Article') }}</a>
-    {{-- <a href="{{ route('home', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Product') }}</a>
-    <a href="{{ route('home', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Program') }}</a> --}}
     <a href="{{ route('gallery', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('News') }}</a>
+    <a href="{{ route('home', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Product') }}</a>
     <a href="{{ route('contact', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Contact') }}</a>
   </ul>
 </div>
