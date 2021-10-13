@@ -45,58 +45,61 @@
             md:text-xl md:w-10/12
             lg:text-2xl
             xl:text-3xl xl:w-9/12
-          ">{{__("Koperasi Mitra Malabar has its finest division units, which is :")}}</p>
+          ">{{__("Indonesian Malabar Coffee cultivates Luwak with standard maintenance following the Five Animal Husbandry Business Program supported by experts in their fields. Indonesian Malabar Coffee has succeeded in cultivating civets, thus helping the conservation of this type of protected animal.")}}</p>
           <div class="section-content-wrap flex justify-center">
             <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-              <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (2 of 8).jpg') }}" alt="" class="
+              <!-- <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (2 of 8).jpg') }}" alt="" class="
                 border-4 border-white -my-8 flex-1 w-11/12
                 lg:w-5/12
-              ">
+              "> -->
+              <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/32.jpg" alt="" class="
+                border-4 border-white -my-8 flex-1 w-11/12
+                lg:w-5/12
+              " style="height:20rem">
               <div class="section-content">
                 <p class="py-4 text-gray-800 text-xl font-medium">
-                  {{__("Koperasi Mitra Malabar is a cooperatives production that has massive potential in supporting the well-being of West Java people's social economy")}}
-                </p>
-                <p class="py-4 text-gray-800 text-lg">
-                  {{__("We develop existing entrepreneurship to match the changes in the business environment without neglecting the spirit of team working and cooperation")}}
+                  {{__("Indonesian Malabar Coffee not only produces quality products but also applies a sustainable coffee production system by cultivating and gardening coffee that is environmentally friendly, not clearing forest areas. We are very concerned about the rules of forest conservation by maintaining stands in coffee plantation areas. Coffee plants, characteristically, plants will be able to carry out the ecological function of an area, the roots of coffee plants are able to open soil cavities and continue water to be stored in the soil layer, to withstand the rate of erosion that occurs. Coffee plants are also able to capture carbon emissions circulating in the air.")}}
                 </p>
               </div>
             </div>
           </div>
         </div>
-        {{-- divisi --}}
-        <div class="w-11/12 mx-auto mt-28 flex flex-col items-center justify-center">
+        {{-- program --}}
+        <div id="program" class="w-11/12 mx-auto mt-28 flex flex-col items-center justify-center">
           <h2 class="
             section-title py-8 text-center font-black capitalize text-2xl w-11/12
             md:text-3xl md:w-10/12
             lg:text-4xl
             xl:text-5xl xl:w-9/12
             2xl:w-8/12
-          ">{{__("Our Division")}}</h2>
+          ">{{__("Our Program")}}</h2>
           <p class="
             text-center text-lg mb-8 text-gray-800 w-11/12
             md:text-xl md:w-10/12
             lg:text-2xl
             xl:text-3xl xl:w-9/12
-          ">{{__("Koperasi Mitra Malabar has its finest division units, which is :")}}</p>
+          ">{{__("The following is our program to achieve a prosperous and prosperous society")}}</p>
         </div>
         <div class="flex flex-col items-center lg:flex-row justify-evenly gap-8">
           <div class="content-image flex-1 border-4 border-white shadow-md relative">
-            <img src="{{asset('/fe/img/9.png')}}" alt="" srcset="">
+            <!-- <img src="{{asset('/fe/img/9.png')}}" alt="" srcset=""> -->
+            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/5.jpg" alt="" srcset="">
             <a href="{{ route('profil', app()->getLocale()) }}" class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">{{__("PROFILE")}}</div>
-              <p class="font-medium text-white">{{__("To know more about us")}}</p>
+              <!-- <div class="text-white font-black">{{__("PROFILE")}}</div> -->
+              <div class="text-white font-black">LMDH - KTH RAHAYU TANI</div>
+              <p class="font-medium text-white">{{__("Realizing forest conservation to achieve a prosperous and prosperous society")}}</p>
             </a>
           </div>
           <div class="content-image flex-1 border-4 border-white shadow-md relative">
-            <img src="{{asset('/fe/img/10.png')}}" alt="" srcset="">
+            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/42.jpg" alt="" srcset="">
             <a href="" class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">{{__("TRAINING")}}</div>
-              <p class="font-medium text-white">{{__("To join our training in agribusiness")}}</p>
+              <div class="text-white font-black">P4S Rahayu Tani Malabar</div>
+              <p class="font-medium text-white">{{__("Educational institutions in agriculture and rural areas")}}</p>
             </a>
           </div>
         </div>
         {{-- info --}}
-        <div class="mx-auto bg-gray-200 pt-32 pb-16">
+        <div class="mx-auto bg-gray-100 pt-32 pb-16">
           <h2 class="
             section-title pb-16 text-center font-black capitalize text-2xl
             md:text-3xl

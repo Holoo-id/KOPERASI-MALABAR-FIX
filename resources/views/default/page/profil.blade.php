@@ -14,158 +14,31 @@
         ">{{__('About Us')}}</h2>
         <div class="section-content-wrap flex justify-center mb-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <img src="{{asset('/fe/img/9.png')}}" alt="" class="
+            <!-- <img src="{{asset('/fe/img/9.png')}}" alt="" class="
+              border-4 border-white -my-8 flex-1 w-11/12
+              lg:w-5/12
+            "> -->
+            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/06/profmal.jpg" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
               lg:w-5/12
             ">
             <div class="section-content">
               <p class="py-4 text-gray-800">
-                {{__("A cooperatives production that specialized in agribusiness consist of people that cares in Indonesian social economy and plantation and agricultural development, involving people from various professions")}}
-              </p>
-              <p class="py-4 text-gray-800">
-                {{__("West Java Koperasi Mitra Malabar (KMM) was established based on the concern of farmers and villagers. We hope that starting this cooperatives production will make the village's economy and the farmer's prosperity thrive fluently.")}}
+                {{__("Indonesian Malabar Coffee cultivates Luwak with standard maintenance following the Five Animal Husbandry Business Program supported by experts in their fields. Indonesian Malabar Coffee has succeeded in cultivating civets, thus helping the conservation of this type of protected animal.")}}
               </p>
             </div>
           </div>
         </div>
         <div class="section-content-wrap flex justify-center">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row-reverse">
-            <img src="{{asset('/fe/img/Aset_MitraMalabar_ (6 of 8).jpg')}}" alt="" class="
+            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/pemberdayaan.jpg" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
               lg:w-5/12
             ">
             <div class="section-content">
               <p class="py-4 text-right text-gray-800">
-                {{__("Focused on the enhancement of the added value of plantation and agricultural products to improve the prosperity of our members and also society in general")}}
+                {{__("Indonesian Malabar Coffee not only produces quality products but also applies a sustainable coffee production system by cultivating and gardening coffee that is environmentally friendly, not clearing forest areas. We are very concerned about the rules of forest conservation by maintaining stands in coffee plantation areas. Coffee plants, characteristically, plants will be able to carry out the ecological function of an area, the roots of coffee plants are able to open soil cavities and continue water to be stored in the soil layer, to withstand the rate of erosion that occurs. Coffee plants are also able to capture carbon emissions circulating in the air.")}}
               </p>
-              <p class="py-4 text-right text-gray-800">
-                {{__("We develop existing entrepreneurship to match the changes in the business environment without neglecting the spirit of team working and cooperation")}}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      {{-- visi misi --}}
-      <div class="mx-auto flex flex-col items-center">
-        <h2 class="
-          section-title py-8 text-center font-black capitalize text-2xl mt-24 mb-4
-          md:text-3xl
-          lg:text-4xl
-          xl:text-5xl
-        ">{{__("Vision & Mission")}}</h2>
-        <p class="
-          text-center w-10/12 text-lg text-gray-800
-          md:text-xl
-          lg:text-2xl
-          xl:text-3xl
-          ">{{__("To become the biggest cooperatives production network in West Java in 2025, integrate with other parties that also concern with social economy and indonesian prime commodity, and become partnership using the \"philosophy of sharing\" that is fair and environmentally friendly.")}}
-        </p>
-        <div class="border-1 border-black w-8/12 h-px bg-black my-12"></div>
-        <ul class="
-          text-left w-10/12 text-lg mb-4 text-gray-800 list-disc px-12
-          md:text-xl
-          lg:text-2xl
-          xl:text-3xl
-          ">
-          <li>{{__("Improve the prosperity of farmer, food processor, and marketer")}}</li>
-          <li>{{__("Uplift excellent local commodities that have added value and are beneficial")}}</li>
-          <li>{{__("Integrate upstream, processing, and downstream activities.")}}</li>
-          <li>{{__("Give excellent and beneficial products to consumers")}}</li>
-          <li>{{__("Grow the spirit of \"cooperating\" to the young generation.")}}</li>
-          <li>{{__("Build integrated agroforestry and agro-industry in the upstream, midstream, and downstream drainage basin.")}}</li>
-        </ul>
-      </div>
-      {{-- struktur --}}
-      <div class="mx-auto flex flex-col items-center">
-        <h2 class="
-          section-title py-8 text-center font-black capitalize text-2xl mt-24 mb-4
-          md:text-3xl
-          lg:text-4xl
-          xl:text-5xl
-        ">{{__("Organizational Structure")}}</h2>
-        <div class="flex flex-wrap flex-row items-center sm:gap-6">
-          <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="https://media.istockphoto.com/vectors/profile-picture-vector-illustration-vector-id587805156?k=20&m=587805156&s=612x612&w=0&h=Ok_jDFC5J1NgH20plEgbQZ46XheiAF8sVUKPvocne6Y=" alt="" srcset="">
-            <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">{{__("Expert Council")}}</div>
-              <p class="font-medium text-white">Drs. Dodi Syaripudin, S.AK, MBA.</p>
-            </div>
-          </div>
-          <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="https://media.istockphoto.com/vectors/profile-picture-vector-illustration-vector-id587805156?k=20&m=587805156&s=612x612&w=0&h=Ok_jDFC5J1NgH20plEgbQZ46XheiAF8sVUKPvocne6Y=" alt="" srcset="">
-            <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">{{__("Expert Council")}}</div>
-              <p class="font-medium text-white">DR. Sulistyo Rabono</p>
-            </div>
-          </div>
-          <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="https://media.istockphoto.com/vectors/profile-picture-vector-illustration-vector-id587805156?k=20&m=587805156&s=612x612&w=0&h=Ok_jDFC5J1NgH20plEgbQZ46XheiAF8sVUKPvocne6Y=" alt="" srcset="">
-            <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">{{__("Expert Council")}}</div>
-              <p class="font-medium text-white">Prof. Wisnu Gardjito, M.Sc</p>
-            </div>
-          </div>
-          <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="https://media.istockphoto.com/vectors/profile-picture-vector-illustration-vector-id587805156?k=20&m=587805156&s=612x612&w=0&h=Ok_jDFC5J1NgH20plEgbQZ46XheiAF8sVUKPvocne6Y=" alt="" srcset="">
-            <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">{{__("Expert Council")}}</div>
-              <p class="font-medium text-white">Ir. Elly Amalia, MP</p>
-            </div>
-          </div>
-          <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="{{asset('/fe/img/organisasi/Jayagama_Masri.jpg')}}" alt="" srcset="">
-            <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">{{__("Administrator")}}</div>
-              <p class="font-medium text-white">Ketua: Ir. Jayagama ME</p>
-            </div>
-          </div>
-          <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="{{asset('/fe/img/organisasi/M_Dhanny_R_N_S_Hut.jpg')}}" alt="" srcset="">
-            <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">{{__("Administrator")}}</div>
-              <p class="font-medium text-white">Sekretaris: Dhanny R. N, S.Hut</p>
-            </div>
-          </div>
-          <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="{{asset('/fe/img/organisasi/Evi_Sri_Mulyati.jpg')}}" alt="" srcset="">
-            <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">{{__("Administrator")}}</div>
-              <p class="font-medium text-white">Bendahara: Evi Sri Mulyati</p>
-            </div>
-          </div>
-          <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="{{asset('/fe/img/organisasi/Dr_Denie_Heriyadi_Ir_MS.jpg')}}" alt="" srcset="">
-            <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">{{__("Supervisor")}}</div>
-              <p class="font-medium text-white">Dr.Deni Heriyadi Ir. MS (Ketua)</p>
-            </div>
-          </div>
-          <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="{{asset('/fe/img/organisasi/Drs_Daeng_M_Ma’mur_Thahir.jpg')}}" alt="" srcset="">
-            <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">{{__("Supervisor")}}</div>
-              <p class="font-medium text-white">Drs. Daeng M Ma’mur Thahir</p>
-            </div>
-          </div>
-          <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="{{asset('/fe/img/organisasi/Ir_Muhammad_Sholeh.jpg')}}" alt="" srcset="">
-            <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">{{__("Supervisor")}}</div>
-              <p class="font-medium text-white">Ir. Muhammad Sholeh</p>
-            </div>
-          </div>
-          <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="{{asset('/fe/img/organisasi/Robbie_Sartana.jpg')}}" alt="" srcset="">
-            <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">{{__("Manager")}}</div>
-              <p class="font-medium text-white">Kepala Divisi Trading: Robbie Sartana</p>
-            </div>
-          </div>
-          <div class="content-image2 flex-grow flex-1 border-4 border-white shadow-md relative">
-            <img src="{{asset('/fe/img/organisasi/Faqih_Asyikin.jpg')}}" alt="" srcset="">
-            <div class="image-content absolute bottom-0 p-4">
-              <div class="text-white font-black">{{__("Manager")}}</div>
-              <p class="font-medium text-white">Kepala Divisi Community Dev: Faqih Asyikin</p>
             </div>
           </div>
         </div>
@@ -177,216 +50,190 @@
           md:text-3xl
           lg:text-4xl
           xl:text-5xl
-        ">{{__("HISTORY")}}</h2>
-        <div class="video-content-wrap flex flex-col items-center p-8 mt-36 w-full">
-          <div class="
-            video-thumbnail border-white w-full
-            md:w-9/12
-            xl:w-7/12
-            2xl:w-6/12
-          ">
-            <iframe class="w-full h-96" src="https://www.youtube.com/embed/VhE8IKetDD0" controls playsinline></iframe>
-          </div>
-          <h2 class="
-            py-8 text-center font-normal capitalize text-2xl text-white
-            md:text-3xl
-            lg:text-4xl
-            xl:text-5xl
-          ">{{__("Kopi Mitra Malabar Video Profile")}}
-        </div>
-        {{-- lompat --}}
+        ">{{__("MALABAR COFFEE JOURNEY")}}</h2>
+        {{-- JOURNEY --}}
         <div class="section-content-wrap flex justify-center min-w-full my-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <img src="{{asset('/fe/img/lompat/1.jpg')}}" alt="" class="
+            <!-- <img src="{{asset('/fe/img/lompat/1.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12 lg:min-h-full
+              lg:w-5/12 lg:
+            "> -->
+            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/pola1.jpg" alt="" class="
+              border-4 border-white -my-8 flex-1 w-11/12
+              lg:w-5/12 lg:
             ">
             <div class="section-content lg:w-7/12">
               <h4 class="text-black font-black py-4 text-xl
                 md:text-2xl
                 lg:text-3xl
                 xl:text-4xl
-              ">{{__("2009 - Starting Point")}}</h4>
+              ">2001</h4>
               <p class="py-4 text-gray-800">
-                {{__("\"There is always wisdom in every event\". In the year 2009, an earthquake happened in Pangalengan, South Bandung.")}}
+                {{__("The Rahayu Farmers Group engaged in horticultural cultivation was inaugurated on 24 September 1992, then on 17 May 2001 based on the results of a member meeting under the leadership of Mr. Supriatna Dinuri, the Rahayu farmer group agreed to only plant one commodity, namely coffee. After switching to coffee plantations, this group shrunk to 7 members, some of the farmers did not want to join until they saw the benefits of coffee. Farmers have not gotten the maximum benefit from the coffee plant because they still sell coffee in the form of cherries.")}}
               </p>
               <p class="py-4 text-gray-800">
-                {{__("Haji Jayagama with his community did some post-earthquake recovery activities there.")}}
-              </p>
-              <p class="py-4 text-gray-800">
-                {{__("He met various public figures who have remarkable commitment and passion in revitalizing villages after being badly affected by the earthquake.")}}
+                {{__("Over time, with the ups and downs faced by the members and balanced by the better coffee yields, the number of members of the farmer group increased. In 2009, LMDH Rahayu Tani obtained the right to manage the Pangkuan Village Forest from PERHUTANI KPH South Bandung, BKPH Banjaran RPH Logawa covering an area of 60 hectares with a PHBM pattern.")}}
               </p>
             </div>
           </div>
         </div>
         <div class="section-content-wrap flex justify-center min-w-full">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row-reverse">
-            <img src="{{asset('/fe/img/lompat/2.jpg')}}" alt="" class="
+            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/kegiatans1.jpg" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12 lg:min-h-full
+              lg:w-5/12 lg:
             ">
             <div class="section-content lg:w-7/12">
               <h4 class="text-black text-right font-black py-4 text-xl
                 md:text-2xl
                 lg:text-3xl
                 xl:text-4xl
-              ">{{__("2010-2011 - Uplifting The Village Economy Potention")}}</h4>
+              ">2009</h4>
               <p class="py-4 text-right text-gray-800">
-                {{__("One of the post-earthquake recovery activities relevant to the economic sector was developing public plantations in the Pangalengan region, one of the famous production centers of coffee in West Java.")}}
+                {{__("In 2009, the Pangalengan area experienced an earthquake, Ir. Jayaagama ME held a social service activity in the form of a Mass Kitchen for several days closed with Mass Medicine to at least reduce the burden and increase the motivation of earthquake victims in Margamulya Village, the majority of which are coffee farmers.")}}
               </p>
               <p class="py-4 text-right text-gray-800">
-                {{__("Two years building the Kopi Malabar, many unexpected things happened. Besides the surprisingly high economic opportunity, it turns out there were lots of knowledge about coffee and its ins and outs that were unknown to farmers and people.")}}
+                {{__("This social service activity resulted in an idea, how to improve the welfare of the community, especially coffee farmers considering that coffee is an Indonesian export commodity.")}}
               </p>
+              <p class="py-4 text-right text-gray-800">
+                {{__('Furthermore, in order to approach the community to explore the existing potential, the Social Service Team implemented a coffee farmer community empowerment program through "caring livestock" activities which were the first step in an effort to help restore the economy of the Coffee Farmer community. The “Livestock Care” activity is a program to provide assistance for cattle, sheep and rabbits to several coffee farmers, the results of these efforts are redistributed to other farmers in need.')}}
+              </p>
+              <p class="py-4 text-right text-gray-800">
+                {{__("This activity is the starting point for the business that was pioneered in the coffee sector, the forerunner of Indonesian Malabar Coffee with the principle of Partnering Sharing Care between Mr. Jayaagama and Mr. Supriatna Dinuri.")}}
+              </p>
+              <p class="py-4 text-right text-gray-800 font-bold">
+                {{__("RAHAYU COFFEE FARMER GROUP AWARD")}}
+              </p>
+              <ol class="py-4 text-gray-800 list-decimal list-outside">
+                <li>
+                  {{__("Food Security Award Charter (Vice President of the Republic of Indonesia) – Rahayu Farmers Group")}}
+                </li>
+                <li>
+                  {{__("Certificate of Award for Plantation Post-Harvest Business Actor (Director General of P2HP-Ministry of Agriculture")}}
+                </li>
+                <li>
+                  {{__("Food Security Award in the Field of Processing and Marketing")}}
+                </li>
+                <li>
+                  {{__("Award Charter for Exemplary Farmer Group Leader")}}
+                </li>
+                <li>
+                  {{__("Award Charter for Integrated Pest Management (IPM) West Java Plantation Farmers Group")}}
+                </li>
+                <li>
+                  {{__("Certificate of Quality Improvement of Coffee Plantation")}}
+                </li>
+              </ol>
             </div>
           </div>
         </div>
         <div class="section-content-wrap flex justify-center min-w-full my-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <img src="{{asset('/fe/img/lompat/3.jpg')}}" alt="" class="
+            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/kantor-desa1.jpg" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12 lg:min-h-full
+              lg:w-5/12 lg:
             ">
             <div class="section-content lg:w-7/12">
               <h4 class="text-black font-black py-4 text-xl
                 md:text-2xl
                 lg:text-3xl
                 xl:text-4xl
-              ">{{__("2012 - Establishing the Cooperatives")}}</h4>
-              <p class="py-4 text-gray-800">
-                {{__("During the two years in uplifting the village economic potential, Kopi Malabar founders agree to establish cooperatives that accommodate Bandung's farmers and coffee processors.")}}
-              </p>
-              <p class="py-4 text-gray-800">
-                {{__("After consulting with many West Java cooperatives figures and the provincial cooperative service, they advised establishing these cooperatives as provincial-level cooperatives. The reason was to accommodate all farmers, processors, and activists in West Java.")}}
-              </p>
+              ">2010</h4>
+              <ol class="text-gray-800 list-decimal list-outside">
+                <li class="font-bold pt-4">
+                  {{__("ESTABLISHED PT NUGA RAMITRA (COFFEE MALABAR INDONESIA)")}}
+                  <p class="font-normal pb-2">{{__("Cooperation Agreement on Plantation Management and Coffee Processing between Indonesian Malabar Coffee and LMDH Rahayu Tani Indonesian Malabar Coffee gets a patent for the MALABAR KOPI Brand from HAKI, September 2010 Construction and renovation of office facilities in Pasir Mulya Village")}}</p>
+                </li>
+                <li class="font-bold pt-4">
+                  {{__("COFFEE LAND DEVELOPMENT")}}
+                  <p class="font-normal pb-2">{{__("Revitalization of Abandoned Cultivated Land, New Coffee Garden Planting, Development of Indonesian Malabar Coffee Seedlings")}}</p>
+                </li>
+                <li class="font-bold pt-4">
+                  {{__("DEVELOPMENT OF MALABAR LUWAK COFFEE")}}
+                  <p class="font-normal pb-2">{{__("Civet Breeding, Civet Cultivation Development, Development, Civet Cultivation, Treatment Methods, Development of Representative Civet Cage Facilities")}}</p>
+                </li>
+                <li class="font-bold pt-4">
+                  {{__("PARTNERSHIP PROGRAM WITH PERHUTANI")}}
+                  <p class="font-normal pb-2">{{__("The achievement achieved by Kopi Malabar Indonesia has improved its image so that Perhutani has provided additional PHBM land from PERHUTANI of 100.00 Ha, bringing the total arable land to 238.50 Ha.")}}</p>
+                </li>
+              </ol>
             </div>
           </div>
         </div>
         <div class="section-content-wrap flex justify-center">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row-reverse">
-            <img src="{{asset('/fe/img/lompat/4.jpg')}}" alt="" class="
+            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/roasting.jpg" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12 lg:min-h-full
+              lg:w-5/12 lg:
             ">
             <div class="section-content lg:w-7/12">
               <h4 class="text-black text-right font-black py-4 text-xl
                 md:text-2xl
                 lg:text-3xl
                 xl:text-4xl
-              ">{{__("2012-2013 - The First Leap")}}</h4>
-              <p class="py-4 text-right text-gray-800">
-                {{__("The excellence and popularity of the Java Preanger Coffee have been a legend in our country since the old days. The excellence and popularity of the Java Preanger Coffee have been a legend in our country since the old days. But not all coffee can be cultivated and processed to become an excellent coffee with the old day's taste.")}}
-              </p>
-              <p class="py-4 text-right text-gray-800">
-                {{__("This fact in the ways of breeding coffee was one of the foundations that the coffee society needs to prepare by empowering resources to stimulate the stakeholders to have concern on the importance of excel seeds in coffee cultivation.")}}
-              </p>
+              ">2011</h4>
+              <ol class="text-gray-800 list-decimal list-outside">
+                <li class="font-bold pt-4">
+                  {{__("IMPROVING THE QUALITY OF INDONESIAN MALABAR COFFEE")}}
+                  <ul class="text-gray-800 list-disc list-inside">
+                    <li class="font-normal pb-2">{{__("Assistance by Experts from PUM Netherland, Mr. Sipke de Schriffat")}}</li>
+                    <li class="font-normal pb-2">{{__("Addition of Coffee Processing Facilities in the form of Factories, Warehouses, and Roasting Machines.")}}</li>
+                  </ul>
+                </li>
+                <li class="font-bold pt-4">
+                  {{__("INDONESIA MALABAR COFFEE AWARD")}}
+                  <ul class="text-gray-800 list-disc list-inside">
+                    <li class="font-normal pb-2">{{__("Puslitkoka Jember : 3 Best National Coffee Flavors")}}</li>
+                    <li class="font-normal pb-2">{{__("Puslitkoka Jember: Civet Cage Management is the CLEANEST in Indonesia")}}</li>
+                    <li class="font-normal pb-2">{{__("Coffee Seed Certification from BP2MB JABAR.")}}</li>
+                    <li class="font-normal pb-2">{{__("Determination as Middle Class P4S.")}}</li>
+                  </ul>
+                </li>
+                <li class="font-bold pt-4">
+                  {{__("DEVELOPMENT OF FACILITIES AND INFRASTRUCTURE")}}
+                  <p class="font-normal pb-2">{{__("Operational Vehicles, Food Stalls, Downstream Processing Plants, Coffee Warehouses and Sorting Rooms, Malabar Training Building")}}</p>
+                </li>
+                <li class="font-bold pt-4">
+                  {{__("COMMUNITY EMPOWERMENT PROGRAM PLANNING")}}
+                  <p class="font-normal pb-2">{{__("Sustainable Development, One Village One Product / OVOP, Amanah Foundation, Malabar Coffee Village")}}</p>
+                </li>
+              </ol>
             </div>
           </div>
         </div>
         <div class="section-content-wrap flex justify-center my-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <img src="{{asset('/fe/img/lompat/5.jpg')}}" alt="" class="
+            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/koperasis.jpg" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12 lg:min-h-full
+              lg:w-5/12 lg:
             ">
             <div class="section-content lg:w-7/12">
               <h4 class="text-black font-black py-4 text-xl
                 md:text-2xl
                 lg:text-3xl
                 xl:text-4xl
-              ">{{__("2013 - Leaping Together")}}</h4>
-              <p class="py-4 text-gray-800">
-                {{__("We realize that problems in upstream, midstream, and downstream coffee production stages were complex and not just a few. KMM initiate the forming the \"Clearing House Kopi Jawa Barat\" forum (CHK Jabar). This forum was for mediating stakeholders with various professions and jobs, covering from upstream to downstream production. We hoped that this forum would solve the likely-unsolvable dire straits. We also hoped that this forum would give us clear information while also distribute it to all involving parties so that West Java's coffee trading would be well-arranged.")}}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section-content-wrap flex justify-center">
-          <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row-reverse">
-            <img src="{{asset('/fe/img/lompat/6.jpg')}}" alt="" class="
-              border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12 lg:min-h-full
-            ">
-            <div class="section-content lg:w-7/12">
-              <h4 class="text-black text-right font-black py-4 text-xl
-                md:text-2xl
-                lg:text-3xl
-                xl:text-4xl
-              ">{{__("2013 - The High-Risk Third Leap")}}</h4>
-              <p class="py-4 text-right text-gray-800">
-                {{__("The Clearing House Kopi Jawa Barat forum was appointed by the governor of West Java in the same year when West Java society's coffee got an order from Morocco. The trading scheme was built upon fair-trade patterned trading. The partnership concept was disclosing the price from the West Java farmers without concealing it, the same as for Morocco's buyer or importer. This trade was hazardous because the product was not using any letter of credit and would only be paid after it was sold in Morocco.")}}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section-content-wrap flex justify-center my-28">
-          <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <img src="{{asset('/fe/img/lompat/7.jpg')}}" alt="" class="
-              border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12 lg:min-h-full
-            ">
-            <div class="section-content lg:w-7/12">
-              <h4 class="text-black font-black py-4 text-xl
-                md:text-2xl
-                lg:text-3xl
-                xl:text-4xl
-              ">{{__("2014-2015 - The Fourth Leap")}}</h4>
-              <p class="py-4 text-gray-800">
-                {{__("We cannot simply separate Nusantara's Coffee Culture from the various local wisdom in Indonesia. KMM with the Ministry of Cooperative and SMEs initiate the market's forum with Indonesian coffee farmers. Our first meeting regarding the topic was at Bandung in late 2003. In 2014, through the Promotion of Excel Products in the Region with SMEs and the Ministry of Cooperative, we opened the Rumah Kopi Nusantara in Jakarta's Taman Mini Indonesia Indah.")}}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section-content-wrap flex justify-center">
-          <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row-reverse">
-            <img src="{{asset('/fe/img/lompat/8.jpg')}}" alt="" class="
-              border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12 lg:min-h-full
-            ">
-            <div class="section-content lg:w-7/12">
-              <h4 class="text-black text-right font-black py-4 text-xl
-                md:text-2xl
-                lg:text-3xl
-                xl:text-4xl
-              ">{{__("2016-2017 - The Fifth Leap")}}</h4>
-              <p class="py-4 text-right text-gray-800">
-                {{__("In early 2016, Koperasi Mitra Malabar Jawa Barat was discussing with farmers and other public figures at Parigi, District Pangandaran, West Java, which is a region that was known to have coconut commodity potential but yet to optimized its potential. And so in November 2016, KMM established of Koperasi Produsen Mitra Kelapa (KPMK) of Pangandaran District. A year later, in October 2017, KMM built an integrated coconut processing factory to increase the added value of coconut.")}}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section-content-wrap flex justify-center my-28">
-          <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <img src="{{asset('/fe/img/lompat/9.jpg')}}" alt="" class="
-              border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12 lg:min-h-full
-            ">
-            <div class="section-content lg:w-7/12">
-              <h4 class="text-black font-black py-4 text-xl
-                md:text-2xl
-                lg:text-3xl
-                xl:text-4xl
-              ">{{__("2017-2018 - The Sixth Leap")}}</h4>
-              <p class="py-4 text-gray-800">
-                {{__("We optimized the land around the coconut plantation for cultivating fragrant lemongrass as an alternative source of income for farmers when not harvesting coconut. We optimized the land around the coconut plantation for cultivating fragrant lemongrass as an alternative source of income for farmers when not harvesting coconut. To raise the added value of the leaf of fragrant lemongrass, the leaf will be distilled and turn into essential oil. And then, it will be processed into derivative products like soap or carbolic acid.")}}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section-content-wrap flex justify-center mb-28">
-          <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row-reverse">
-            <img src="{{asset('/fe/img/lompat/10.jpg')}}" alt="" class="
-              border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12 lg:min-h-full
-            ">
-            <div class="section-content lg:w-7/12">
-              <h4 class="text-black text-right font-black py-4 text-xl
-                md:text-2xl
-                lg:text-3xl
-                xl:text-4xl
-              ">{{__("2019-2020 - The Seventh Leap")}}</h4>
-              <p class="py-4 text-right text-gray-800">
-                {{__("The Ministry of Environment & Forestry's Social Forestry Program campaigned in the last four years. To support this Social Forestry Program, KMM gives guidance to several villages and the Lembaga Masyarakat Desa Hutan (LMDH) in West Java. One of the villages was Loa and Drawati in Paseh, Bandung, which has agribusiness potential in coffee and other forest products. The guidance starts from the submission of the Social Forestry Program, enforcement of farmer institutions by making producer cooperatives until the guidance in the coffee processing phase (post-harvest phase).")}}
-              </p>
+              ">2012</h4>
+              <ol class="text-gray-800 list-decimal list-outside">
+                <li class="font-bold pt-4">
+                  {{__("ESTABLISHING PARTNERS COOPERATIVES MALABAR JABAR PROVINCE")}}
+                  <ul class="text-gray-800 list-disc list-inside">
+                    <li class="font-normal pb-2">{{__("Mitra Malabar Cooperative was established based on the Notarial Deed of T. Martin Arifin, SH No 16 (20 June 2012)")}}</li>
+                    <li class="font-normal pb-2">{{__("Cooperative Activities: Coffee Trading, Training and Provision of Coffee Plant Production Facilities")}}</li>
+                  </ul>
+                </li>
+                <li class="font-bold pt-4">
+                  {{__("NATIONAL ASSESSMENT OF INDONESIAN MALABAR COFFEE")}}
+                  <p class="font-normal pb-2">{{__("3 Best Flavors at SCAI Coffee Auction, Expert Team for Compilation of RSKKNI for Civet Coffee Production – Ministry of Agriculture, Head of AKLI (Indonesian Civet Coffee Association) West Java Province, Place for Competency Test for Civet Cultivation AKLI Recommendations, Malabar Training to become P4S Main level")}}</p>
+                </li>
+                <li class="font-bold pt-4">
+                  {{__("DEVELOPMENT OF INDONESIAN MALABAR COFFEE FACILITIES")}}
+                  <p class="font-normal pb-2">{{__("Cowshed, Gazebo, Saprotan Warehouse, Mini Café, Cooperative Office")}}</p>
+                </li>
+                <li class="font-bold pt-4">
+                  {{__("PARTNERSHIP PROGRAM WITH PERHUTANI")}}
+                  <p class="font-normal pb-2">{{__("Prestasi yang diraih Kopi Malabar Indonesia meningkatkan citra sehingga perhutani memberi tambahan lahan garapan PHBM dari PERHUTANI 100,00 Ha sehingga total lahan garapan menjadi 238.50 Ha.")}}</p>
+                </li>
+              </ol>
             </div>
           </div>
         </div>
