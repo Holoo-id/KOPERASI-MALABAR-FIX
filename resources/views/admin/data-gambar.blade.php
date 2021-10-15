@@ -13,7 +13,7 @@
         <div class="card-body">
           <div class="toolbar">
             <div class="row mt-3">
-            <button class="btn bg-primary" data-toggle="modal" data-target="#gambarBaru">
+                <button class="btn bg-primary m-4" data-toggle="modal" data-target="#gambarBaru">
                   Tambah Gambar
                 </button>
              
@@ -26,7 +26,7 @@
                 <div class="card">
                   <div class="card-header card-header-danger">
                     <a href="#" class="d-block blur-shadow-image">
-                      <img src="{{ asset('storage/images/contents/'.$g->gambar) }}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                      <img src="{{ asset('/public/fe/img/contents/'.$g->gambar) }}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
                     </a>
                   </div>
                   <div class="card-body">
@@ -73,8 +73,8 @@
               <div class="form-group">
                 <input type="text" name="judul_gambar" class="form-control">
                 @if($errors->has('judul_gambar'))
-                      <span class="text-danger">{{ $errors->first('judul_gambar') }}</span>
-                      @endif
+                    <span class="text-danger">{{ $errors->first('judul_gambar') }}</span>
+                @endif
               </div>
             </div>
           </div>
@@ -84,8 +84,8 @@
               
                 <input type="file" name="gambar" class="form-control">
                 @if($errors->has('gambar'))
-                      <span class="text-danger">{{ $errors->first('gambar') }}</span>
-                      @endif
+                  <span class="text-danger">{{ $errors->first('gambar') }}</span>
+                @endif
             
             </div>
           </div>
@@ -99,4 +99,4 @@
   </div>
 </div>
 
-@endsection 
+@endsection

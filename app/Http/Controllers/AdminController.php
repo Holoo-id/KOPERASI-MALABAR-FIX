@@ -20,9 +20,9 @@ class AdminController extends Controller
        $file = $request->upload;
        $namaFile = $file->getClientOriginalName();
        $namaBaru = time().$namaFile;
-       $uploaded = "public/fe/img/upload/";
+       $uploaded = "fe/img/upload/";
        $file->move($uploaded,$namaBaru);
-       $url = asset('public/fe/img/upload/'.$namaBaru);
+       $url = asset('fe/img/upload/'.$namaBaru);
        $CkeditorFuncNum = $request->input('CKEditorFuncNum');
        $status = "<script>window.parent.CKEDITOR.tools.callFunction('$CkeditorFuncNum','$url','Gambar Telah Berhasil Di Upload')</script>";
         echo $status;
@@ -47,6 +47,7 @@ class AdminController extends Controller
     public function buatArtikel(Request $request){
         $messages = [
             'required'=> 'Judul Wajib Diisi.',
+            'kategori.required'=> 'Kategori Wajib Diisi.',
             'deskripsi.required'=> 'Deskripsi Wajib Diisi.',
             'tanggal.required' => 'Tanggal Wajib Diisi.',
             'gambar.required' => 'Gambar Wajib Diisi.',
@@ -55,6 +56,7 @@ class AdminController extends Controller
         ];
         $request->validate([
             'judul'=> 'required|min:7',
+            'kategori'=> 'required',
             'deskripsi'=> 'required',
             'tanggal' => 'required',
             'gambar' => 'required',
@@ -62,8 +64,8 @@ class AdminController extends Controller
         ],$messages);
         
         $uploadedFile = $request->file('gambar');
-        $uploadedFile->move("public/fe/img/contents/", $uploadedFile->getClientOriginalName());
-        $image_path = "public/fe/img/contents/".$request->in_img_title;
+        $uploadedFile->move("fe/img/contents/", $uploadedFile->getClientOriginalName());
+        $image_path = "fe/img/contents/".$request->in_img_title;
         $tanggal = date('Y-m-d');
 
         
@@ -78,6 +80,7 @@ class AdminController extends Controller
         $buatArtikel = Artikel::create([
             'added_by' => $request->id,
             'judul' => $request->judul,
+            'kategori' => $request->kategori,
             'deskripsi' => $request->deskripsi,
             'tanggal' => $tanggal,
             'gambar_sampul' => $uploadGambar->id
@@ -104,8 +107,8 @@ class AdminController extends Controller
         ],$messages);
         
         $uploadedFile = $request->file('gambar');
-        $uploadedFile->move("public/fe/img/contents/", $uploadedFile->getClientOriginalName());
-        $image_path = "public/fe/img/contents/".$request->in_img_title;
+        $uploadedFile->move("fe/img/contents/", $uploadedFile->getClientOriginalName());
+        $image_path = "fe/img/contents/".$request->in_img_title;
         $tanggal = date('Y-m-d');
 
         
@@ -143,7 +146,7 @@ class AdminController extends Controller
         ],$messages);
         
         $uploadedFile = $request->file('gambar');
-        $uploadedFile->storePubliclyAs('public/images/contents/', $uploadedFile->getClientOriginalName());
+        $uploadedFile->storePubliclyAs('images/contents/', $uploadedFile->getClientOriginalName());
         $image_path = "storage/images/contents/".$request->in_img_title;
         $tanggal = date('Y-m-d');
 

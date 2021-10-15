@@ -107,13 +107,13 @@
             xl:text-5xl
           ">{{__("Latest Information")}}</h2>
           {{-- start articles grid --}}
-          <div class="w-11/12 mx-auto grid auto-rows-auto items-center gap-8 md:grid-cols-2 xl:grid-cols-3">
+          <div class="min-w-min mx-auto grid grid-flow-row auto-rows-auto items-center gap-8 md:grid-flow-col md:auto-cols-auto justify-items-center">
             @foreach ($articles as $article)
-              <div class="article-thumbnail shadow-xl bg-white flex flex-col flex-nowrap items-center justify-between w-full">
+              <div class="article-thumbnail shadow-xl bg-white flex flex-col flex-nowrap items-center justify-between">
                 @foreach ($images as $image)
-                @if($article->gambar_sampul === $image->id)
-                    <img class="article-thumbnail-image" src="{{ asset('/fe/img/contents/'.$image->gambar) }}" alt="{{ $image->gambar }}">
-                @endif
+                  @if($article->gambar_sampul === $image->id)
+                      <img class="article-thumbnail-image" src="{{ asset('/fe/img/contents/'.$image->gambar) }}" alt="{{ $image->gambar }}">
+                  @endif
                 @endforeach
                 <div class="flex flex-col p-4 text-gray-800 items-center">
                   <h5 class="w-full text-lg text-center text-2xl font-bold">{{ $article->judul }}</h5>

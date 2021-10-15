@@ -105,10 +105,13 @@ h3.page-subtitle {
 .article-thumbnail {
   aspect-ratio: 11/13;
 }
-.article-thumbnail .article-thumbnail-image {
-  max-height: 50%;
+@media screen and (min-width: 1024px) {
+  .article-thumbnail {
+    width: 30vw;
+  }
 }
-.article-thumbnail .article-thumbnail-image img {
+.article-thumbnail img.article-thumbnail-image {
+  max-height: 50%;
   width: auto;
   -o-object-fit: cover;
      object-fit: cover;

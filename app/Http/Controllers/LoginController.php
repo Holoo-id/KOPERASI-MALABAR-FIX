@@ -10,28 +10,31 @@ use Illuminate\Support\Facades\Session;
 
 class LoginController extends Controller
 {
+    public function index(){
+        return view('auth.login');
+    }
+    
     public function login(Request $request){
-        $email = $request->email;
-        $password = $request->password;
-
-        $data = User::where('email',$email)->first();
-        if(Hash::check($password,$data->password)){
-            if($data->role == 'super_admin'){
-                Session::put('name',$data->name);
-                return view('super_admin.dashboard');
+        
+        $credentials = $request->validate([
+            'email' => ['required'],
+            'password' => ['required'],
+        ]);
+        if (Auth::attempt($credentials, true)) {
+            $request->session()->regenerate();
+            if(Auth::user()->role == 'super_admin'){
+                return redirect()->route('dashboard');
             }else{
-                Session::put('name',$data->name);
-                Session::put('id',$data->id);
-                return view('admin.dashboard');
+                return redirect()->route('dashboard-admin');
             }
         }
+        return back()->with('failed','Email atau Password anda salah!');
 
     }
-    public function logout(){
+    public function logout(Request $request){
         Auth::logout();
-        return view('auth.login');
-    }
-    public function feLogin(){
-        return view('auth.login');
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect()->route('loginPage')->with('logoutmsg','Logout Success!');
     }
 }

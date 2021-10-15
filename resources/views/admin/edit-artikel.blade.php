@@ -1,4 +1,3 @@
-
 @extends('admin.sidebar')
 @section('content')
   <div class="row">
@@ -32,7 +31,7 @@
                 <div class="row">
                   <div class="col-sm-12">
                     <div class="form-group">
-                      <input type="text" name="id" value="{{Session::get('id')}}" class="form-control" hidden>
+                      <input type="text" name="id" value="{{Auth::user()->id}}" class="form-control" hidden>
                       <span class="bmd-help">Errors message goes here</span>
                     </div>
                   </div>
@@ -43,7 +42,7 @@
                     <div class="form-group">
                       <input type="text" name="judul" class="form-control" value="{{ $article->judul }}">
                       @if($errors->has('judul'))
-                      <span class="text-danger">{{ $errors->first('judul') }}</span>
+                          <span class="text-danger">{{ $errors->first('judul') }}</span>
                       @endif
                     </div>
                   </div>
@@ -53,8 +52,8 @@
                   <div class="col-sm-11">
                     <div class="form-group">
                       <textarea name="deskripsi" id="konten" class="form-control">{!! html_entity_decode ($article->deskripsi) !!}</textarea>
-                      @if($errors->has('deskripsi'))
-                      <span class="text-danger">{{ $errors->first('deskripsi') }}</span>
+                      @if($errors->has('konten'))
+                          <span class="text-danger">{{ $errors->first('konten') }}</span>
                       @endif
                     </div>
                   </div>
@@ -63,9 +62,9 @@
                   <label class="col-sm-1 col-form-label">Tanggal</label>
                   <div class="col-sm-11">
                     <div class="form-group">
-                      <input type="date" name="tanggal" class="form-control">
+                      <input type="date" name="tanggal" class="form-control" value="{{ $article->tanggal }}">
                       @if($errors->has('tanggal'))
-                      <span class="text-danger">{{ $errors->first('tanggal') }}</span>
+                          <span class="text-danger">{{ $errors->first('tanggal') }}</span>
                       @endif
                     </div>
                   </div>
@@ -74,9 +73,9 @@
                   <label class="col-sm-1 col-form-label">Gambar</label>
                   <div class="col-sm-11">
                     
-                      <input type="file" name="gambar" class="form-control">
+                      <input type="file" name="gambar" class="form-control" value="{{ $article->galeri->gambar }}">
                       @if($errors->has('gambar'))
-                      <span class="text-danger">{{ $errors->first('gambar') }}</span>
+                          <span class="text-danger">{{ $errors->first('gambar') }}</span>
                       @endif
                   
                   </div>
@@ -87,7 +86,7 @@
                     <div class="form-group">
                       <input type="text" name="judul_gambar" class="form-control" value="{{ $article->galeri->judul }}">
                       @if($errors->has('judul_gambar'))
-                      <span class="text-danger">{{ $errors->first('judul_gambar') }}</span>
+                          <span class="text-danger">{{ $errors->first('judul_gambar') }}</span>
                       @endif
                     </div>
                   </div>
