@@ -14,14 +14,14 @@
         ">{{__('About Us')}}</h2>
         <div class="section-content-wrap flex justify-center mb-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <!-- <img src="{{asset('/fe/img/9.png')}}" alt="" class="
-              border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12
-            "> -->
-            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/06/profmal.jpg" alt="" class="
+            <img src="{{asset('/fe/img/pages/home/home_2.png')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
               lg:w-5/12
             ">
+            <!-- <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/06/profmal.jpg" alt="" class="
+              border-4 border-white -my-8 flex-1 w-11/12
+              lg:w-5/12
+            "> -->
             <div class="section-content">
               <p class="py-4 text-gray-800">
                 {{__("Indonesian Malabar Coffee cultivates Luwak with standard maintenance following the Five Animal Husbandry Business Program supported by experts in their fields. Indonesian Malabar Coffee has succeeded in cultivating civets, thus helping the conservation of this type of protected animal.")}}
@@ -31,7 +31,7 @@
         </div>
         <div class="section-content-wrap flex justify-center">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row-reverse">
-            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/pemberdayaan.jpg" alt="" class="
+            <img src="{{asset('/fe/img/pages/profile/profile_1.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
               lg:w-5/12
             ">
@@ -54,11 +54,7 @@
         {{-- JOURNEY --}}
         <div class="section-content-wrap flex justify-center min-w-full my-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <!-- <img src="{{asset('/fe/img/lompat/1.jpg')}}" alt="" class="
-              border-4 border-white -my-8 flex-1 w-11/12
-              lg:w-5/12 lg:
-            "> -->
-            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/pola1.jpg" alt="" class="
+            <img src="{{asset('/fe/img/pages/profile/profile_2.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
               lg:w-5/12 lg:
             ">
@@ -79,7 +75,7 @@
         </div>
         <div class="section-content-wrap flex justify-center min-w-full">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row-reverse">
-            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/kegiatans1.jpg" alt="" class="
+            <img src="{{asset('/fe/img/pages/profile/profile_3.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
               lg:w-5/12 lg:
             ">
@@ -129,7 +125,7 @@
         </div>
         <div class="section-content-wrap flex justify-center min-w-full my-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/kantor-desa1.jpg" alt="" class="
+            <img src="{{asset('/fe/img/pages/profile/profile_4.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
               lg:w-5/12 lg:
             ">
@@ -162,7 +158,7 @@
         </div>
         <div class="section-content-wrap flex justify-center">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row-reverse">
-            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/roasting.jpg" alt="" class="
+            <img src="{{asset('/fe/img/pages/profile/profile_5.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
               lg:w-5/12 lg:
             ">
@@ -203,7 +199,7 @@
         </div>
         <div class="section-content-wrap flex justify-center my-28">
           <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/koperasis.jpg" alt="" class="
+            <img src="{{asset('/fe/img/pages/profile/profile_6.jpg')}}" alt="" class="
               border-4 border-white -my-8 flex-1 w-11/12
               lg:w-5/12 lg:
             ">

@@ -4,7 +4,7 @@
       {{-- banner --}}
       <div class="slideshow-container">
         <div class="homeSlides fade">
-          <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (3 of 8).jpg') }}">
+          <img src="{{ asset('/fe/img/pages/home/home_1.jpg') }}">
           <div class="absolute bottom-1/2 -my-16 text-center w-full text-2xl flex flex-col items-center">
             <h1 class="
               page-title w-11/12 text-white text-center font-black uppercase text-4xl
@@ -48,14 +48,14 @@
           ">{{__("Indonesian Malabar Coffee cultivates Luwak with standard maintenance following the Five Animal Husbandry Business Program supported by experts in their fields. Indonesian Malabar Coffee has succeeded in cultivating civets, thus helping the conservation of this type of protected animal.")}}</p>
           <div class="section-content-wrap flex justify-center">
             <div class="flex items-center flex-col w-11/12 gap-8 lg:flex-row">
-              <!-- <img src="{{ asset('/fe/img/Aset_MitraMalabar_ (2 of 8).jpg') }}" alt="" class="
+              <img src="{{ asset('/fe/img/pages/home/home_2.png') }}" alt="" class="
                 border-4 border-white -my-8 flex-1 w-11/12
                 lg:w-5/12
-              "> -->
-              <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/32.jpg" alt="" class="
+              " style="height:25rem">
+              <!-- <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/32.jpg" alt="" class="
                 border-4 border-white -my-8 flex-1 w-11/12
                 lg:w-5/12
-              " style="height:20rem">
+              " style="height:20rem"> -->
               <div class="section-content">
                 <p class="py-4 text-gray-800 text-xl font-medium">
                   {{__("Indonesian Malabar Coffee not only produces quality products but also applies a sustainable coffee production system by cultivating and gardening coffee that is environmentally friendly, not clearing forest areas. We are very concerned about the rules of forest conservation by maintaining stands in coffee plantation areas. Coffee plants, characteristically, plants will be able to carry out the ecological function of an area, the roots of coffee plants are able to open soil cavities and continue water to be stored in the soil layer, to withstand the rate of erosion that occurs. Coffee plants are also able to capture carbon emissions circulating in the air.")}}
@@ -82,8 +82,8 @@
         </div>
         <div class="flex flex-col items-center lg:flex-row justify-evenly gap-8">
           <div class="content-image flex-1 border-4 border-white shadow-md relative">
-            <!-- <img src="{{asset('/fe/img/9.png')}}" alt="" srcset=""> -->
-            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/5.jpg" alt="" srcset="">
+            <img src="{{asset('/fe/img/pages/home/home_3.jpg')}}" alt="" srcset="">
+            <!-- <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/5.jpg" alt="" srcset=""> -->
             <a href="{{ route('profil', app()->getLocale()) }}" class="image-content absolute bottom-0 p-4">
               <!-- <div class="text-white font-black">{{__("PROFILE")}}</div> -->
               <div class="text-white font-black">LMDH - KTH RAHAYU TANI</div>
@@ -91,7 +91,8 @@
             </a>
           </div>
           <div class="content-image flex-1 border-4 border-white shadow-md relative">
-            <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/42.jpg" alt="" srcset="">
+            <!-- <img src="http://kopimalabarindonesia.com/wp-content/uploads/2013/05/42.jpg" alt="" srcset=""> -->
+            <img src="{{asset('/fe/img/pages/home/home_4.jpg')}}" alt="" srcset="">
             <a href="" class="image-content absolute bottom-0 p-4">
               <div class="text-white font-black">P4S Rahayu Tani Malabar</div>
               <p class="font-medium text-white">{{__("Educational institutions in agriculture and rural areas")}}</p>

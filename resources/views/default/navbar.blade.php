@@ -48,7 +48,7 @@
     <a href="{{ route('profil', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Profile') }}</a>
     <a href="{{ route('home', app()->getLocale()) }}#program" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Program') }}</a>
     <a href="{{ route('articles', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Article') }}</a>
-    <a href="{{ route('gallery', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('News') }}</a>
+    <a href="{{ route('news', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('News') }}</a>
     <a href="{{ route('home', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Product') }}</a>
     <a href="{{ route('contact', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Contact') }}</a>
   </ul>
