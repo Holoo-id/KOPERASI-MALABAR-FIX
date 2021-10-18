@@ -46,7 +46,7 @@ class AdminController extends Controller
     }
     public function buatArtikel(Request $request){
         $messages = [
-            'required'=> 'Judul Wajib Diisi.',
+            'judul.required'=> 'Judul Wajib Diisi.',
             'kategori.required'=> 'Kategori Wajib Diisi.',
             'deskripsi.required'=> 'Deskripsi Wajib Diisi.',
             'tanggal.required' => 'Tanggal Wajib Diisi.',
@@ -77,6 +77,7 @@ class AdminController extends Controller
             'path' => $image_path,
             'tampilkan' => 0
         ]);
+        // dd($request);
         $buatArtikel = Artikel::create([
             'added_by' => $request->id,
             'judul' => $request->judul,

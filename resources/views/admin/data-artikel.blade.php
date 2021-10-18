@@ -28,7 +28,7 @@
                     <a href="{{ route('article-detail', $article->id) }}" class="d-block blur-shadow-image">
                       @foreach ($images as $image)
                         @if($article->gambar_sampul === $image->id)
-                          <img src="{{ asset('/fe/img/contents/'.$image->gambar) }}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg"> 
+                          <img src="{{ asset('/fe/img/contents/'.$image->gambar) }}" alt="{{ $image->judul }}" class="img-fluid shadow border-radius-lg"> 
                         @endif
                       @endforeach
                     </a>

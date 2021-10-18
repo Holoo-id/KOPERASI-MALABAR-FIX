@@ -12,6 +12,7 @@ class Artikel extends Model
         'added_by',
         'judul',
         'deskripsi',
+        'kategori',
         'tanggal',
         'gambar_sampul',
     ];
