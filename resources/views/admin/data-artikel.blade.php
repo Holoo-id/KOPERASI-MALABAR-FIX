@@ -12,10 +12,8 @@
         <div class="card-body">
           <div class="toolbar">
             <div class="row mt-3">
-              <div class="col">
-              </div>
-              <div class="col d-flex justify-content-end">
-                <a href="{{ route('create-article') }}" class="btn bg-primary" > Tambah Artikel </a>
+              <div class="col-6">
+                <a href="{{ route('create-article') }}" class="btn bg-primary m-4" > Tambah Artikel </a>
                 {{-- <a href="" class="btn btn-danger">Cetak Sebagai PDF</a>
                 <a href="" class="btn btn-success">Cetak Sebagai EXCEL</a> --}}
               </div>
@@ -26,20 +24,32 @@
             @foreach ($articles as $article)
               <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
                 <div class="card">
-                  <div class="card-header card-header-danger">
-                    <a href="{{ route('edit-article', $article->id) }}" class="d-block blur-shadow-image">
-                      <img src="{{ asset('storage/images/contents/'.$article->galeri->gambar) }}" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                  <div class="card-header card-header-success">
+                    <a href="{{ route('article-detail', $article->id) }}" class="d-block blur-shadow-image">
+                      @foreach ($images as $image)
+                        @if($article->gambar_sampul === $image->id)
+                          <img src="{{ asset('/fe/img/contents/'.$image->gambar) }}" alt="{{ $image->judul }}" class="img-fluid shadow border-radius-lg"> 
+                        @endif
+                      @endforeach
                     </a>
                   </div>
                   <div class="card-body">
                     <a href="{{ route('article-detail', $article->id) }}">
                       <h4 class="card-title">{{ $article->judul }}</h4>
                     </a>
-                    <p class="card-category">{!! Str::limit( html_entity_decode ($article->deskripsi) , 200) !!}</p>
+                    <p class="card-category">{!! Str::limit( strip_tags($article->deskripsi) , 200) !!}</p>
                   </div>
                   <div class="card-footer">
                     <div class="stats">
                       {{ \Carbon\Carbon::parse($article->tanggal)->format('d F Y')}} dibuat oleh {{ $article->user->name }}
+                    </div>
+                    <div>
+                      <a data-toggle="modal" data-target="#deletePopup{{ $article->id }}" class="btn btn-just-icon remove btn-danger text-white pull-right mx-1">
+                          <i class="material-icons">delete</i>
+                      </a>
+                      <a href="{{ route('edit-article', $article->id) }}" class="btn btn-just-icon remove btn-warning text-white pull-right mx-1">
+                          <i class="material-icons">edit</i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -53,4 +63,5 @@
     </div>
     <!-- end col-md-12 -->
   </div>
+  @include('admin.hapus-artikel')
 @endsection 
