@@ -13,8 +13,8 @@ class FrontendController extends Controller
     public function index(Request $request, $local)
     {
         app()->setLocale($local);
-        $articles = Artikel::where('kategori', 'berita')
-        ->orderBy('created_at', 'desc')
+        // $articles = Artikel::where('kategori', 'berita')
+        $articles = Artikel::orderBy('created_at', 'desc')
         ->paginate(3);
         $images = Galeri::all();
         return view('default.page.home', compact('articles', 'images'));
@@ -29,8 +29,8 @@ class FrontendController extends Controller
     public function articles(Request $request, $local)
     {
         app()->setLocale($local);
-        $articles = Artikel::where('kategori', 'artikel')
-        ->orderBy('created_at', 'desc')
+        // $articles = Artikel::where('kategori', 'artikel')
+        $articles = Artikel::orderBy('created_at', 'desc')
         ->paginate(9);
         $images = Galeri::all();
         $pageSubtitle = trans("Latest Information");

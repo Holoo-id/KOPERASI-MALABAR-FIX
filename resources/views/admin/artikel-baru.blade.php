@@ -34,11 +34,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="row mb-4">
+                {{-- <div class="row mb-4">
                   <label class="col-sm-1 col-form-label">Kategori</label>
                   <div class="col-sm-11">
                     <div class="form-group">
-                      {{-- <input type="text" name="judul" class="form-control"> --}}
                       <select name="kategori" id="" class="form-control">
                         <option value="artikel">Artikel</option>
                         <option value="berita">Berita</option>
@@ -48,7 +47,7 @@
                       @endif
                     </div>
                   </div>
-                </div>
+                </div> --}}
                 <div class="row">
                   <label class="col-sm-1 col-form-label">Konten</label>
                   <div class="col-sm-11">

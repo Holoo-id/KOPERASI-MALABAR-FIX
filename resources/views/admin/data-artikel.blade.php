@@ -28,9 +28,10 @@
                     <a href="{{ route('article-detail', $article->id) }}" class="d-block blur-shadow-image">
                       @foreach ($images as $image)
                         @if($article->gambar_sampul === $image->id)
-                          <img src="{{ asset('/fe/img/contents/'.$image->gambar) }}" alt="{{ $image->judul }}" class="img-fluid shadow border-radius-lg"> 
+                          <img src="{{ asset('/public/fe/img/contents/'.$image->gambar) }}" alt="{{ $image->judul }}" class="img-fluid shadow border-radius-lg"> 
                         @endif
                       @endforeach
+                          {{-- <img src="{{ asset('/fe/img/contents/'.$article->galeri->gambar) }}" alt="{{ $article->galeri->judul }}" class="img-fluid shadow border-radius-lg">  --}}
                     </a>
                   </div>
                   <div class="card-body">

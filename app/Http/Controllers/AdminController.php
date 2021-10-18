@@ -47,7 +47,7 @@ class AdminController extends Controller
     public function buatArtikel(Request $request){
         $messages = [
             'judul.required'=> 'Judul Wajib Diisi.',
-            'kategori.required'=> 'Kategori Wajib Diisi.',
+            // 'kategori.required'=> 'Kategori Wajib Diisi.',
             'deskripsi.required'=> 'Deskripsi Wajib Diisi.',
             'tanggal.required' => 'Tanggal Wajib Diisi.',
             'gambar.required' => 'Gambar Wajib Diisi.',
@@ -56,7 +56,7 @@ class AdminController extends Controller
         ];
         $request->validate([
             'judul'=> 'required|min:7',
-            'kategori'=> 'required',
+            // 'kategori'=> 'required',
             'deskripsi'=> 'required',
             'tanggal' => 'required',
             'gambar' => 'required',
@@ -81,7 +81,7 @@ class AdminController extends Controller
         $buatArtikel = Artikel::create([
             'added_by' => $request->id,
             'judul' => $request->judul,
-            'kategori' => $request->kategori,
+            // 'kategori' => $request->kategori,
             'deskripsi' => $request->deskripsi,
             'tanggal' => $tanggal,
             'gambar_sampul' => $uploadGambar->id

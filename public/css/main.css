@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 h2.section-title {
-  color: #DFBE77;
+  color: #0C94A4;
 }
 
 h1.page-title, h2.section-title-alt, h3.page-subtitle {
@@ -34,7 +34,7 @@ h3.page-subtitle {
 }
 
 .page-banner {
-  background: url("/fe/img/Aset_MitraMalabar_ (2 of 8).jpg") no-repeat center center fixed;
+  background: url("/fe/img/pages/home/home_2.jpg") no-repeat center center scroll;
   height: 465px;
 }
 
@@ -53,7 +53,7 @@ h3.page-subtitle {
 }
 
 .section-content-wrap {
-  background-color: rgba(223, 190, 119, 0.4);
+  background-color: #E0EBF9;
 }
 
 .content-image img, .content-image2 img {
