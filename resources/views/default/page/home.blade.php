@@ -413,11 +413,12 @@
           <div class="min-w-min mx-auto grid grid-flow-row auto-rows-auto items-center gap-8 md:grid-flow-col md:auto-cols-auto justify-items-center">
             @foreach ($articles as $article)
               <div class="article-thumbnail shadow-xl bg-white flex flex-col flex-nowrap items-center justify-between">
-                @foreach ($images as $image)
+                {{-- @foreach ($images as $image)
                   @if($article->gambar_sampul === $image->id)
-                      <img class="article-thumbnail-image" src="{{ asset('/fe/img/contents/'.$image->gambar) }}" alt="{{ $image->gambar }}">
+                    <img class="article-thumbnail-image" src="{{ asset('/fe/img/contents/'.$image->gambar) }}" alt="{{ $image->gambar }}">
                   @endif
-                @endforeach
+                @endforeach --}}
+                <img class="article-thumbnail-image" src="{{ asset('/fe/img/contents/'.$article->galeri->gambar) }}" alt="{{ $article->galeri->judul }}">
                 <div class="flex flex-col p-4 text-gray-800 items-center">
                   <h5 class="w-full text-lg text-center text-2xl font-bold">{{ $article->judul }}</h5>
                   <p class="w-full text-center text-sm">Dibuat oleh <b class="text-bold">{{ $article->user->name }}</b> pada {{ \Carbon\Carbon::parse($article->tanggal)->format('d F Y')}}
