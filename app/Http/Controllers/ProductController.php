@@ -34,7 +34,7 @@ class ProductController extends Controller
 
     // Create New Product Data
     public function createProductPage(){
-        return view('admin.artikel-baru');
+        return view('admin.produk-baru');
     }
     public function createNewProduct(Request $request){
         $messages = [
@@ -67,7 +67,7 @@ class ProductController extends Controller
             'path' => $image_path,
             'tampilkan' => 0
         ]);
-        $produkBaru = Product::create([
+        $produkBaru = Produk::create([
             'added_by' => $request->id,
             'judul' => $request->judul,
             'kategori' => $request->kategori,

@@ -60,8 +60,8 @@ Route::middleware(['auth'])->group(function ()
         Route::prefix('/produk')->group(function () {
             Route::get('/', 'App\Http\Controllers\ProductController@semuaProduk')->name('semua-produk');
             Route::get('/tambah', 'App\Http\Controllers\ProductController@createProductPage')->name('produk-baru');
-            Route::post('/post-tambah', 'App\Http\Controllers\ProdukController@createNewProduct')->name('post-produk-baru');
-            Route::get('detail/{link}', 'App\Http\Controllers\ProdukController@detailProduk')->name('detail-produk');
+            Route::post('/post-tambah', 'App\Http\Controllers\ProductController@createNewProduct')->name('post-produk-baru');
+            Route::get('detail/{link}', 'App\Http\Controllers\ProductController@detailProduk')->name('detail-produk');
             Route::get('/edit/{id}', 'App\Http\Controllers\ProductController@editArticlePage')->name('edit-produk');
             Route::post('/update', 'App\Http\Controllers\ProductController@postEditArtikel')->name('update-produk');
         });
