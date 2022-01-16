@@ -18,7 +18,7 @@ class ProductController extends Controller
     public function detailProduk($link){
         $product = Produk::where('id', $link)->first();
         $image = Galeri::where('id', $link)->first();
-        return view('admin.detail-artikel', compact('product', 'image'));
+        return view('admin.detail-produk', compact('product', 'image'));
     }
     // Semua Produk di Public
     public function allProducts(Request $request, $local)
@@ -30,6 +30,14 @@ class ProductController extends Controller
         $pageSubtitle = trans("This is Our Products");
         $pageTitle = trans("Products");
         return view('default.page.products', compact('products', 'images', 'pageSubtitle', 'pageTitle'));
+    }
+    // Detail Produk di Public
+    public function productDetail(Request $request, $local, $link)
+    {
+        app()->setLocale($local);
+        $product = Produk::where('id', $link)->first();
+        $image = Galeri::where('id', $product->gambar_sampul)->first();
+        return view('default.page.product-detail', compact('product', 'image'));
     }
 
     // Create New Product Data

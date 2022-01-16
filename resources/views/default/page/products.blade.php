@@ -19,7 +19,7 @@
               <p class="w-full text-center text-sm">Dibuat oleh <b class="text-bold">{{ $product->user->name }}</b> pada {{ \Carbon\Carbon::parse($product->tanggal)->format('d F Y')}}
               </p>
               <p class="pt-4">{!! Str::limit( strip_tags($product->deskripsi) , 200, ENT_NOQUOTES) !!}</p>
-              {{--<a href="{{ route('product', ['language' => app()->getLocale(), 'link' => $product->id]) }}" class="primary-button text-right w-min rounded-full mt-4">{{__("More..")}}</a>--}}
+              <a href="{{ route('product', ['language' => app()->getLocale(), 'link' => $product->id]) }}" class="primary-button text-right w-min rounded-full mt-4">{{__("More..")}}</a>
             </div>
           </div>
         @endforeach
