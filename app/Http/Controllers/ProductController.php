@@ -133,4 +133,16 @@ class ProductController extends Controller
         ]);
          return redirect(route('semua-produk'));
     }
+    
+    // Delete Produk
+    public function deleteProduct(Request $request)
+    {
+        $hapusProduk = Produk::where('id',$request->id);
+        $hapusProduk->delete();
+        $hapusGambarProduk = Galeri::where('id',$request->gambar_sampul);
+        $hapusGambarProduk->delete();
+
+        return redirect(route('semua-produk'));
+    
+    }
 }

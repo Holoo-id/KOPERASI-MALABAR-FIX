@@ -65,6 +65,7 @@ Route::middleware(['auth'])->group(function ()
             Route::get('detail/{link}', 'App\Http\Controllers\ProductController@detailProduk')->name('detail-produk');
             Route::get('/edit/{id}', 'App\Http\Controllers\ProductController@editProduct')->name('edit-produk');
             Route::post('/update', 'App\Http\Controllers\ProductController@updateProduct')->name('update-produk');
+            Route::get('/delete/{id}', 'App\Http\Controllers\ProductController@deleteProduct')->name('delete-produk');
         });
     });
 });

@@ -63,5 +63,5 @@
     </div>
     <!-- end col-md-12 -->
   </div>
-  {{--@include('admin.hapus-artikel')--}}
+  @include('admin.hapus-produk')
 @endsection 
