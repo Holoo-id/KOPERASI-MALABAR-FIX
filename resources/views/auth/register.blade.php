@@ -33,16 +33,10 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a href="{{ route('registerPage') }}" class="nav-link">
-                <i class="material-icons">app_registration</i>
-                Register
-              </a>
-            </li>
             <li class="nav-item">
-              <a href="{{ route('loginPage') }}" class="nav-link">
-                <i class="material-icons">fingerprint</i>
-                Login
+              <a href="{{ route('dashboard-admin') }}" class="nav-link">
+                <i class="material-icons">dashboard</i>
+                Admin Page
               </a>
             </li>
           </ul>

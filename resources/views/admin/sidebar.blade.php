@@ -46,6 +46,12 @@
                 <p> Data Produk </p>
               </a>
             </li>
+            <li class="nav-item {{ Route::currentRouteName() == 'registerPage' ? 'active' : '' }}">
+              <a class="nav-link" href="{{ route('registerPage') }}">
+                <i class="material-icons">app_registration</i>
+                <p> Tambah User </p>
+              </a>
+            </li>
             {{-- <li class="nav-item {{ Route::currentRouteName() == 'req-gambar' ? 'active' : '' }}">
               <a class="nav-link" href="{{ route('req-gambar') }}">
                 <i class="material-icons">insert_photo</i>

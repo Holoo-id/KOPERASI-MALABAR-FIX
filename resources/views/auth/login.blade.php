@@ -33,12 +33,6 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="{{ route('registerPage') }}" class="nav-link">
-                <i class="material-icons">app_registration</i>
-                Register
-              </a>
-            </li>
             <li class="nav-item active">
               <a href="{{ route('login') }}" class="nav-link">
                 <i class="material-icons">fingerprint</i>

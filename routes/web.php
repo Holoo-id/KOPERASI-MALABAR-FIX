@@ -25,20 +25,20 @@ Route::group(['prefix' => '{language}'], function () {
 Route::middleware(['guest'])->group(function ()
 {
     Route::get('/admin/login', 'App\Http\Controllers\LoginController@index')->name('loginPage');
-    Route::get('/admin/register', 'App\Http\Controllers\LoginController@register')->name('registerPage');
     Route::get('/admin/post-login', 'App\Http\Controllers\LoginController@login')->name('login');
     // post register belum
 });
 
-    
+
 Route::middleware(['auth'])->group(function ()
 {
     Route::get('/auth/logout', 'App\Http\Controllers\LoginController@logout')->name('logout');
     Route::post('/super-admin', 'App\Http\Controllers\SuperAdminController@index')->name('dashboard');
     Route::post('/super-admin/post-akun', 'App\Http\Controllers\SuperAdminController@buatAkun')->name('buatAkun');
-
+    
     Route::prefix('/admin')->group(function () {
         Route::get('/dashboard', 'App\Http\Controllers\AdminController@dashboard')->name('dashboard-admin');
+        Route::get('/register', 'App\Http\Controllers\LoginController@register')->name('registerPage');
         Route::prefix('/artikel')->group(function () {
             Route::get('/', 'App\Http\Controllers\AdminController@allArticles')->name('allArticle');
             Route::get('detail/{link}', 'App\Http\Controllers\AdminController@detailArticle')->name('article-detail');
@@ -59,12 +59,11 @@ Route::middleware(['auth'])->group(function ()
         });
         Route::prefix('/produk')->group(function () {
             Route::get('/', 'App\Http\Controllers\ProductController@semuaProduk')->name('semua-produk');
-            // Route::post('/upload', 'App\Http\Controllers\AdminController@uploadGambar')->name('upload-gambar');
-            // Route::post('/postGambar', 'App\Http\Controllers\AdminController@postGambar')->name('post-gambar');
-            // Route::get('/request', 'App\Http\Controllers\AdminController@reqGambar')->name('req-gambar');
-            // Route::post('/postReqGambar', 'App\Http\Controllers\AdminController@postReqGambar')->name('post-req-gambar');
-            // Route::get('/delete/{id}', 'App\Http\Controllers\AdminController@deleteArticle')->name('delete-image');
-            // Route::get('/delete/gambar/{id}', 'App\Http\Controllers\AdminController@deleteImage')->name('delete-gambar');
+            Route::get('/tambah', 'App\Http\Controllers\ProductController@createProductPage')->name('produk-baru');
+            Route::post('/post-tambah', 'App\Http\Controllers\ProdukController@createNewProduct')->name('post-produk-baru');
+            Route::get('detail/{link}', 'App\Http\Controllers\ProdukController@detailProduk')->name('detail-produk');
+            Route::get('/edit/{id}', 'App\Http\Controllers\ProductController@editArticlePage')->name('edit-produk');
+            Route::post('/update', 'App\Http\Controllers\ProductController@postEditArtikel')->name('update-produk');
         });
     });
 });
