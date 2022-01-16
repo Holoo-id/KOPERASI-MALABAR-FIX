@@ -27,4 +27,8 @@ class Galeri extends Model
     {
         return $this->belongsTo(Artikel::class,'gambar_sampul');
     }
+    public function produk()
+    {
+        return $this->belongsTo(Produk::class,'gambar_sampul');
+    }
 }

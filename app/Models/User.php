@@ -52,4 +52,8 @@ class User extends Authenticatable
     {
         return $this->hasMany(Artikel::class, 'added_by');
     }
+    public function produk()
+    {
+        return $this->hasMany(Produk::class, 'added_by');
+    }
 }

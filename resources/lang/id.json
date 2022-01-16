@@ -172,7 +172,9 @@
 
     "__gallery.blade":"__gallery.blade",
     "Activity Documentation":"Dokumentasi Kegiatan",
-
+    
+    "__products.blade":"__products.blade",
+    "This is Our Products":"Produk dan Divisi",
 
     "__contact.blade":"__contact.blade",
     "Contact Us":"Hubungi Kami",
