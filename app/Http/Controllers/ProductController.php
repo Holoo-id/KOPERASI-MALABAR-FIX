@@ -86,4 +86,51 @@ class ProductController extends Controller
         
         return redirect(route('semua-produk'));
     }
+    
+    // Edit Data Produk
+    public function editProduct($link){
+        $product = Produk::where('id', $link)->first();
+        return view('admin.edit-produk', compact('product'));
+    }
+    public function updateProduct(Request $request){
+        $messages = [
+            'required'=> 'Judul Wajib Diisi.',
+            'deskripsi.required'=> 'Deskripsi Wajib Diisi.',
+            'tanggal.required' => 'Tanggal Wajib Diisi.',
+            'gambar.required' => 'Gambar Wajib Diisi.',
+            'judul_gambar.required' => 'Judul Gambar Wajib Diisi.',
+            'min' => 'Harus Diisi minimal :min'
+        ];
+
+        $request->validate([
+            'judul'=> 'required|min:7',
+            'deskripsi'=> 'required',
+            'tanggal' => 'required',
+            'gambar' => 'required',
+            'judul_gambar' => 'required'
+        ],$messages);
+        
+        $uploadedFile = $request->file('gambar');
+        $uploadedFile->move("fe/img/contents/", $uploadedFile->getClientOriginalName());
+        $image_path = "fe/img/contents/".$request->in_img_title;
+        $tanggal = date('Y-m-d');
+
+        
+        $uploadGambar = Galeri::where('id', $request->id)->update([
+            
+            'judul' => $request->judul_gambar,
+            'gambar' => $request->in_img_title ?? $uploadedFile->getClientOriginalName(),
+            'added_by' => $request->id,
+            'path' => $image_path,
+            'tampilkan' => 0
+        ]);
+        $updateProduk = Produk::where('id', $request->id)->update([
+            'added_by' => $request->id,
+            'judul' => $request->judul,
+            'deskripsi' => $request->deskripsi,
+            'tanggal' => $tanggal,
+            'gambar_sampul' => $request->id,
+        ]);
+         return redirect(route('semua-produk'));
+    }
 }

@@ -63,8 +63,8 @@ Route::middleware(['auth'])->group(function ()
             Route::get('/tambah', 'App\Http\Controllers\ProductController@createProductPage')->name('produk-baru');
             Route::post('/post-tambah', 'App\Http\Controllers\ProductController@createNewProduct')->name('post-produk-baru');
             Route::get('detail/{link}', 'App\Http\Controllers\ProductController@detailProduk')->name('detail-produk');
-            Route::get('/edit/{id}', 'App\Http\Controllers\ProductController@editArticlePage')->name('edit-produk');
-            Route::post('/update', 'App\Http\Controllers\ProductController@postEditArtikel')->name('update-produk');
+            Route::get('/edit/{id}', 'App\Http\Controllers\ProductController@editProduct')->name('edit-produk');
+            Route::post('/update', 'App\Http\Controllers\ProductController@updateProduct')->name('update-produk');
         });
     });
 });
