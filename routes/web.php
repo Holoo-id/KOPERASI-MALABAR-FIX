@@ -25,7 +25,9 @@ Route::group(['prefix' => '{language}'], function () {
 Route::middleware(['guest'])->group(function ()
 {
     Route::get('/admin/login', 'App\Http\Controllers\LoginController@index')->name('loginPage');
+    Route::get('/admin/register', 'App\Http\Controllers\LoginController@register')->name('registerPage');
     Route::get('/admin/post-login', 'App\Http\Controllers\LoginController@login')->name('login');
+    // post register belum
 });
 
     

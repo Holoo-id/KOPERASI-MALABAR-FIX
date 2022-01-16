@@ -34,12 +34,12 @@
         <div class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="{{ route('dashboard') }}" class="nav-link">
-                <i class="material-icons">dashboard</i>
-                Dashboard
+              <a href="{{ route('registerPage') }}" class="nav-link">
+                <i class="material-icons">app_registration</i>
+                Register
               </a>
             </li>
-            <li class="nav-item  active ">
+            <li class="nav-item active">
               <a href="{{ route('login') }}" class="nav-link">
                 <i class="material-icons">fingerprint</i>
                 Login
@@ -51,7 +51,7 @@
     </nav>
     <!-- End Navbar -->
     <div class="wrapper wrapper-full-page">
-      <div class="page-header login-page header-filter" filter-color="black" style="background-image: url('../../be/img/login.jpg'); background-size: cover; background-position: top center;">
+      <div class="page-header login-page header-filter" filter-color="black" style="background-image: url('../../be/img/bg-kopi.jpg'); background-size: cover; background-position: top center;">
         <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
         <div class="container">
           <div class="row">
@@ -60,7 +60,7 @@
                 @csrf
                 <div class="card card-login card-hidden">
                   <div class="card-header card-header-info text-center">
-                    <img src="{{ asset('/be/img/kmm-logo.png') }}" alt="" srcset="">
+                    <img src="{{ asset('/fe/img/kopi-logo.png') }}" alt="" srcset="">
                   </div>
                   <div class="card-body ">
                     {{-- <p class="card-description text-center">Or Be Classical</p> --}}
@@ -312,15 +312,3 @@
     </script>
   </body>
 </html>
-
-    <form action="{{ route('login') }}" method="get" enctype="multipart/form-data">
-        <div class="form-column">
-            <label for="" class="be-form-label mb-1 mt-2">Email</label>
-            <input class="be-form" type="email" name="email" id="" placeholder="Masukkan Email">
-        </div>
-        <div class="form-column">
-            <label for="" class="be-form-label mb-1 mt-2">Password</label>
-            <input class="be-form" type="password" name="password" id="" placeholder="Masukkan Password">
-        </div>
-        <input type="submit" value="Masuk" class="be-form-button mt-2">
-    </form>
