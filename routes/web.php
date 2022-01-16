@@ -57,5 +57,14 @@ Route::middleware(['auth'])->group(function ()
             Route::get('/delete/{id}', 'App\Http\Controllers\AdminController@deleteArticle')->name('delete-image');
             Route::get('/delete/gambar/{id}', 'App\Http\Controllers\AdminController@deleteImage')->name('delete-gambar');
         });
+        Route::prefix('/produk')->group(function () {
+            Route::get('/', 'App\Http\Controllers\ProductController@semuaProduk')->name('semua-produk');
+            // Route::post('/upload', 'App\Http\Controllers\AdminController@uploadGambar')->name('upload-gambar');
+            // Route::post('/postGambar', 'App\Http\Controllers\AdminController@postGambar')->name('post-gambar');
+            // Route::get('/request', 'App\Http\Controllers\AdminController@reqGambar')->name('req-gambar');
+            // Route::post('/postReqGambar', 'App\Http\Controllers\AdminController@postReqGambar')->name('post-req-gambar');
+            // Route::get('/delete/{id}', 'App\Http\Controllers\AdminController@deleteArticle')->name('delete-image');
+            // Route::get('/delete/gambar/{id}', 'App\Http\Controllers\AdminController@deleteImage')->name('delete-gambar');
+        });
     });
 });

@@ -40,10 +40,10 @@
                 <p> Data Artikel </p>
               </a>
             </li>
-            <li class="nav-item {{ Route::currentRouteName() == 'req-gambar' ? 'active' : '' }}">
-              <a class="nav-link" href="{{ route('req-gambar') }}">
+            <li class="nav-item {{ Route::currentRouteName() == 'semua-produk' ? 'active' : '' }}">
+              <a class="nav-link" href="{{ route('semua-produk') }}">
                 <i class="material-icons">collections</i>
-                <p> Data Galeri </p>
+                <p> Data Produk </p>
               </a>
             </li>
             {{-- <li class="nav-item {{ Route::currentRouteName() == 'req-gambar' ? 'active' : '' }}">
