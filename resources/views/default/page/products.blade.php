@@ -15,10 +15,10 @@
               @endif
             @endforeach
             <div class="flex flex-col p-4 text-gray-800 items-center">
-              <h5 class="w-full text-center text-2xl font-bold">{{ $product->judul }}</h5>
+            <h5 class="w-full text-2xl text-center font-bold block h-16 overflow-hidden text-ellipsis">{{ $product->judul }}</h5>
               <p class="w-full text-center text-sm">Dibuat oleh <b class="text-bold">{{ $product->user->name }}</b> pada {{ \Carbon\Carbon::parse($product->tanggal)->format('d F Y')}}
               </p>
-              <p class="pt-4">{!! Str::limit( strip_tags($product->deskripsi) , 200, ENT_NOQUOTES) !!}</p>
+              <p class="pt-4 block overflow-hidden text-ellipsis" style="height: 88px">{!! Str::limit( strip_tags($product->deskripsi) , 200, ENT_NOQUOTES) !!}</p>
               <a href="{{ route('product', ['language' => app()->getLocale(), 'link' => $product->id]) }}" class="primary-button text-right w-min rounded-full mt-4">{{__("More..")}}</a>
             </div>
           </div>

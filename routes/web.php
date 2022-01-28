@@ -18,6 +18,7 @@ Route::group(['prefix' => '{language}'], function () {
     Route::get('/profile', 'App\Http\Controllers\FrontendController@profil')->name('profil');
     // Route::get('/article', 'App\Http\Controllers\FrontendController@articles')->name('articles');
     Route::get('/news-event', 'App\Http\Controllers\FrontendController@newsAndEvent')->name('news-event');
+    Route::get('/coffee-story', 'App\Http\Controllers\FrontendController@coffeeStories')->name('coffee-story');
     Route::get('/article/{link}', 'App\Http\Controllers\FrontendController@articleDetail')->name('article');
     Route::get('/products', 'App\Http\Controllers\ProductController@allProducts')->name('products');
     Route::get('/product/{link}', 'App\Http\Controllers\ProductController@productDetail')->name('product');

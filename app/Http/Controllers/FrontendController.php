@@ -36,6 +36,17 @@ class FrontendController extends Controller
         $pageTitle = trans("Article");
         return view('default.page.artikel', compact('articles', 'images', 'pageSubtitle', 'pageTitle'));
     }
+    public function coffeeStories(Request $request, $local)
+    {
+        app()->setLocale($local);
+        $articles = Artikel::where('kategori', 'story')
+        ->orderBy('created_at', 'desc')
+        ->paginate(9);
+        $images = Galeri::all();
+        $pageSubtitle = trans("");
+        $pageTitle = trans("Coffee Story");
+        return view('default.page.artikel', compact('articles', 'images', 'pageSubtitle', 'pageTitle'));
+    }
     public function newsAndEvent(Request $request, $local)
     {
         app()->setLocale($local);
