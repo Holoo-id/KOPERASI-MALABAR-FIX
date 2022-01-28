@@ -1,23 +1,26 @@
-<header class="sticky z-50 flex top-0 items-center px-8 w-full justify-between font-medium nav-wrap text-white">
+<header class="sticky z-50 top-0 font-medium nav-wrap text-white">
   <a href="{{ route('home', app()->getLocale()) }}" class="">
-    <img src="{{ asset('/fe/img/kopi-logo.png') }}" alt="Logo Mitra Malabar" class="logo-image p-4 h-20">
+    <img src="{{ asset('/fe/img/kopi-logo1.png') }}" alt="Logo Mitra Malabar" class="logo-image">
   </a>
   <nav class="
     navbar justify-center px-4 hidden
-    lg:flex flex-1
+    xl:flex flex-1
   ">
     <a href="{{ route('home', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Home') }}</a>
-    <a href="{{ route('profil', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Profile') }}</a>
-    <a href="{{ route('home', app()->getLocale()) }}#program" class="menu-item hover:underline px-4">{{ __('Program') }}</a>
-    <a href="{{ route('articles', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Article') }}</a>
+    <a href="{{ route('home', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Coffeepedia') }}</a>
+    <a href="{{ route('home', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Coffee Story') }}</a>
     <a href="{{ route('products', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Product') }}</a>
+    <a href="{{ route('articles', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('News & Event') }}</a>
+    <a href="{{ route('profil', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('About Us') }}</a>
     <a href="{{ route('contact', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Contact') }}</a>
+    <!-- <a href="{{ route('home', app()->getLocale()) }}#program" class="menu-item hover:underline px-4">{{ __('Program') }}</a>
+    <a href="{{ route('articles', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Article') }}</a> -->
   </nav>
-  <div class="hidden lg:block lang-switcher px-4">
+  <div class="hidden xl:block lang-switcher px-4">
     <a href="{{ route(Route::currentRouteName(), ['id', '']) }}" class="menu-item hover:underline">ID</a>
     <a href="{{ route(Route::currentRouteName(), ['en', '']) }}" class="menu-item px-4 hover:underline">EN</a>
   </div>
-  <div class="block lg:hidden px-4">
+  <div class="block xl:hidden px-4">
     <button id="openMenu" class="bg-gray-200 text-gray-800 font-black rounded-2xl p-4">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
@@ -35,7 +38,7 @@
   </button>
   <div class="flex items-center justify-between w-full">
     <a href="{{ route('home', app()->getLocale()) }}" class="">
-      <img src="{{ asset('/fe/img/kmm-logo.png') }}" alt="Logo Mitra Malabar" class="logo-image p-4 h-20">
+      <img src="{{ asset('/fe/img/kopi-logo1.png') }}" alt="Logo Mitra Malabar" class="logo-image w-32 pl-4">
     </a>
     <div class="text-white">
       <a href="{{ route(Route::currentRouteName(), ['id', '']) }}" class="menu-item hover:underline">ID</a>
@@ -44,10 +47,13 @@
   </div>
   <ul class="flex flex-col text-right text-white">
     <a href="{{ route('home', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Home') }}</a>
-    <a href="{{ route('profil', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Profile') }}</a>
-    <a href="{{ route('home', app()->getLocale()) }}#program" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Program') }}</a>
-    <a href="{{ route('articles', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Article') }}</a>
+    <a href="{{ route('home', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Coffeepedia') }}</a>
+    <a href="{{ route('home', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Coffee Story') }}</a>
     <a href="{{ route('products', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Product') }}</a>
+    <a href="{{ route('articles', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('News & Event') }}</a>
+    <a href="{{ route('profil', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('About Us') }}</a>
     <a href="{{ route('contact', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Contact') }}</a>
+    <!-- <a href="{{ route('home', app()->getLocale()) }}#program" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Program') }}</a>
+    <a href="{{ route('articles', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Article') }}</a> -->
   </ul>
 </div>

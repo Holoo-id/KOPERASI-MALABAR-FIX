@@ -31,6 +31,23 @@ h3.page-subtitle {
 
 .nav-wrap {
   background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 100px;
+  align-items: center;
+  max-height: 225px;
+}
+.nav-wrap .logo-image {
+  max-height: 4rem;
+}
+@media screen and (max-width: 765px) {
+  .nav-wrap {
+    padding: 20px 5%;
+  }
+  .nav-wrap .logo-image {
+    max-height: 3rem;
+  }
 }
 
 .page-banner {
@@ -45,11 +62,11 @@ h3.page-subtitle {
 }
 
 .home-page .page-section .card {
-  margin: -5rem auto 0;
+  /* margin: -5rem auto 0; */
 }
 
 .default-page .page-section {
-  margin-top: calc(465px - 5rem);
+  /* margin-top: calc(465px - 5rem); */
 }
 
 .section-content-wrap {
@@ -144,7 +161,7 @@ h3.page-subtitle {
 
 /* Slideshow container */
 .slideshow-container {
-  max-height: 85vh;
+  max-height: 100vh;
   position: relative;
   margin: auto;
 }
@@ -155,7 +172,8 @@ h3.page-subtitle {
   vertical-align: middle;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 85vh;
+  height: 100vh;
+  max-height: 100vh;
   width: 100%;
 }
 

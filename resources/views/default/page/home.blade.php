@@ -1,11 +1,11 @@
 @extends('default.base')
 @section('content')
-    <div class="home-page -mt-20">
+    <div class="home-page" style="margin-top: -104px">
       {{-- banner --}}
       <div class="slideshow-container">
         <div class="homeSlides fade">
-          <img src="{{ asset('/fe/img/pages/home/home_1.jpg') }}">
-          <div class="absolute bottom-1/2 -my-16 text-center w-full text-2xl flex flex-col items-center">
+          <img src="{{ asset('/fe/img/pages/home/main-image.jpg') }}">
+          <div class="absolute text-center w-full text-2xl flex flex-col items-center" style="top: 50%; transform: translate(50%, -50%); right: 50%;">
             <h1 class="
               page-title w-11/12 text-white text-center font-black uppercase text-4xl
               md:text-5xl
