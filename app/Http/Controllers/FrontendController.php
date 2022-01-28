@@ -13,8 +13,7 @@ class FrontendController extends Controller
     public function index(Request $request, $local)
     {
         app()->setLocale($local);
-        $articles = Artikel::where('kategori', 'berita')
-        ->orderBy('created_at', 'desc')
+        $articles = Artikel::orderBy('created_at', 'desc')
         ->paginate(3);
         $images = Galeri::all();
         return view('default.page.home', compact('articles', 'images'));
@@ -37,16 +36,19 @@ class FrontendController extends Controller
         $pageTitle = trans("Article");
         return view('default.page.artikel', compact('articles', 'images', 'pageSubtitle', 'pageTitle'));
     }
-    public function news(Request $request, $local)
+    public function newsAndEvent(Request $request, $local)
     {
         app()->setLocale($local);
-        $articles = Artikel::where('kategori', 'berita')
+        $news = Artikel::where('kategori', 'berita')
         ->orderBy('created_at', 'desc')
-        ->paginate(9);
+        ->paginate(6);
+        $events = Artikel::where('kategori', 'event')
+        ->orderBy('created_at', 'desc')
+        ->paginate(3);
         $images = Galeri::all();
-        $pageSubtitle = trans("Latest Information");
-        $pageTitle = trans("News");
-        return view('default.page.artikel', compact('articles', 'images', 'pageSubtitle', 'pageTitle'));
+        $pageSubtitle = trans("");
+        $pageTitle = trans("News and Events");
+        return view('default.page.news-event', compact('events', 'news', 'images', 'pageSubtitle', 'pageTitle'));
     }
     public function articleDetail(Request $request, $local, $link)
     {

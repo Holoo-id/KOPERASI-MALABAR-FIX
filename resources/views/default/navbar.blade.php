@@ -10,11 +10,11 @@
     <a href="{{ route('home', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Coffeepedia') }}</a>
     <a href="{{ route('home', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Coffee Story') }}</a>
     <a href="{{ route('products', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Product') }}</a>
-    <a href="{{ route('articles', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('News & Event') }}</a>
+    <a href="{{ route('news-event', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('News & Event') }}</a>
     <a href="{{ route('profil', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('About Us') }}</a>
     <a href="{{ route('contact', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Contact') }}</a>
-    <!-- <a href="{{ route('home', app()->getLocale()) }}#program" class="menu-item hover:underline px-4">{{ __('Program') }}</a>
-    <a href="{{ route('articles', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Article') }}</a> -->
+    {{-- <a href="{{ route('home', app()->getLocale()) }}#program" class="menu-item hover:underline px-4">{{ __('Program') }}</a>
+    <a href="{{ route('articles', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Article') }}</a> --}}
   </nav>
   <div class="hidden xl:block lang-switcher px-4">
     <a href="{{ route(Route::currentRouteName(), ['id', '']) }}" class="menu-item hover:underline">ID</a>
@@ -50,10 +50,10 @@
     <a href="{{ route('home', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Coffeepedia') }}</a>
     <a href="{{ route('home', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Coffee Story') }}</a>
     <a href="{{ route('products', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Product') }}</a>
-    <a href="{{ route('articles', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('News & Event') }}</a>
+    <a href="{{ route('news-event', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('News & Event') }}</a>
     <a href="{{ route('profil', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('About Us') }}</a>
     <a href="{{ route('contact', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Contact') }}</a>
-    <!-- <a href="{{ route('home', app()->getLocale()) }}#program" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Program') }}</a>
-    <a href="{{ route('articles', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Article') }}</a> -->
+    {{-- <a href="{{ route('home', app()->getLocale()) }}#program" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Program') }}</a>
+    <a href="{{ route('articles', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Article') }}</a> --}}
   </ul>
 </div>
