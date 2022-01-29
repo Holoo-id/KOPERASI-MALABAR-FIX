@@ -52,7 +52,31 @@
                 <p> Data Coffee Story </p>
               </a>
             </li>
-            {{-- <li class="nav-item ">
+            <li class="nav-item {{ Route::currentRouteName() == 'semua-coffeepedia' ? 'active' : '' }}">
+              <a class="nav-link" href="{{ route('semua-coffeepedia') }}">
+                <i class="material-icons">article</i>
+                <p> Data Coffeepedia </p>
+              </a>
+            </li>
+            <li class="nav-item {{ Route::currentRouteName() == 'semua-produk' ? 'active' : '' }}">
+              <a class="nav-link" href="{{ route('semua-produk') }}">
+                <i class="material-icons">collections</i>
+                <p> Data Produk </p>
+              </a>
+            </li>
+            <li class="nav-item {{ Route::currentRouteName() == 'registerPage' ? 'active' : '' }}">
+              <a class="nav-link" href="{{ route('registerPage') }}">
+                <i class="material-icons">app_registration</i>
+                <p> Tambah User </p>
+              </a>
+            </li>
+            {{-- <li class="nav-item {{ Route::currentRouteName() == 'req-gambar' ? 'active' : '' }}">
+              <a class="nav-link" href="{{ route('req-gambar') }}">
+                <i class="material-icons">insert_photo</i>
+                <p> Request Gambar </p>
+              </a>
+            </li>
+            <li class="nav-item ">
               <a class="nav-link" data-toggle="collapse" href="#componentsCollapse">
                 <span class="sidebar-mini"> 
                   <i class="material-icons">article</i>  
@@ -71,24 +95,6 @@
                   </li>
                 </ul>
               </div>
-            </li> --}}
-            <li class="nav-item {{ Route::currentRouteName() == 'semua-produk' ? 'active' : '' }}">
-              <a class="nav-link" href="{{ route('semua-produk') }}">
-                <i class="material-icons">collections</i>
-                <p> Data Produk </p>
-              </a>
-            </li>
-            <li class="nav-item {{ Route::currentRouteName() == 'registerPage' ? 'active' : '' }}">
-              <a class="nav-link" href="{{ route('registerPage') }}">
-                <i class="material-icons">app_registration</i>
-                <p> Tambah User </p>
-              </a>
-            </li>
-            {{-- <li class="nav-item {{ Route::currentRouteName() == 'req-gambar' ? 'active' : '' }}">
-              <a class="nav-link" href="{{ route('req-gambar') }}">
-                <i class="material-icons">insert_photo</i>
-                <p> Request Gambar </p>
-              </a>
             </li>
             <li class="nav-item ">
               <a class="nav-link" data-toggle="collapse" href="#componentsExamples">

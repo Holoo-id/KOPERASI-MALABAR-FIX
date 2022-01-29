@@ -61,6 +61,24 @@ Route::middleware(['auth'])->group(function ()
             Route::post('/update', 'App\Http\Controllers\BeritaController@updateNews')->name('update-berita');
             Route::get('/delete/{id}', 'App\Http\Controllers\BeritaController@deleteNews')->name('delete-berita');
         });
+        Route::prefix('/coffeestory')->group(function () {
+            Route::get('/', 'App\Http\Controllers\CoffeeStoryController@allStories')->name('semua-story');
+            Route::get('/tambah', 'App\Http\Controllers\CoffeeStoryController@createStoryPage')->name('story-baru');
+            Route::post('/post-tambah', 'App\Http\Controllers\CoffeeStoryController@createStory')->name('post-story-baru');
+            Route::get('detail/{link}', 'App\Http\Controllers\CoffeeStoryController@storyDetail')->name('detail-story');
+            Route::get('/edit/{id}', 'App\Http\Controllers\CoffeeStoryController@editStory')->name('edit-story');
+            Route::post('/update', 'App\Http\Controllers\CoffeeStoryController@updateStory')->name('update-story');
+            Route::get('/delete/{id}', 'App\Http\Controllers\CoffeeStoryController@deleteStory')->name('delete-story');
+        });
+        Route::prefix('/kopipedia')->group(function () {
+            Route::get('/', 'App\Http\Controllers\CoffeepediaController@allCoffeePedias')->name('semua-coffeepedia');
+            Route::get('/tambah', 'App\Http\Controllers\CoffeepediaController@createCoffeepediaPage')->name('coffeepedia-baru');
+            Route::post('/post-tambah', 'App\Http\Controllers\CoffeepediaController@createCoffeepedia')->name('post-coffeepedia-baru');
+            Route::get('detail/{link}', 'App\Http\Controllers\CoffeepediaController@coffeepediaDetail')->name('detail-coffeepedia');
+            Route::get('/edit/{id}', 'App\Http\Controllers\CoffeepediaController@editCoffeepedia')->name('edit-coffeepedia');
+            Route::post('/update', 'App\Http\Controllers\CoffeepediaController@updateCoffeepedia')->name('update-coffeepedia');
+            Route::get('/delete/{id}', 'App\Http\Controllers\CoffeepediaController@deleteCoffeepedia')->name('delete-coffeepedia');
+        });
         Route::prefix('/event')->group(function () {
             Route::get('/', 'App\Http\Controllers\EventController@allEvents')->name('semua-event');
             Route::get('/tambah', 'App\Http\Controllers\EventController@createEventPage')->name('event-baru');
@@ -87,15 +105,6 @@ Route::middleware(['auth'])->group(function ()
             Route::get('/edit/{id}', 'App\Http\Controllers\ProductController@editProduct')->name('edit-produk');
             Route::post('/update', 'App\Http\Controllers\ProductController@updateProduct')->name('update-produk');
             Route::get('/delete/{id}', 'App\Http\Controllers\ProductController@deleteProduct')->name('delete-produk');
-        });
-        Route::prefix('/story')->group(function () {
-            Route::get('/', 'App\Http\Controllers\CoffeeStoryController@allStories')->name('semua-story');
-            Route::get('/tambah', 'App\Http\Controllers\CoffeeStoryController@createStoryPage')->name('story-baru');
-            Route::post('/post-tambah', 'App\Http\Controllers\CoffeeStoryController@createStory')->name('post-story-baru');
-            Route::get('detail/{link}', 'App\Http\Controllers\CoffeeStoryController@storyDetail')->name('detail-story');
-            Route::get('/edit/{id}', 'App\Http\Controllers\CoffeeStoryController@editStory')->name('edit-story');
-            Route::post('/update', 'App\Http\Controllers\CoffeeStoryController@updateStory')->name('update-story');
-            Route::get('/delete/{id}', 'App\Http\Controllers\CoffeeStoryController@deleteStory')->name('delete-story');
         });
     });
 });
