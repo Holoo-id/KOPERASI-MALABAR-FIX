@@ -46,6 +46,12 @@
                 <p> Data Event </p>
               </a>
             </li>
+            <li class="nav-item {{ Route::currentRouteName() == 'semua-story' ? 'active' : '' }}">
+              <a class="nav-link" href="{{ route('semua-story') }}">
+                <i class="material-icons">article</i>
+                <p> Data Coffee Story </p>
+              </a>
+            </li>
             {{-- <li class="nav-item ">
               <a class="nav-link" data-toggle="collapse" href="#componentsCollapse">
                 <span class="sidebar-mini"> 

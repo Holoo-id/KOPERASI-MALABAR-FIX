@@ -88,5 +88,14 @@ Route::middleware(['auth'])->group(function ()
             Route::post('/update', 'App\Http\Controllers\ProductController@updateProduct')->name('update-produk');
             Route::get('/delete/{id}', 'App\Http\Controllers\ProductController@deleteProduct')->name('delete-produk');
         });
+        Route::prefix('/story')->group(function () {
+            Route::get('/', 'App\Http\Controllers\CoffeeStoryController@allStories')->name('semua-story');
+            Route::get('/tambah', 'App\Http\Controllers\CoffeeStoryController@createStoryPage')->name('story-baru');
+            Route::post('/post-tambah', 'App\Http\Controllers\CoffeeStoryController@createStory')->name('post-story-baru');
+            Route::get('detail/{link}', 'App\Http\Controllers\CoffeeStoryController@storyDetail')->name('detail-story');
+            Route::get('/edit/{id}', 'App\Http\Controllers\CoffeeStoryController@editStory')->name('edit-story');
+            Route::post('/update', 'App\Http\Controllers\CoffeeStoryController@updateStory')->name('update-story');
+            Route::get('/delete/{id}', 'App\Http\Controllers\CoffeeStoryController@deleteStory')->name('delete-story');
+        });
     });
 });
