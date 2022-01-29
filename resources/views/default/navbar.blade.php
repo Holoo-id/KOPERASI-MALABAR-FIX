@@ -7,7 +7,7 @@
     xl:flex flex-1
   ">
     <a href="{{ route('home', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Home') }}</a>
-    <a href="{{ route('home', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Coffeepedia') }}</a>
+    <a href="{{ route('coffeepedia', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Coffeepedia') }}</a>
     <a href="{{ route('coffee-story', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Coffee Story') }}</a>
     <a href="{{ route('products', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('Product') }}</a>
     <a href="{{ route('news-event', app()->getLocale()) }}" class="menu-item hover:underline px-4">{{ __('News & Event') }}</a>
@@ -47,7 +47,7 @@
   </div>
   <ul class="flex flex-col text-right text-white">
     <a href="{{ route('home', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Home') }}</a>
-    <a href="{{ route('home', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Coffeepedia') }}</a>
+    <a href="{{ route('coffeepedia', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Coffeepedia') }}</a>
     <a href="{{ route('coffee-story', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Coffee Story') }}</a>
     <a href="{{ route('products', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('Product') }}</a>
     <a href="{{ route('news-event', app()->getLocale()) }}" class="menu-item leading-loose text-xl hover:underline px-4">{{ __('News & Event') }}</a>

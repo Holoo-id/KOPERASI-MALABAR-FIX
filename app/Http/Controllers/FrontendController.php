@@ -47,6 +47,23 @@ class FrontendController extends Controller
         $pageTitle = trans("Coffee Story");
         return view('default.page.artikel', compact('articles', 'images', 'pageSubtitle', 'pageTitle'));
     }
+    public function coffeepedia(Request $request, $local)
+    {
+        app()->setLocale($local);
+        $types = Artikel::where('kategori', 'kopipedia-jenis')
+        ->orderBy('created_at', 'desc')
+        ->paginate(3);
+        $cultivations = Artikel::where('kategori', 'kopipedia-budidaya')
+        ->orderBy('created_at', 'desc')
+        ->paginate(3);
+        $processing = Artikel::where('kategori', 'kopipedia-pengolahan')
+        ->orderBy('created_at', 'desc')
+        ->paginate(3);
+        $images = Galeri::all();
+        $pageSubtitle = trans("");
+        $pageTitle = trans("COFFEEPEDIA");
+        return view('default.page.coffeepedias', compact('cultivations', 'processing', 'types', 'images', 'pageSubtitle', 'pageTitle'));
+    }
     public function newsAndEvent(Request $request, $local)
     {
         app()->setLocale($local);
