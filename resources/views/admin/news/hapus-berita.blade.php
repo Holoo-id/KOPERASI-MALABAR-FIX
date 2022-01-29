@@ -13,10 +13,14 @@
           <center>Anda Yakin Ingin Menghapus Data</center>
         </div>
         <div class="modal-footer">
+          <form action="{{ route('delete-berita', $feed->id) }}" method="get" enctype="multipart/form-data">
+            @csrf
             <input type="text" value="{{ $feed->id }}" name="id" hidden>
             <input type="text" value="{{ $feed->gambar_sampul }}" name="gambar_sampul" hidden>
-            <a href="{{ route('delete-berita',$feed->id) }}" class="btn btn-danger">Yakin</a>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+            <!-- <a href="{{ route('delete-berita',$feed->id) }}" class="btn btn-danger">Yakin</a> -->
+            <input type="submit" value="Yakin" class="btn btn-danger">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+          </form>
         </div>
       </div>
       

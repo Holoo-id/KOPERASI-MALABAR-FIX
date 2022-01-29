@@ -59,7 +59,7 @@
                   <label class="col-sm-1 col-form-label">Gambar</label>
                   <div class="col-sm-11">
                     
-                      <input type="file" name="gambar" class="form-control" value="{{ $feed->galeri->gambar }}">
+                      <input type="file" name="gambar" class="form-control" value="{{ $image->gambar }}">
                       @if($errors->has('gambar'))
                           <span class="text-danger">{{ $errors->first('gambar') }}</span>
                       @endif
@@ -70,7 +70,7 @@
                   <label class="col-sm-1 col-form-label">Judul Gambar</label>
                   <div class="col-sm-11">
                     <div class="form-group">
-                      <input type="text" name="judul_gambar" class="form-control" value="{{ $feed->galeri->judul }}">
+                      <input type="text" name="judul_gambar" class="form-control" value="{{ $image->judul }}">
                       @if($errors->has('judul_gambar'))
                           <span class="text-danger">{{ $errors->first('judul_gambar') }}</span>
                       @endif

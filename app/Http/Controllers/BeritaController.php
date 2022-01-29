@@ -71,7 +71,8 @@ class BeritaController extends Controller
     // Edit Data Berita
     public function editNews($link){
         $feed = Artikel::where('id', $link)->first();
-        return view('admin.news.edit-berita', compact('feed'));
+        $image = Galeri::where('id', $feed->gambar_sampul)->first();
+        return view('admin.news.edit-berita', compact('feed', 'image'));
     }
     public function updateNews(Request $request){
         $messages = [
@@ -119,11 +120,10 @@ class BeritaController extends Controller
     // Delete Berita
     public function deleteNews(Request $request)
     {
-        $hapusBerita = Artikel::where('id',$request->id);
+        $hapusBerita = Artikel::where('id', $request->id);
         $hapusBerita->delete();
-        $hapusGambarBerita = Galeri::where('id',$request->gambar_sampul);
+        $hapusGambarBerita = Galeri::where('id', $request->gambar_sampul);
         $hapusGambarBerita->delete();
         return redirect(route('semua-berita'));
-    
     }
 }
