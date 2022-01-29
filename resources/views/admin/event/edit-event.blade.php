@@ -7,9 +7,9 @@
           <div class="card-icon">
             <i class="material-icons">assignment</i>
           </div>
-          <h4 class="card-title">Berita Baru</h4>
+          <h4 class="card-title">Event Baru</h4>
         </div>
-        <form action="{{ route('update-berita') }}" method="post" enctype="multipart/form-data" class="form-horizontal">
+        <form action="{{ route('update-event') }}" method="post" enctype="multipart/form-data" class="form-horizontal">
           @csrf
           <div class="card-body">
             <div class="row px-5">
@@ -26,7 +26,7 @@
                   <label class="col-sm-1 col-form-label">Judul</label>
                   <div class="col-sm-11">
                     <div class="form-group">
-                      <input type="text" name="judul" class="form-control" value="{{ $feed->judul }}">
+                      <input type="text" name="judul" class="form-control" value="{{ $event->judul }}">
                       @if($errors->has('judul'))
                           <span class="text-danger">{{ $errors->first('judul') }}</span>
                       @endif
@@ -37,7 +37,7 @@
                   <label class="col-sm-1 col-form-label">Konten</label>
                   <div class="col-sm-11">
                     <div class="form-group">
-                      <textarea name="deskripsi" id="konten" class="form-control">{!! html_entity_decode ($feed->deskripsi) !!}</textarea>
+                      <textarea name="deskripsi" id="konten" class="form-control">{!! html_entity_decode ($event->deskripsi) !!}</textarea>
                       @if($errors->has('konten'))
                           <span class="text-danger">{{ $errors->first('konten') }}</span>
                       @endif
@@ -48,7 +48,7 @@
                   <label class="col-sm-1 col-form-label">Tanggal</label>
                   <div class="col-sm-11">
                     <div class="form-group">
-                      <input type="date" name="tanggal" class="form-control" value="{{ $feed->tanggal }}">
+                      <input type="date" name="tanggal" class="form-control" value="{{ $event->tanggal }}">
                       @if($errors->has('tanggal'))
                           <span class="text-danger">{{ $errors->first('tanggal') }}</span>
                       @endif
@@ -58,12 +58,10 @@
                 <div class="row">
                   <label class="col-sm-1 col-form-label">Gambar</label>
                   <div class="col-sm-11">
-                    
                       <input type="file" name="gambar" class="form-control" value="{{ $image->gambar }}">
                       @if($errors->has('gambar'))
                           <span class="text-danger">{{ $errors->first('gambar') }}</span>
                       @endif
-                  
                   </div>
                 </div>
                 <div class="row">

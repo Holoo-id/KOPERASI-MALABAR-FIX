@@ -61,6 +61,15 @@ Route::middleware(['auth'])->group(function ()
             Route::post('/update', 'App\Http\Controllers\BeritaController@updateNews')->name('update-berita');
             Route::get('/delete/{id}', 'App\Http\Controllers\BeritaController@deleteNews')->name('delete-berita');
         });
+        Route::prefix('/event')->group(function () {
+            Route::get('/', 'App\Http\Controllers\EventController@allEvents')->name('semua-event');
+            Route::get('/tambah', 'App\Http\Controllers\EventController@createEventPage')->name('event-baru');
+            Route::post('/post-tambah', 'App\Http\Controllers\EventController@createEvent')->name('post-event-baru');
+            Route::get('detail/{link}', 'App\Http\Controllers\EventController@eventDetail')->name('detail-event');
+            Route::get('/edit/{id}', 'App\Http\Controllers\EventController@editEvent')->name('edit-event');
+            Route::post('/update', 'App\Http\Controllers\EventController@updateEvent')->name('update-event');
+            Route::get('/delete/{id}', 'App\Http\Controllers\EventController@deleteEvent')->name('delete-event');
+        });
         Route::prefix('/gambar')->group(function () {
             Route::get('/', 'App\Http\Controllers\AdminController@showGambar')->name('show-gambar');
             Route::post('/upload', 'App\Http\Controllers\AdminController@uploadGambar')->name('upload-gambar');

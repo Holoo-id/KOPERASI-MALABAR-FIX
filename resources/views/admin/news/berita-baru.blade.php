@@ -17,8 +17,7 @@
                 <div class="row">
                   <div class="col-sm-12">
                     <div class="form-group">
-                      {{-- <input type="text" name="id" value="{{Auth::user()->id}}" class="form-control" hidden> --}}
-                      <input type="text" name="id" value="1" class="form-control" hidden>
+                      <input type="text" name="id" value="{{Auth::user()->id}}" class="form-control" hidden>
                       <span class="bmd-help">{{ $errors->first('id') }}</span>
                     </div>
                   </div>

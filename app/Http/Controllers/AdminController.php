@@ -77,7 +77,6 @@ class AdminController extends Controller
             'path' => $image_path,
             'tampilkan' => 0
         ]);
-        // dd($request);
         $buatArtikel = Artikel::create([
             'added_by' => $request->id,
             'judul' => $request->judul,
