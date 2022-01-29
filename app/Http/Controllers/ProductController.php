@@ -12,13 +12,13 @@ class ProductController extends Controller
     public function semuaProduk(){
         $products = Produk::all();
         $images = Galeri::all();
-        return view('admin.semua-produk', compact('products', 'images'));
+        return view('admin.product.semua-produk', compact('products', 'images'));
     }
     // Detail Produk di Admin
     public function detailProduk($link){
         $product = Produk::where('id', $link)->first();
         $image = Galeri::where('id', $link)->first();
-        return view('admin.detail-produk', compact('product', 'image'));
+        return view('admin.product.detail-produk', compact('product', 'image'));
     }
     // Semua Produk di Public
     public function allProducts(Request $request, $local)
@@ -42,7 +42,7 @@ class ProductController extends Controller
 
     // Create New Product Data
     public function createProductPage(){
-        return view('admin.produk-baru');
+        return view('admin.product.produk-baru');
     }
     public function createNewProduct(Request $request){
         $messages = [
@@ -90,7 +90,7 @@ class ProductController extends Controller
     // Edit Data Produk
     public function editProduct($link){
         $product = Produk::where('id', $link)->first();
-        return view('admin.edit-produk', compact('product'));
+        return view('admin.product.edit-produk', compact('product'));
     }
     public function updateProduct(Request $request){
         $messages = [
