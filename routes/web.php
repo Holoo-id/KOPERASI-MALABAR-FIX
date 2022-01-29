@@ -52,6 +52,15 @@ Route::middleware(['auth'])->group(function ()
             Route::post('/post', 'App\Http\Controllers\AdminController@buatArtikel')->name('buatArtikel');
             Route::get('/delete/{id}', 'App\Http\Controllers\AdminController@deleteArticle')->name('delete-article');
         });
+        Route::prefix('/berita')->group(function () {
+            Route::get('/', 'App\Http\Controllers\BeritaController@allNews')->name('semua-berita');
+            Route::get('/tambah', 'App\Http\Controllers\BeritaController@createNewsPage')->name('berita-baru');
+            Route::post('/post-tambah', 'App\Http\Controllers\BeritaController@createNews')->name('post-berita-baru');
+            Route::get('detail/{link}', 'App\Http\Controllers\BeritaController@newsDetail')->name('detail-berita');
+            Route::get('/edit/{id}', 'App\Http\Controllers\BeritaController@editNews')->name('edit-berita');
+            Route::post('/update', 'App\Http\Controllers\BeritaController@updateNews')->name('update-berita');
+            Route::get('/delete/{id}', 'App\Http\Controllers\BeritaController@deleteNews')->name('delete-berita');
+        });
         Route::prefix('/gambar')->group(function () {
             Route::get('/', 'App\Http\Controllers\AdminController@showGambar')->name('show-gambar');
             Route::post('/upload', 'App\Http\Controllers\AdminController@uploadGambar')->name('upload-gambar');

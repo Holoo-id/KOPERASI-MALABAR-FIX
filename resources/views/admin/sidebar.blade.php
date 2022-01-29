@@ -34,12 +34,32 @@
                 <p> Dashboard </p>
               </a>
             </li>
-            <li class="nav-item {{ Route::currentRouteName() == 'allArticle' ? 'active' : '' }}">
-              <a class="nav-link" href="{{ route('allArticle') }}">
+            <li class="nav-item {{ Route::currentRouteName() == 'semua-berita' ? 'active' : '' }}">
+              <a class="nav-link" href="{{ route('semua-berita') }}">
                 <i class="material-icons">article</i>
-                <p> Data Artikel </p>
+                <p> Data Berita </p>
               </a>
             </li>
+            {{-- <li class="nav-item ">
+              <a class="nav-link" data-toggle="collapse" href="#componentsCollapse">
+                <span class="sidebar-mini"> 
+                  <i class="material-icons">article</i>  
+                </span>
+                <span class="sidebar-normal"> Multi Level Collapse
+                  <b class="caret"></b>
+                </span>
+              </a>
+              <div class="collapse" id="componentsCollapse">
+                <ul class="nav">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#0">
+                      <span class="sidebar-mini"> E </span>
+                      <span class="sidebar-normal"> Example </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li> --}}
             <li class="nav-item {{ Route::currentRouteName() == 'semua-produk' ? 'active' : '' }}">
               <a class="nav-link" href="{{ route('semua-produk') }}">
                 <i class="material-icons">collections</i>
@@ -67,24 +87,6 @@
               </a>
               <div class="collapse" id="componentsExamples">
                 <ul class="nav">
-                  <li class="nav-item ">
-                    <a class="nav-link" data-toggle="collapse" href="#componentsCollapse">
-                      <span class="sidebar-mini"> MLT </span>
-                      <span class="sidebar-normal"> Multi Level Collapse
-                        <b class="caret"></b>
-                      </span>
-                    </a>
-                    <div class="collapse" id="componentsCollapse">
-                      <ul class="nav">
-                        <li class="nav-item ">
-                          <a class="nav-link" href="#0">
-                            <span class="sidebar-mini"> E </span>
-                            <span class="sidebar-normal"> Example </span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
                   <li class="nav-item ">
                     <a class="nav-link" href="../../examples/components/buttons.html">
                       <span class="sidebar-mini"> B </span>

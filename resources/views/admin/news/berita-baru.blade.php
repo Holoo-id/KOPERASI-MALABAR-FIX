@@ -7,9 +7,9 @@
           <div class="card-icon">
             <i class="material-icons">assignment</i>
           </div>
-          <h4 class="card-title">Artikel Baru</h4>
+          <h4 class="card-title">Berita Baru</h4>
         </div>
-        <form action="{{ route('buatArtikel') }}" method="post" enctype="multipart/form-data" class="form-horizontal">
+        <form action="{{ route('post-berita-baru') }}" method="post" enctype="multipart/form-data" class="form-horizontal">
           @csrf
           <div class="card-body">
             <div class="row px-5">
@@ -30,25 +30,6 @@
                       <input type="text" name="judul" class="form-control">
                       @if($errors->has('judul'))
                           <span class="text-danger">{{ $errors->first('judul') }}</span>
-                      @endif
-                    </div>
-                  </div>
-                </div>
-                <div class="row mb-4">
-                  <label class="col-sm-1 col-form-label">Kategori</label>
-                  <div class="col-sm-11">
-                    <div class="form-group">
-                      {{-- <input type="text" name="judul" class="form-control"> --}}
-                      <select name="kategori" id="" class="form-control">
-                        <option value="berita">Berita</option>
-                        <option value="event">Event</option>
-                        <option value="story">Coffee Story</option>
-                        <option value="kopipedia-jenis">Kopipedia - Jenis</option>
-                        <option value="kopipedia-budidaya">Kopipedia - Budidaya</option>
-                        <option value="kopipedia-pengolahan">Kopipedia - Pengolahan</option>
-                      </select>
-                      @if($errors->has('kategori'))
-                          <span class="text-danger">{{ $errors->first('kategori') }}</span>
                       @endif
                     </div>
                   </div>
@@ -78,12 +59,10 @@
                 <div class="row">
                   <label class="col-sm-1 col-form-label">Gambar</label>
                   <div class="col-sm-11">
-                    
                       <input type="file" name="gambar" class="form-control">
                       @if($errors->has('gambar'))
                           <span class="text-danger">{{ $errors->first('gambar') }}</span>
                       @endif
-                  
                   </div>
                 </div>
                 <div class="row">
