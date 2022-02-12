@@ -7,7 +7,7 @@
           <div class="card-icon">
             <i class="material-icons">assignment</i>
           </div>
-          <h4 class="card-title">Berita Baru</h4>
+          <h4 class="card-title">Edit Berita</h4>
         </div>
         <form action="{{ route('update-berita') }}" method="post" enctype="multipart/form-data" class="form-horizontal">
           @csrf
@@ -17,8 +17,8 @@
                 <div class="row">
                   <div class="col-sm-12">
                     <div class="form-group">
-                      <input type="text" name="id" value="{{Auth::user()->id}}" class="form-control" hidden>
-                      <span class="bmd-help">Errors message goes here</span>
+                      <input type="text" name="uId" value="{{Auth::user()->id}}" class="form-control" hidden>
+                      <input type="text" name="cId" value="{{ $feed->id }}" class="form-control" hidden>
                     </div>
                   </div>
                 </div>
@@ -55,15 +55,25 @@
                     </div>
                   </div>
                 </div>
+                @if($image->gambar)
+                <div class="row mb-3">
+                  <label class="col-sm-1 col-form-label">Gambar Sebelumnya</label>
+                    <div class="col-sm-11">
+                      <input type="text" name="imgId" value="{{ $feed->gambar_sampul }}" hidden>
+                      <img src="{{ asset('/fe/img/contents/'.$image->gambar) }}" alt="{{ $image->gambar }}" style="max-height: 250px">
+                    </div>
+                  </div>
+                @endif
                 <div class="row">
-                  <label class="col-sm-1 col-form-label">Gambar</label>
+                  <label class="col-sm-1 col-form-label">Gambar Baru</label>
                   <div class="col-sm-11">
-                    
-                      <input type="file" name="gambar" class="form-control" value="{{ $image->gambar }}">
-                      @if($errors->has('gambar'))
-                          <span class="text-danger">{{ $errors->first('gambar') }}</span>
-                      @endif
-                  
+                      <div class="col-12">
+                        <input type="text" name="imgId" value="{{ $feed->gambar_sampul }}" hidden>
+                        <input type="file" name="gambar" class="form-control">
+                        @if($errors->has('gambar'))
+                            <span class="text-danger">{{ $errors->first('gambar') }}</span>
+                        @endif
+                      </div>
                   </div>
                 </div>
                 <div class="row">

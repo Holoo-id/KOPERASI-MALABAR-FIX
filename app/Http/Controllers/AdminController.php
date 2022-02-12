@@ -93,7 +93,6 @@ class AdminController extends Controller
             'required'=> 'Judul Wajib Diisi.',
             'deskripsi.required'=> 'Deskripsi Wajib Diisi.',
             'tanggal.required' => 'Tanggal Wajib Diisi.',
-            'gambar.required' => 'Gambar Wajib Diisi.',
             'judul_gambar.required' => 'Judul Gambar Wajib Diisi.',
             'min' => 'Harus Diisi minimal :min'
         ];
@@ -102,7 +101,6 @@ class AdminController extends Controller
             'judul'=> 'required|min:7',
             'deskripsi'=> 'required',
             'tanggal' => 'required',
-            'gambar' => 'required',
             'judul_gambar' => 'required'
         ],$messages);
         

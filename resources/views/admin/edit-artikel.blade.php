@@ -69,15 +69,23 @@
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <label class="col-sm-1 col-form-label">Gambar</label>
+                @if($article->galeri->gambar)
+                <div class="row mb-3">
+                  <label class="col-sm-1 col-form-label">Gambar Sebelumnya</label>
                   <div class="col-sm-11">
-                    
-                      <input type="file" name="gambar" class="form-control" value="{{ $article->galeri->gambar }}">
-                      @if($errors->has('gambar'))
-                          <span class="text-danger">{{ $errors->first('gambar') }}</span>
-                      @endif
-                  
+                      <img src="{{ asset('/fe/img/contents/'.$article-galeri->gambar) }}" alt="{{ $article-galeri->gambar }}" style="max-height: 250px">
+                    </div>
+                  </div>
+                @endif
+                <div class="row">
+                  <label class="col-sm-1 col-form-label">Gambar Baru</label>
+                  <div class="col-sm-11">
+                      <div class="col-12">
+                        <input type="file" name="gambar" class="form-control">
+                        @if($errors->has('gambar'))
+                            <span class="text-danger">{{ $errors->first('gambar') }}</span>
+                        @endif
+                      </div>
                   </div>
                 </div>
                 <div class="row">

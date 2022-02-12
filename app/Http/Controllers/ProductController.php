@@ -17,7 +17,7 @@ class ProductController extends Controller
     // Detail Produk di Admin
     public function detailProduk($link){
         $product = Produk::where('id', $link)->first();
-        $image = Galeri::where('id', $link)->first();
+        $image = Galeri::where('id', $product->gambar_sampul)->first();
         return view('admin.product.detail-produk', compact('product', 'image'));
     }
     // Semua Produk di Public
