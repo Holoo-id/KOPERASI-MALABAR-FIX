@@ -92,7 +92,6 @@ class AdminController extends Controller
         $messages = [
             'required'=> 'Judul Wajib Diisi.',
             'deskripsi.required'=> 'Deskripsi Wajib Diisi.',
-            'tanggal.required' => 'Tanggal Wajib Diisi.',
             'judul_gambar.required' => 'Judul Gambar Wajib Diisi.',
             'min' => 'Harus Diisi minimal :min'
         ];
@@ -104,26 +103,27 @@ class AdminController extends Controller
             'judul_gambar' => 'required'
         ],$messages);
         
-        $uploadedFile = $request->file('gambar');
-        $uploadedFile->move("fe/img/contents/", $uploadedFile->getClientOriginalName());
-        $image_path = "fe/img/contents/".$request->in_img_title;
         $tanggal = date('Y-m-d');
-
         
-        $uploadGambar = Galeri::where('id', $request->id)->update([
+        if ($request->has('gambar')) {
+            $uploadedFile = $request->file('gambar');
+            $uploadedFile->move("fe/img/contents/", $uploadedFile->getClientOriginalName());
+            $image_path = "fe/img/contents/".$request->in_img_title;
             
-            'judul' => $request->judul_gambar,
-            'gambar' => $request->in_img_title ?? $uploadedFile->getClientOriginalName(),
-            'added_by' => $request->id,
-            'path' => $image_path,
-            'tampilkan' => 0
-        ]);
-        $buatArtikel = Artikel::where('id', $request->id)->update([
-            'added_by' => $request->id,
+            $uploadGambar = Galeri::where('id', $request->imgId)->update([
+                'judul' => $request->judul_gambar,
+                'gambar' => $request->in_img_title ?? $uploadedFile->getClientOriginalName(),
+                'added_by' => $request->uId,
+                'path' => $image_path,
+                'tampilkan' => 0
+            ]);
+        }
+        $updateArtikel = Artikel::where('id', $request->cId)->update([
+            'added_by' => $request->uId,
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
             'tanggal' => $tanggal,
-            'gambar_sampul' => $request->id,
+            'gambar_sampul' => $request->imgId,
         ]);
          return redirect(route('allArticle'));
     }

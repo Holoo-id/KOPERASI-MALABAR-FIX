@@ -17,7 +17,8 @@
                 <div class="row">
                   <div class="col-sm-12">
                     <div class="form-group">
-                      <input type="text" name="id" value="{{Auth::user()->id}}" class="form-control" hidden>
+                      <input type="text" name="uId" value="{{Auth::user()->id}}" class="form-control" hidden>
+                      <input type="text" name="cId" value="{{ $event->id }}" class="form-control" hidden>
                       <span class="bmd-help">Errors message goes here</span>
                     </div>
                   </div>
@@ -60,6 +61,7 @@
                   <label class="col-sm-1 col-form-label">Gambar Sebelumnya</label>
                   <div class="col-sm-11">
                       <img src="{{ asset('/fe/img/contents/'.$image->gambar) }}" alt="{{ $image->gambar }}" style="max-height: 250px">
+                      <input type="text" name="imgId" value="{{ $event->gambar_sampul }}" hidden>
                     </div>
                   </div>
                 @endif
@@ -67,6 +69,7 @@
                   <label class="col-sm-1 col-form-label">Gambar Baru</label>
                   <div class="col-sm-11">
                       <div class="col-12">
+                      <input type="text" name="imgId" value="{{ $event->gambar_sampul }}" hidden>
                         <input type="file" name="gambar" class="form-control">
                         @if($errors->has('gambar'))
                             <span class="text-danger">{{ $errors->first('gambar') }}</span>

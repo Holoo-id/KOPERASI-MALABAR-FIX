@@ -103,16 +103,15 @@ class BeritaController extends Controller
                 'path' => $image_path,
                 'tampilkan' => 0
             ]);
-        } else {
-            $updateBerita = Artikel::where('id', $request->cId)->update([
-                'added_by' => $request->uId,
-                'judul' => $request->judul,
-                'kategori' => 'berita',
-                'deskripsi' => $request->deskripsi,
-                'tanggal' => $tanggal,
-                'gambar_sampul' => $request->imgId,
-            ]);
         }
+        $updateBerita = Artikel::where('id', $request->cId)->update([
+            'added_by' => $request->uId,
+            'judul' => $request->judul,
+            'kategori' => 'berita',
+            'deskripsi' => $request->deskripsi,
+            'tanggal' => $tanggal,
+            'gambar_sampul' => $request->imgId,
+        ]);
          return redirect(route('semua-berita'));
     }
     

@@ -97,7 +97,6 @@ class ProductController extends Controller
             'required'=> 'Judul Wajib Diisi.',
             'deskripsi.required'=> 'Deskripsi Wajib Diisi.',
             'tanggal.required' => 'Tanggal Wajib Diisi.',
-            'gambar.required' => 'Gambar Wajib Diisi.',
             'judul_gambar.required' => 'Judul Gambar Wajib Diisi.',
             'min' => 'Harus Diisi minimal :min'
         ];
@@ -106,30 +105,30 @@ class ProductController extends Controller
             'judul'=> 'required|min:7',
             'deskripsi'=> 'required',
             'tanggal' => 'required',
-            'gambar' => 'required',
             'judul_gambar' => 'required'
         ],$messages);
         
-        $uploadedFile = $request->file('gambar');
-        $uploadedFile->move("fe/img/contents/", $uploadedFile->getClientOriginalName());
-        $image_path = "fe/img/contents/".$request->in_img_title;
         $tanggal = date('Y-m-d');
 
-        
-        $uploadGambar = Galeri::where('id', $request->id)->update([
+        if ($request->has('gambar')) {
+            $uploadedFile = $request->file('gambar');
+            $uploadedFile->move("fe/img/contents/", $uploadedFile->getClientOriginalName());
+            $image_path = "fe/img/contents/".$request->in_img_title;
             
-            'judul' => $request->judul_gambar,
-            'gambar' => $request->in_img_title ?? $uploadedFile->getClientOriginalName(),
-            'added_by' => $request->id,
-            'path' => $image_path,
-            'tampilkan' => 0
-        ]);
-        $updateProduk = Produk::where('id', $request->id)->update([
-            'added_by' => $request->id,
+            $uploadGambar = Galeri::where('id', $request->imgId)->update([
+                'judul' => $request->judul_gambar,
+                'gambar' => $request->in_img_title ?? $uploadedFile->getClientOriginalName(),
+                'added_by' => $request->uId,
+                'path' => $image_path,
+                'tampilkan' => 0
+            ]);
+        }
+        $updateProduk = Produk::where('id', $request->cId)->update([
+            'added_by' => $request->uId,
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
             'tanggal' => $tanggal,
-            'gambar_sampul' => $request->id,
+            'gambar_sampul' => $request->imgId,
         ]);
          return redirect(route('semua-produk'));
     }
